@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINBEFINE — Каталог онлайн-курсов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css?v=58">
+</head>
+<body>
+<header class="topbar">
+    <div class="top-strip">
+      <div class="container top-strip-inner">
+        <div class="top-strip-links">
+          <a href="#">
+            <div class="icon">
+              <img src="assets/point.svg" alt="point">
+            </div>
+            Москва
+          </a>
+          <div class="course">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/course.svg" alt="course">
+              </div>
+              Курсы валют
+            </a>
+            <div class="course-list">
+              <div class="course-item">
+                <span>USD</span>
+                88.72 +0.01
+              </div>
+              <div class="course-item">
+                <span>EUR</span>
+                96.44 -0.12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-strip-actions language-select" data-language-select>
+          <button class="language-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="language-flag language-flag-ru" data-language-flag aria-hidden="true"></span>
+            <span class="lang" data-language-current>RU</span>
+            <span class="dropdown-arrow" aria-hidden="true">
+              <img src="assets/arrow-down.svg" alt="">
+            </span>
+          </button>
+          <div class="language-menu" role="listbox" aria-label="Выбор языка">
+            <button class="language-option active" type="button" role="option" aria-selected="true" data-lang-value="RU" data-lang-code="ru" data-flag-class="language-flag-ru">
+              <span class="language-flag language-flag-ru" aria-hidden="true"></span>
+              Русский
+            </button>
+            <button class="language-option" type="button" role="option" aria-selected="false" data-lang-value="EN" data-lang-code="en" data-flag-class="language-flag-en">
+              <span class="language-flag language-flag-en" aria-hidden="true"></span>
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="assets/logo.svg" alt="logo" />
+      </a>
+
+<input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Открыть меню">
+<label class="burger" for="menu-toggle" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<div class="mobile-menu">
+  <nav class="nav" aria-label="Основное меню">
+    <a href="credits.html">Кредиты</a>
+    <a href="cards.html">Карты</a>
+    <a href="zaimy.html">Займы</a>
+    <a href="vklady.html">Вклады</a>
+    <a href="insurance.html">Страхование</a>
+    <a class="active" href="education.html">Образование</a>
+  </nav>
+  <button class="login-btn mobile-login-btn">
+    <img src="assets/login.svg" alt="login">
+    Войти
+  </button>
+</div>
+
+      <div class="header-actions">
+        <button class="login-btn">
+          <img src="assets/login.svg" alt="login">
+          Войти
+        </button>
+      </div>
+    </div>
+  </header>
+<main class="education-catalog-page">
+  <div class="container">
+    <section class="catalog-page-head">
+      <h1>Каталог<br>онлайн-курсов</h1>
+      <form class="catalog-top-search" role="search" data-catalog-search-form>
+        <input id="catalog-search-input" type="search" placeholder="Поиск курса" data-catalog-search>
+      </form>
+      <div class="catalog-total">Курсов в подборке: <span>2150</span></div>
+    </section>
+
+    <section class="catalog-layout catalog-layout-grid" data-catalog>
+      <aside class="catalog-filters catalog-filter-panel" aria-label="Фильтры курсов">
+        <div class="catalog-filter-range">
+          <div class="catalog-filter-title-row"><h2>Цена</h2><button type="button" data-catalog-reset>Сброс <span>×</span></button></div>
+          <div class="range-caption">0 ₽ - 1390000 ₽</div>
+          <div class="fake-range"><i></i></div>
+        </div>
+        <div class="catalog-filter-range">
+          <h2>Длительность</h2>
+          <div class="range-caption">0 месяцев - 48 месяцев</div>
+          <div class="fake-range"><i></i></div>
+        </div>
+
+        <div class="catalog-filter-block">
+          <div class="catalog-filter-title-row"><h2>Онлайн школа</h2><button type="button" class="filter-clear" aria-label="Очистить школу"><img src="assets/clear.svg" alt=""></button></div>
+          <label class="filter-search"><input type="search" placeholder="Поиск"><span></span></label>
+          <label><input type="checkbox" value="Информационные технологии" data-catalog-filter="category"> Coddy</label>
+          <label><input type="checkbox" value="Творчество и дизайн" data-catalog-filter="category"> Geekbrains</label>
+          <label><input type="checkbox" value="Бизнес и менеджмент" data-catalog-filter="category"> Skillfactory</label>
+          <button class="filter-more" type="button">Показать все <img src="assets/arrow-down.svg" alt=""></button>
+        </div>
+
+        <div class="catalog-toggle-list">
+          <label>Демо-доступ <input type="checkbox" checked><span></span></label>
+          <label>Бесплатные <input type="checkbox" value="free" data-catalog-filter="price"><span></span></label>
+          <label>Рассрочка <input type="checkbox"><span></span></label>
+          <label>Стажировка <input type="checkbox"><span></span></label>
+          <label>Трудоустройство <input type="checkbox"><span></span></label>
+        </div>
+
+        <div class="catalog-filter-block">
+          <div class="catalog-filter-title-row"><h2>Категория</h2><button type="button" class="filter-clear" aria-label="Очистить категорию"><img src="assets/clear.svg" alt=""></button></div>
+          <label class="filter-search"><input type="search" placeholder="Поиск"><span></span></label>
+          <label><input type="checkbox" value="Творчество и дизайн" data-catalog-filter="category"> 3D - моделирование</label>
+          <label><input type="checkbox" value="Информационные технологии" data-catalog-filter="category"> Data Science</label>
+          <label><input type="checkbox" value="Бизнес и менеджмент" data-catalog-filter="category"> Event - менеджер</label>
+          <button class="filter-more" type="button">Показать все <img src="assets/arrow-down.svg" alt=""></button>
+        </div>
+
+        <div class="catalog-filter-block">
+          <div class="catalog-filter-title-row"><h2>Профессии</h2><button type="button" class="filter-clear" aria-label="Очистить профессию"><img src="assets/clear.svg" alt=""></button></div>
+          <label class="filter-search"><input type="search" placeholder="Поиск"><span></span></label>
+          <label><input type="checkbox" value="medium" data-catalog-filter="duration"> Fullstack - дизайнер</label>
+          <label><input type="checkbox" value="short" data-catalog-filter="duration"> Frontend - разработчик</label>
+          <label><input type="checkbox" value="long" data-catalog-filter="duration"> Fashion - дизайнер</label>
+          <button class="filter-more" type="button">Показать все <img src="assets/arrow-down.svg" alt=""></button>
+        </div>
+
+        <div class="catalog-filter-block catalog-filter-plain">
+          <h2>Рейтинг курса</h2>
+          <label><input type="checkbox" checked> 4.5 и выше</label>
+          <label><input type="checkbox"> 4.0 и выше</label>
+          <label><input type="checkbox"> 3.5 и выше</label>
+          <label><input type="checkbox"> 3.0 и выше</label>
+        </div>
+
+        <div class="catalog-filter-block catalog-filter-plain">
+          <h2>Уровень сложности</h2>
+          <label><input type="checkbox" checked> Для начинающих</label>
+          <label><input type="checkbox"> Для специалистов</label>
+          <label><input type="checkbox"> Для профессионалов</label>
+          <label><input type="checkbox"> Для детей</label>
+          <label><input type="checkbox"> Для пенсионеров</label>
+        </div>
+
+        <div class="catalog-filter-block">
+          <div class="catalog-filter-title-row"><h2>Учителя</h2><button type="button" class="filter-clear" aria-label="Очистить учителей"><img src="assets/clear.svg" alt=""></button></div>
+          <label class="filter-search"><input type="search" placeholder="Поиск"><span></span></label>
+          <label><input type="checkbox" checked> Куренчанина Яна</label>
+          <label><input type="checkbox"> Желнова Наталья</label>
+          <label><input type="checkbox"> Казаченко Анна</label>
+          <button class="filter-more" type="button">Показать все <img src="assets/arrow-down.svg" alt=""></button>
+        </div>
+
+        <div class="catalog-filter-block">
+          <div class="catalog-filter-title-row"><h2>Навыки</h2><button type="button" class="filter-clear" aria-label="Очистить навыки"><img src="assets/clear.svg" alt=""></button></div>
+          <label class="filter-search"><input type="search" placeholder="Поиск"><span></span></label>
+          <label><input type="checkbox" checked> Анализ рынка</label>
+          <label><input type="checkbox"> Анализ поведения пользователей на сайте</label>
+          <label><input type="checkbox"> Казаченко Анна</label>
+          <button class="filter-more" type="button">Показать все <img src="assets/arrow-down.svg" alt=""></button>
+        </div>
+
+        <div class="catalog-filter-block catalog-filter-plain">
+          <h2>Формат обучения</h2>
+          <label><input type="checkbox" checked> Онлайн</label>
+          <label><input type="checkbox"> Вебинар</label>
+          <label><input type="checkbox"> Видеоуроки</label>
+        </div>
+
+        <div class="catalog-filter-block catalog-filter-plain">
+          <h2>Документ по окончании</h2>
+          <label><input type="checkbox" checked> Диплом</label>
+          <label><input type="checkbox"> Сертификат</label>
+          <label><input type="checkbox"> Удостоверение</label>
+          <label><input type="checkbox"> Грамота</label>
+          <label><input type="checkbox"> Нет</label>
+        </div>
+      </aside>
+
+      <div class="catalog-content catalog-grid-content">
+        <div class="catalog-course-grid" data-catalog-list>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="видео-руководство для экспертов, продюсеров и онлайн-школ" data-category="Информационные технологии" data-price="free" data-duration="short">
+            <div class="course-media"><img src="assets/speciality-1.png" alt="Видео-руководство для экспертов, продюсеров и онлайн-школ"><span>SEO-специалист</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Видео-руководство для экспертов, продюсеров и онлайн-школ</h3>
+            <div class="course-tags"><span>1 месяц</span><span>3 урока</span></div>
+            <div class="course-price">Бесплатно</div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="основы ux/ui дизайна с личным наставником" data-category="Творчество и дизайн" data-price="free" data-duration="short">
+            <div class="course-media"><img src="assets/speciality-2.png" alt="Основы UX/UI дизайна с личным наставником"><span>UX/UI-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Основы UX/UI дизайна с личным наставником</h3>
+            <div class="course-tags"><span>1 месяц</span><span>5 уроков</span></div>
+            <div class="course-price">Бесплатно</div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="ux/ui дизайнер с 0 до pro" data-category="Творчество и дизайн" data-price="paid" data-duration="medium">
+            <div class="course-media"><img src="assets/speciality-3.png" alt="UX/UI дизайнер с 0 до PRO"><span>Веб-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>UX/UI дизайнер с 0 до PRO</h3>
+            <div class="course-tags"><span>109 уроков</span></div>
+            <div class="course-price">99 000 ₽ <del>119 000 ₽</del></div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="разработчик продающих лендингов" data-category="Бизнес и менеджмент" data-price="paid" data-duration="medium">
+            <div class="course-media"><img src="assets/speciality-4.png" alt="Разработчик продающих лендингов"><span>Веб-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Разработчик продающих лендингов</h3>
+            <div class="course-tags"><span>56 уроков</span></div>
+            <div class="course-price">59 900 ₽ <del>79 000 ₽</del></div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="видео-руководство для экспертов, продюсеров и онлайн-школ" data-category="Информационные технологии" data-price="free" data-duration="short">
+            <div class="course-media"><img src="assets/speciality-1.png" alt="Видео-руководство для экспертов, продюсеров и онлайн-школ"><span>SEO-специалист</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Видео-руководство для экспертов, продюсеров и онлайн-школ</h3>
+            <div class="course-tags"><span>1 месяц</span><span>3 урока</span></div>
+            <div class="course-price">Бесплатно</div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="основы ux/ui дизайна с личным наставником" data-category="Творчество и дизайн" data-price="free" data-duration="short">
+            <div class="course-media"><img src="assets/speciality-2.png" alt="Основы UX/UI дизайна с личным наставником"><span>UX/UI-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Основы UX/UI дизайна с личным наставником</h3>
+            <div class="course-tags"><span>1 месяц</span><span>5 уроков</span></div>
+            <div class="course-price">Бесплатно</div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="ux/ui дизайнер с 0 до pro" data-category="Творчество и дизайн" data-price="paid" data-duration="medium">
+            <div class="course-media"><img src="assets/speciality-3.png" alt="UX/UI дизайнер с 0 до PRO"><span>Веб-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>UX/UI дизайнер с 0 до PRO</h3>
+            <div class="course-tags"><span>109 уроков</span></div>
+            <div class="course-price">99 000 ₽ <del>119 000 ₽</del></div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card" data-course-card data-title="разработчик продающих лендингов" data-category="Бизнес и менеджмент" data-price="paid" data-duration="medium">
+            <div class="course-media"><img src="assets/speciality-4.png" alt="Разработчик продающих лендингов"><span>Веб-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Разработчик продающих лендингов</h3>
+            <div class="course-tags"><span>56 уроков</span></div>
+            <div class="course-price">59 900 ₽ <del>79 000 ₽</del></div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card is-hidden" data-course-card data-title="психолог-консультант" data-category="Личностный рост" data-price="paid" data-duration="long">
+            <div class="course-media"><img src="assets/speciality-5.png" alt="Психолог-консультант"><span>Психолог</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Психолог-консультант</h3>
+            <div class="course-tags"><span>12 месяцев</span><span>700 уроков</span></div>
+            <div class="course-price">225 000 ₽ <del>375 000 ₽</del></div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card is-hidden" data-course-card data-title="seo-продвижение сайтов с практикой" data-category="Информационные технологии" data-price="paid" data-duration="medium">
+            <div class="course-media"><img src="assets/speciality-1.png" alt="SEO-продвижение сайтов с практикой"><span>SEO-специалист</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>SEO-продвижение сайтов с практикой</h3>
+            <div class="course-tags"><span>2 месяца</span><span>28 уроков</span></div>
+            <div class="course-price">34 900 ₽</div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card is-hidden" data-course-card data-title="продуктовый дизайн: интерфейсы и исследования" data-category="Творчество и дизайн" data-price="paid" data-duration="medium">
+            <div class="course-media"><img src="assets/speciality-2.png" alt="Продуктовый дизайн: интерфейсы и исследования"><span>UX/UI-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Продуктовый дизайн: интерфейсы и исследования</h3>
+            <div class="course-tags"><span>4 месяца</span><span>64 урока</span></div>
+            <div class="course-price">78 000 ₽</div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+          <article class="education-course-card catalog-grid-card is-hidden" data-course-card data-title="figma для дизайнера сайтов и приложений" data-category="Творчество и дизайн" data-price="free" data-duration="short">
+            <div class="course-media"><img src="assets/speciality-3.png" alt="Figma для дизайнера сайтов и приложений"><span>Веб-дизайнер</span><b><img src="assets/speciality-icon-tag.png" alt=""></b><i>5.0</i></div>
+            <h3>Figma для дизайнера сайтов и приложений</h3>
+            <div class="course-tags"><span>3 недели</span><span>14 уроков</span></div>
+            <div class="course-price">Бесплатно</div>
+            <a class="primary-btn" href="course.html">Перейти на сайт курса</a>
+          </article>
+        </div>
+        <div class="catalog-empty" hidden data-catalog-empty><b>Курсы не найдены</b><span>Попробуйте изменить запрос или сбросить фильтры.</span></div>
+        <button class="catalog-load-more" type="button" data-catalog-more>Показать еще</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <a href="index.html" class="brand footer-brand">
+          <img class="brand-mark" src="assets/logo.svg" alt="FINBEFINE.RU" />
+        </a>
+        <p>2005—2025 "Название организации". При использовании материалов гиперссылка на finbefine.ru обязательна.</p>
+        <p>Свидетельство на товарный знак №123456 от 15.05.2025 г.</p>
+        <div class="footer-links">
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Безопасность</a>
+        </div>
+        <p>Реквизиты "Название компании": ИНН: 1234567890; ОГРН: 1234567891011; Адрес: 123456, г. Москва, улица Уличная, д. 1, этаж 1; ОКВЭД: 12.34</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-socials" aria-label="Социальные сети">
+          <a href="#!" aria-label="Дзен"><img src="assets/dzen.svg" alt=""></a>
+          <a href="#!" aria-label="ВКонтакте"><img src="assets/vk.svg" alt=""></a>
+          <a href="#!" aria-label="Telegram"><img src="assets/tg.svg" alt=""></a>
+        </nav>
+        <div class="support-title">Служба поддержки клиентов:</div>
+        <div class="footer-support">
+          <div class="footer-support-main">
+            <a href="mailto:support@finbefine.ru">support@finbefine.ru</a>
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+            <span>Пн-пт с 10:00 до 17:00</span>
+          </div>
+          <address>123456, г. Москва, улица Уличная, д. 1, этаж 1</address>
+        </div>
+        <div class="footer-bottom-row">
+          <div class="copy">© finbefine.ru 2025</div>
+          <div class="age-badge" aria-label="Возрастное ограничение 16 плюс">16+</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function setupTabs(tabSelector, panelSelector, tabAttribute, panelAttribute) {
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(tabSelector));
+        var panels = Array.prototype.slice.call(document.querySelectorAll(panelSelector));
+
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            var target = tab.getAttribute(tabAttribute);
+
+            tabs.forEach(function (item) {
+              var isActive = item === tab;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            panels.forEach(function (panel) {
+              panel.classList.toggle('active', panel.getAttribute(panelAttribute) === target);
+            });
+          });
+        });
+      }
+
+      setupTabs('[data-offer-tab]', '[data-offer-panel]', 'data-offer-tab', 'data-offer-panel');
+      setupTabs('[data-bank-tab]', '[data-bank-panel]', 'data-bank-tab', 'data-bank-panel');
+      setupTabs('[data-review-tab]', '[data-review-panel]', 'data-review-tab', 'data-review-panel');
+      setupTabs('[data-news-tab]', '[data-news-panel]', 'data-news-tab', 'data-news-panel');
+
+      var languageSelect = document.querySelector('[data-language-select]');
+      if (languageSelect) {
+        var languageToggle = languageSelect.querySelector('.language-toggle');
+        var languageCurrent = languageSelect.querySelector('[data-language-current]');
+        var languageFlag = languageSelect.querySelector('[data-language-flag]');
+        var languageOptions = Array.prototype.slice.call(languageSelect.querySelectorAll('.language-option'));
+
+        function closeLanguageMenu() {
+          languageSelect.classList.remove('open');
+          languageToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        languageToggle.addEventListener('click', function () {
+          var isOpen = languageSelect.classList.toggle('open');
+          languageToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        languageOptions.forEach(function (option) {
+          option.addEventListener('click', function () {
+            languageCurrent.textContent = option.getAttribute('data-lang-value');
+            document.documentElement.setAttribute('lang', option.getAttribute('data-lang-code'));
+            languageFlag.className = 'language-flag ' + option.getAttribute('data-flag-class');
+
+            languageOptions.forEach(function (item) {
+              var isActive = item === option;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            closeLanguageMenu();
+          });
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!languageSelect.contains(event.target)) {
+            closeLanguageMenu();
+          }
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            closeLanguageMenu();
+          }
+        });
+      }
+
+      var newsSlider = document.querySelector('[data-news-slider]');
+      if (newsSlider) {
+        var slides = [
+          { src: './assets/figma/news-old-woman.png', alt: 'Новость о пенсиях' },
+          { src: './assets/figma/news-old-man.png', alt: 'Новость о пенсионных условиях' },
+          { src: './assets/hero-man.png', alt: 'Финансовые продукты' },
+          { src: './assets/hero-travel.png', alt: 'Туристическое страхование' },
+          { src: './assets/promo-credit.png', alt: 'Помощь с кредитом' }
+        ];
+        var currentSlide = 0;
+        var isSliderAnimating = false;
+        var sliderStack = newsSlider.querySelector('.news-slider-stack');
+        var frontImage = newsSlider.querySelector('[data-slider-image]');
+        var backOneImage = newsSlider.querySelector('[data-slider-back-one]');
+        var backTwoImage = newsSlider.querySelector('[data-slider-back-two]');
+        var currentLabel = newsSlider.querySelector('[data-slider-current]');
+        var totalLabel = newsSlider.querySelector('[data-slider-total]');
+        var progress = newsSlider.querySelector('[data-slider-progress]');
+        var prevButton = newsSlider.querySelector('[data-slider-prev]');
+        var nextButton = newsSlider.querySelector('[data-slider-next]');
+
+        function getSlide(index) {
+          return slides[(index + slides.length) % slides.length];
+        }
+
+        function setImage(image, slide) {
+          image.src = slide.src;
+          image.alt = slide.alt;
+        }
+
+        function updateNewsSlider(direction) {
+          setImage(frontImage, getSlide(currentSlide));
+          setImage(backOneImage, getSlide(currentSlide + 1));
+          setImage(backTwoImage, getSlide(currentSlide + 2));
+          currentLabel.textContent = String(currentSlide + 1);
+          totalLabel.textContent = String(slides.length);
+          progress.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+          if (direction) {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            void sliderStack.offsetWidth;
+            sliderStack.classList.add(direction === 'prev' ? 'is-prev' : 'is-next');
+          }
+        }
+
+        function moveNewsSlider(step, direction) {
+          if (isSliderAnimating) {
+            return;
+          }
+          isSliderAnimating = true;
+          currentSlide = (currentSlide + step + slides.length) % slides.length;
+          updateNewsSlider(direction);
+          window.setTimeout(function () {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            isSliderAnimating = false;
+          }, 480);
+        }
+
+        prevButton.addEventListener('click', function () {
+          moveNewsSlider(-1, 'prev');
+        });
+
+        nextButton.addEventListener('click', function () {
+          moveNewsSlider(1, 'next');
+        });
+
+        updateNewsSlider();
+      }
+
+      var educationCoursesSlider = document.querySelector('.education-courses-slider');
+      if (educationCoursesSlider) {
+        var educationCoursesTrack = educationCoursesSlider.querySelector('.education-course-grid');
+        var educationCoursesPrev = educationCoursesSlider.querySelector('.education-arrow--prev');
+        var educationCoursesNext = educationCoursesSlider.querySelector('.education-arrow--next');
+        var educationCourseCards = Array.prototype.slice.call(educationCoursesTrack.querySelectorAll('.education-course-card'));
+        educationCourseCards.forEach(function (card) {
+          var clone = card.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          educationCoursesTrack.appendChild(clone);
+        });
+        educationCourseCards = Array.prototype.slice.call(educationCoursesTrack.querySelectorAll('.education-course-card'));
+        var educationCourseIndex = 0;
+
+        function getVisibleEducationCourses() {
+          if (window.matchMedia('(max-width: 760px)').matches) {
+            return 1;
+          }
+          if (window.matchMedia('(max-width: 1180px)').matches) {
+            return 3;
+          }
+          return 5;
+        }
+
+        function updateEducationCoursesSlider() {
+          var visible = getVisibleEducationCourses();
+          var maxIndex = Math.max(0, educationCourseCards.length - visible);
+          educationCourseIndex = Math.max(0, Math.min(educationCourseIndex, maxIndex));
+          var cardWidth = educationCourseCards[0] ? educationCourseCards[0].getBoundingClientRect().width : 0;
+          var gap = parseFloat(getComputedStyle(educationCoursesTrack).gap) || 0;
+          educationCoursesTrack.style.transform = 'translateX(' + (educationCourseIndex * -(cardWidth + gap)) + 'px)';
+          educationCoursesPrev.disabled = educationCourseIndex === 0;
+          educationCoursesNext.disabled = educationCourseIndex === maxIndex;
+        }
+
+        educationCoursesPrev.addEventListener('click', function () {
+          educationCourseIndex -= 1;
+          updateEducationCoursesSlider();
+        });
+
+        educationCoursesNext.addEventListener('click', function () {
+          educationCourseIndex += 1;
+          updateEducationCoursesSlider();
+        });
+
+        window.addEventListener('resize', updateEducationCoursesSlider);
+        updateEducationCoursesSlider();
+      }
+
+
+      var educationCategories = document.querySelector('[data-education-categories]');
+      if (educationCategories) {
+        var categoryButtons = Array.prototype.slice.call(educationCategories.querySelectorAll('button'));
+        var categoryTitle = document.querySelector('[data-education-program-title]');
+        var categoryLink = document.querySelector('[data-education-program-link]');
+        var categoryCounts = {
+          'Информационные технологии': 56,
+          'Иностранные языки': 42,
+          'Бизнес и менеджмент': 38,
+          'Творчество и дизайн': 31,
+          'Личностный рост': 25,
+          'Школьникам': 34,
+          'Педагогика': 19,
+          'Учебные и академические дисциплины': 28,
+          'Архитектура и инженерное дело': 14,
+          'Технологии и инновации': 22,
+          'Досуг': 16,
+          'Здоровье и безопасность': 18
+        };
+
+        categoryButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var title = button.getAttribute('data-category-title') || button.textContent.trim();
+
+            categoryButtons.forEach(function (item) {
+              item.classList.toggle('active', item === button);
+            });
+
+            if (categoryTitle) {
+              categoryTitle.textContent = title;
+            }
+
+            if (categoryLink) {
+              categoryLink.textContent = 'Показать все ' + (categoryCounts[title] || 25) + ' курсов';
+            }
+          });
+        });
+      }
+
+
+      var catalog = document.querySelector('[data-catalog]');
+      if (catalog) {
+        var searchInput = document.querySelector('[data-catalog-search]');
+        var searchForm = document.querySelector('[data-catalog-search-form]');
+        var listNode = catalog.querySelector('[data-catalog-list]');
+        var cards = Array.prototype.slice.call(catalog.querySelectorAll('[data-course-card]'));
+        var filters = Array.prototype.slice.call(catalog.querySelectorAll('[data-catalog-filter]'));
+        var resetButton = catalog.querySelector('[data-catalog-reset]');
+        var countNode = catalog.querySelector('[data-catalog-count]');
+        var emptyNode = catalog.querySelector('[data-catalog-empty]');
+        var moreButton = catalog.querySelector('[data-catalog-more]');
+        var sortSelect = catalog.querySelector('[data-catalog-sort]');
+        var visibleLimit = 8;
+
+        function getCheckedValues(type) {
+          return filters.filter(function (filter) {
+            return filter.getAttribute('data-catalog-filter') === type && filter.checked;
+          }).map(function (filter) {
+            return filter.value;
+          });
+        }
+
+        function normalize(value) {
+          return String(value || '').toLowerCase().replace(/\s+/g, ' ').trim();
+        }
+
+        function matchesGroup(card, type) {
+          var values = getCheckedValues(type);
+          if (!values.length) {
+            return true;
+          }
+          return values.indexOf(card.getAttribute('data-' + type)) !== -1;
+        }
+
+        function sortCards(list) {
+          var mode = sortSelect ? sortSelect.value : 'default';
+          if (mode === 'default') {
+            return list;
+          }
+          return list.slice().sort(function (a, b) {
+            if (a.getAttribute('data-price') === mode && b.getAttribute('data-price') !== mode) {
+              return -1;
+            }
+            if (a.getAttribute('data-price') !== mode && b.getAttribute('data-price') === mode) {
+              return 1;
+            }
+            return 0;
+          });
+        }
+
+        function updateCatalog(resetLimit) {
+          if (resetLimit) {
+            visibleLimit = 8;
+          }
+          var query = normalize(searchInput ? searchInput.value : '');
+          var matched = cards.filter(function (card) {
+            var title = normalize(card.getAttribute('data-title'));
+            return (!query || title.indexOf(query) !== -1) && matchesGroup(card, 'category') && matchesGroup(card, 'price') && matchesGroup(card, 'duration');
+          });
+          var ordered = sortCards(matched);
+
+          if (listNode) {
+            ordered.forEach(function (card) {
+              listNode.appendChild(card);
+            });
+          }
+
+          cards.forEach(function (card) {
+            card.classList.add('is-hidden');
+          });
+          ordered.slice(0, visibleLimit).forEach(function (card) {
+            card.classList.remove('is-hidden');
+          });
+
+          if (countNode) {
+            countNode.textContent = String(matched.length);
+          }
+          if (emptyNode) {
+            emptyNode.hidden = matched.length > 0;
+          }
+          if (moreButton) {
+            moreButton.hidden = matched.length <= visibleLimit;
+          }
+        }
+
+        if (searchForm) {
+          searchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            updateCatalog(true);
+          });
+        }
+        if (searchInput) {
+          searchInput.addEventListener('input', function () { updateCatalog(true); });
+        }
+        filters.forEach(function (filter) {
+          filter.addEventListener('change', function () { updateCatalog(true); });
+        });
+        if (sortSelect) {
+          sortSelect.addEventListener('change', function () { updateCatalog(false); });
+        }
+        if (moreButton) {
+          moreButton.addEventListener('click', function () {
+            visibleLimit += 4;
+            updateCatalog(false);
+          });
+        }
+        if (resetButton) {
+          resetButton.addEventListener('click', function () {
+            filters.forEach(function (filter) { filter.checked = false; });
+            if (searchInput) {
+              searchInput.value = '';
+            }
+            if (sortSelect) {
+              sortSelect.value = 'default';
+            }
+            updateCatalog(true);
+          });
+        }
+
+        updateCatalog(true);
+      }
+
+
+      var creditReviewsSlider = document.querySelector("[data-credit-reviews-slider]");
+
+      if (creditReviewsSlider) {
+        var reviewsTrack = creditReviewsSlider.querySelector("[data-credit-reviews-track]");
+        var reviewsPrev = creditReviewsSlider.querySelector("[data-credit-reviews-prev]");
+        var reviewsNext = creditReviewsSlider.querySelector("[data-credit-reviews-next]");
+        var reviewCards = Array.prototype.slice.call(reviewsTrack.querySelectorAll(".review-card"));
+        var reviewIndex = 0;
+
+        function getVisibleReviews() {
+          return window.matchMedia("(max-width: 980px)").matches ? 1 : 3;
+        }
+
+        function updateCreditReviewsSlider() {
+          var visible = getVisibleReviews();
+          var maxIndex = Math.max(0, reviewCards.length - visible);
+          reviewIndex = Math.min(reviewIndex, maxIndex);
+          var cardWidth = reviewCards[0] ? reviewCards[0].getBoundingClientRect().width : 0;
+          var gap = parseFloat(getComputedStyle(reviewsTrack).gap) || 0;
+          reviewsTrack.style.transform = "translateX(" + (reviewIndex * -(cardWidth + gap)) + "px)";
+          reviewsPrev.disabled = reviewIndex === 0;
+          reviewsNext.disabled = reviewIndex === maxIndex;
+        }
+
+        reviewsPrev.addEventListener("click", function () {
+          reviewIndex -= 1;
+          updateCreditReviewsSlider();
+        });
+
+        reviewsNext.addEventListener("click", function () {
+          reviewIndex += 1;
+          updateCreditReviewsSlider();
+        });
+
+        window.addEventListener("resize", updateCreditReviewsSlider);
+        updateCreditReviewsSlider();
+      }
+
+      var creditAmountRange = document.querySelector("[data-credit-amount-range]");
+      var creditAmountValue = document.querySelector("[data-credit-amount-value]");
+
+      if (creditAmountRange && creditAmountValue) {
+        function formatCreditAmount(value) {
+          return Number(value).toLocaleString("ru-RU") + " ₽";
+        }
+
+        function updateCreditAmount() {
+          var min = Number(creditAmountRange.min);
+          var max = Number(creditAmountRange.max);
+          var value = Number(creditAmountRange.value);
+          var progress = ((value - min) / (max - min)) * 100;
+          creditAmountValue.value = formatCreditAmount(value);
+          creditAmountRange.style.setProperty("--credit-progress", progress + "%");
+        }
+
+        creditAmountRange.addEventListener("input", updateCreditAmount);
+        updateCreditAmount();
+      }
+
+      var bankSearch = document.querySelector('.bank-search');
+      var bankTiles = Array.prototype.slice.call(document.querySelectorAll('[data-bank-name]'));
+      var bankEmpty = document.querySelector('.bank-empty');
+
+      if (bankSearch && bankTiles.length && bankEmpty) {
+        function normalizeBankText(value) {
+          return value.toLowerCase().replace(/[\s\-]+/g, '');
+        }
+
+        bankSearch.addEventListener('input', function () {
+          var query = normalizeBankText(bankSearch.value.trim());
+          var visibleCount = 0;
+
+          bankTiles.forEach(function (tile) {
+            var name = normalizeBankText(tile.getAttribute('data-bank-name'));
+            var isVisible = !query || name.indexOf(query) !== -1;
+            tile.hidden = !isVisible;
+            if (isVisible) {
+              visibleCount += 1;
+            }
+          });
+
+          bankEmpty.hidden = visibleCount > 0;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

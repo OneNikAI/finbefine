@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINBEFINE — Страхование</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css?v=56">
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-strip">
+      <div class="container top-strip-inner">
+        <div class="top-strip-links">
+          <a href="#">
+            <div class="icon">
+              <img src="assets/point.svg" alt="point">
+            </div>
+            Москва
+          </a>
+          <div class="course">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/course.svg" alt="course">
+              </div>
+              Курсы валют
+            </a>
+            <div class="course-list">
+              <div class="course-item">
+                <span>USD</span>
+                88.72 +0.01
+              </div>
+              <div class="course-item">
+                <span>EUR</span>
+                96.44 -0.12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-strip-actions language-select" data-language-select>
+          <button class="language-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="language-flag language-flag-ru" data-language-flag aria-hidden="true"></span>
+            <span class="lang" data-language-current>RU</span>
+            <span class="dropdown-arrow" aria-hidden="true">
+              <img src="assets/arrow-down.svg" alt="">
+            </span>
+          </button>
+          <div class="language-menu" role="listbox" aria-label="Выбор языка">
+            <button class="language-option active" type="button" role="option" aria-selected="true" data-lang-value="RU" data-lang-code="ru" data-flag-class="language-flag-ru">
+              <span class="language-flag language-flag-ru" aria-hidden="true"></span>
+              Русский
+            </button>
+            <button class="language-option" type="button" role="option" aria-selected="false" data-lang-value="EN" data-lang-code="en" data-flag-class="language-flag-en">
+              <span class="language-flag language-flag-en" aria-hidden="true"></span>
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="assets/logo.svg" alt="logo" />
+      </a>
+
+<input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Открыть меню">
+<label class="burger" for="menu-toggle" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<div class="mobile-menu">
+  <nav class="nav" aria-label="Основное меню">
+    <a href="credits.html">Кредиты</a>
+    <a href="cards.html">Карты</a>
+    <a href="zaimy.html">Займы</a>
+    <a href="vklady.html">Вклады</a>
+    <a class="active" href="insurance.html">Страхование</a>
+    <a href="education.html">Образование</a>
+  </nav>
+  <button class="login-btn mobile-login-btn">
+    <img src="assets/login.svg" alt="login">
+    Войти
+  </button>
+</div>
+
+      <div class="header-actions">
+        <button class="login-btn">
+          <img src="assets/login.svg" alt="login">
+          Войти
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <main class="insurance-page">
+    <div class="container">
+      <section class="insurance-hero">
+        <div class="insurance-hero-copy">
+          <h1>Все виды <span class="title-icon-inline"><img src="assets/strah.svg" alt=""></span> страхования в <span>Москве</span></h1>
+          <p>В нашем сервисе представлен широкий спектр страховых услуг, охватывающих различные области вашей жизни и имущества. Воспользуйтесь нашими преимуществами и обеспечьте себе и своей семье финансовую безопасность в разнообразных жизненных ситуациях.</p>
+        </div>
+        <a class="insurance-hero-banner image-banner" href="#!" aria-label="Автострахование"><img src="assets/banner-strah.png" alt="Автострахование"></a>
+      </section>
+
+      <section class="insurance-tabs" role="tablist" aria-label="Виды страхования">
+        <button class="active" type="button" role="tab" aria-selected="true" data-insurance-type="auto">Автострахование</button>
+        <button type="button" role="tab" aria-selected="false" data-insurance-type="mortgage">Ипотечное страхование</button>
+        <button type="button" role="tab" aria-selected="false" data-insurance-type="life">Страхование жизни и здоровья</button>
+      </section>
+
+      <section class="insurance-main-grid">
+        <div class="insurance-products">
+          <div class="insurance-product-cards">
+            <article class="insurance-product-card is-active">
+              <div class="insurance-product-content"><h2>ОСАГО</h2><p>Выгода до 86% при оформлении на finbefine.ru</p></div>
+              <img class="insurance-product-car" src="assets/osago.png" alt="ОСАГО">
+              <img class="insurance-product-icon" src="assets/osago-icon.svg" alt="">
+            </article>
+            <article class="insurance-product-card">
+              <div class="insurance-product-content"><h2>Каско</h2><p>Купите полис на Банки.ру с выгодой до 90%</p></div>
+              <img class="insurance-product-car" src="assets/kasko.png" alt="Каско">
+              <img class="insurance-product-icon" src="assets/kasko-icon.svg" alt="">
+            </article>
+          </div>
+          <form class="insurance-number-form" action="#!">
+            <label for="car-number">Введите гос. номер автомобиля</label>
+            <input id="car-number" type="text" placeholder="Гос. номер">
+            <button class="primary-btn" type="submit">Рассчитать</button>
+          </form>
+        </div>
+
+        <aside class="banks-list-card insurance-company-list">
+          <h3>Все страховые компании <span>Москвы</span></h3>
+          <input class="bank-search" type="text" placeholder="Введите название компании" aria-label="Поиск страховой компании">
+          <div class="bank-tiles" data-bank-list>
+            <a class="bank-tile" href="#!" data-bank-name="U Life Ю Лайф"><img src="assets/ulife.png" alt="U Life"></a>
+            <a class="bank-tile" href="#!" data-bank-name="Ренессанс страхование"><img src="assets/renes.png" alt="Ренесанс страхование"></a>
+            <a class="bank-tile" href="#!" data-bank-name="РЕСО гарантия RESO"><img src="assets/reso.png" alt="РЕСО гарантия"></a>
+            <a class="bank-tile" href="#!" data-bank-name="МАКС страховая группа"><img src="assets/maks.png" alt="Макс страховая группа"></a>
+            <a class="bank-tile" href="#!" data-bank-name="Zetta Group Зетта"><img src="assets/zetta.png" alt="Zetta Group"></a>
+            <a class="bank-tile" href="#!" data-bank-name="ВСК страховой дом"><img src="assets/vsk.png" alt="ВСК страховой дом"></a>
+          </div>
+          <div class="bank-empty" hidden>
+            <div class="placeholder-icon">?</div>
+            <h4>Компания не найдена</h4>
+            <p>Попробуйте изменить запрос или посмотреть полный список компаний.</p>
+          </div>
+          <a class="section-link" href="#!">Смотреть все компании</a>
+        </aside>
+      </section>
+
+      <section class="insurance-banners">
+        <a class="image-banner" href="#!"><img src="assets/banner-insurance-1.png" alt="Все виды страхования"></a>
+        <a class="image-banner" href="#!"><img src="assets/banner-insurance-2.png" alt="Честное ОСАГО"></a>
+      </section>
+
+      <section class="insurance-special-section">
+        <h2>Специальные предложения</h2>
+        <div class="insurance-special-grid">
+          <article><img src="assets/insurance-spec-1.png" alt="Ингосстрах жизнь"><div><strong>ИНГОССТРАХ <span>ЖИЗНЬ</span></strong><p>Страхование от укуса клеща</p><dl><div><dt>Стоимость страхования</dt></div><div><dt>От 360 рублей</dt></div></dl><a class="primary-btn" href="#!">Подробнее</a></div></article>
+          <article><img src="assets/insurance-spec-2.png" alt="Сбер страхование"><div><strong>СБЕР СТРАХОВАНИЕ</strong><p>Защита на любой случай</p><dl><div><dt>Платите как удобно</dt></div><div><dt>раз в год или раз в месяц</dt></div></dl><a class="primary-btn" href="#!">Подробнее</a></div></article>
+          <article><img src="assets/insurance-spec-1.png" alt="Ингосстрах жизнь"><div><strong>ИНГОССТРАХ <span>ЖИЗНЬ</span></strong><p>Страхование от укуса клеща</p><dl><div><dt>Стоимость страхования</dt></div><div><dt>От 360 рублей</dt></div></dl><a class="primary-btn" href="#!">Подробнее</a></div></article>
+          <article><img src="assets/insurance-spec-2.png" alt="Сбер страхование"><div><strong>СБЕР СТРАХОВАНИЕ</strong><p>Защита на любой случай</p><dl><div><dt>Платите как удобно</dt></div><div><dt>раз в год или раз в месяц</dt></div></dl><a class="primary-btn" href="#!">Подробнее</a></div></article>
+        </div>
+      </section>
+
+      <section class="news-section credit-news">
+        <div class="section-head section-head-tight"><h2>Новости о страховании</h2></div>
+        <article class="news-card">
+          <div class="news-col news-feature"><h3>Лента новостей</h3><h4>Кто рискует остаться без пенсии: разъяснения юриста.</h4><div class="news-meta">Страхование · 15.05.2025 · 22:05</div><p>Несмотря на то что право на страховую пенсию закреплено федеральным законом, для её получения необходимо выполнить ряд условий.</p><a href="#" class="section-link">Читать полностью</a><img src="assets/news-old-man.png" alt="Новость"></div>
+          <div class="news-col news-list"><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Страхование · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Страхование · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Страхование · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Страхование · 15.05.2025 · 22:05</div></div></div>
+          <div class="news-col news-slider" data-news-slider><div class="news-slider-stack"><img class="slider-layer slider-layer-back slider-layer-back-two" data-slider-back-two src="assets/hero-travel.png" alt=""><img class="slider-layer slider-layer-back slider-layer-back-one" data-slider-back-one src="assets/news-old-man.png" alt=""><img class="slider-layer slider-layer-front" data-slider-image src="assets/news-old-woman.png" alt="Новость"></div><div class="slider-nav"><button class="slider-arrow" type="button" data-slider-prev aria-label="Предыдущая новость">←</button><span class="slider-count" data-slider-current>1</span><div class="slider-bar"><i data-slider-progress></i></div><span data-slider-total>5</span><button class="slider-arrow" type="button" data-slider-next aria-label="Следующая новость">→</button></div></div>
+        </article>
+      </section>
+
+      <section class="credit-reviews-section">
+        <div class="section-head section-head-tight"><h2>Отзывы о страховых компаниях</h2></div>
+        <div class="credit-reviews-slider" data-credit-reviews-slider>
+          <button class="credit-review-arrow credit-review-arrow--prev" type="button" aria-label="Предыдущие отзывы" data-credit-reviews-prev><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+          <div class="credit-review-viewport"><div class="credit-review-track" data-credit-reviews-track>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          </div></div>
+          <button class="credit-review-arrow credit-review-arrow--next" type="button" aria-label="Следующие отзывы" data-credit-reviews-next><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+        </div>
+        <div class="credit-leave-review"><h3>Оставьте отзыв</h3><p>Помогите другим пользователям выбрать лучший банк</p><button class="primary-btn">Написать отзыв</button></div>
+      </section>
+
+      <section class="credit-seo card-lite"><h2>&lt;h2&gt;Заголовок&lt;/h2&gt;</h2><p>Вот вам яркий пример современных тенденций: высокотехнологичная концепция общественного уклада способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности.</p><p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности играет важную роль в формировании первоочередных требований.</p><p>Однозначно, интерактивные прототипы представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть смешаны с не уникальными данными.</p></section>
+
+      <section class="credit-question card-lite"><h2>Задать вопрос по оформлению страховки</h2><div class="question-card"><div class="question-card__label">Эксперт направления страхование</div><div class="expert"><img src="assets/expert-avatar.png" alt=""><div><strong>Жорж Милославский</strong><span>Ведущий эксперт по страхованию Finbefine</span></div></div><div class="question-card__action"><button class="primary-btn">Задать вопрос</button></div></div></section>
+    </div>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <a href="index.html" class="brand footer-brand">
+          <img class="brand-mark" src="assets/logo.svg" alt="FINBEFINE.RU" />
+        </a>
+        <p>2005—2025 "Название организации". При использовании материалов гиперссылка на finbefine.ru обязательна.</p>
+        <p>Свидетельство на товарный знак №123456 от 15.05.2025 г.</p>
+        <div class="footer-links">
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Безопасность</a>
+        </div>
+        <p>Реквизиты "Название компании": ИНН: 1234567890; ОГРН: 1234567891011; Адрес: 123456, г. Москва, улица Уличная, д. 1, этаж 1; ОКВЭД: 12.34</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-socials" aria-label="Социальные сети">
+          <a href="#!" aria-label="Дзен"><img src="assets/dzen.svg" alt=""></a>
+          <a href="#!" aria-label="ВКонтакте"><img src="assets/vk.svg" alt=""></a>
+          <a href="#!" aria-label="Telegram"><img src="assets/tg.svg" alt=""></a>
+        </nav>
+        <div class="support-title">Служба поддержки клиентов:</div>
+        <div class="footer-support">
+          <div class="footer-support-main">
+            <a href="mailto:support@finbefine.ru">support@finbefine.ru</a>
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+            <span>Пн-пт с 10:00 до 17:00</span>
+          </div>
+          <address>123456, г. Москва, улица Уличная, д. 1, этаж 1</address>
+        </div>
+        <div class="footer-bottom-row">
+          <div class="copy">© finbefine.ru 2025</div>
+          <div class="age-badge" aria-label="Возрастное ограничение 16 плюс">16+</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function setupTabs(tabSelector, panelSelector, tabAttribute, panelAttribute) {
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(tabSelector));
+        var panels = Array.prototype.slice.call(document.querySelectorAll(panelSelector));
+
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            var target = tab.getAttribute(tabAttribute);
+
+            tabs.forEach(function (item) {
+              var isActive = item === tab;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            panels.forEach(function (panel) {
+              panel.classList.toggle('active', panel.getAttribute(panelAttribute) === target);
+            });
+          });
+        });
+      }
+
+      setupTabs('[data-offer-tab]', '[data-offer-panel]', 'data-offer-tab', 'data-offer-panel');
+      setupTabs('[data-bank-tab]', '[data-bank-panel]', 'data-bank-tab', 'data-bank-panel');
+      setupTabs('[data-review-tab]', '[data-review-panel]', 'data-review-tab', 'data-review-panel');
+      setupTabs('[data-news-tab]', '[data-news-panel]', 'data-news-tab', 'data-news-panel');
+
+      var languageSelect = document.querySelector('[data-language-select]');
+      if (languageSelect) {
+        var languageToggle = languageSelect.querySelector('.language-toggle');
+        var languageCurrent = languageSelect.querySelector('[data-language-current]');
+        var languageFlag = languageSelect.querySelector('[data-language-flag]');
+        var languageOptions = Array.prototype.slice.call(languageSelect.querySelectorAll('.language-option'));
+
+        function closeLanguageMenu() {
+          languageSelect.classList.remove('open');
+          languageToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        languageToggle.addEventListener('click', function () {
+          var isOpen = languageSelect.classList.toggle('open');
+          languageToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        languageOptions.forEach(function (option) {
+          option.addEventListener('click', function () {
+            languageCurrent.textContent = option.getAttribute('data-lang-value');
+            document.documentElement.setAttribute('lang', option.getAttribute('data-lang-code'));
+            languageFlag.className = 'language-flag ' + option.getAttribute('data-flag-class');
+
+            languageOptions.forEach(function (item) {
+              var isActive = item === option;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            closeLanguageMenu();
+          });
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!languageSelect.contains(event.target)) {
+            closeLanguageMenu();
+          }
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            closeLanguageMenu();
+          }
+        });
+      }
+
+      var newsSlider = document.querySelector('[data-news-slider]');
+      if (newsSlider) {
+        var slides = [
+          { src: './assets/figma/news-old-woman.png', alt: 'Новость о пенсиях' },
+          { src: './assets/figma/news-old-man.png', alt: 'Новость о пенсионных условиях' },
+          { src: './assets/hero-man.png', alt: 'Финансовые продукты' },
+          { src: './assets/hero-travel.png', alt: 'Туристическое страхование' },
+          { src: './assets/promo-credit.png', alt: 'Помощь с кредитом' }
+        ];
+        var currentSlide = 0;
+        var isSliderAnimating = false;
+        var sliderStack = newsSlider.querySelector('.news-slider-stack');
+        var frontImage = newsSlider.querySelector('[data-slider-image]');
+        var backOneImage = newsSlider.querySelector('[data-slider-back-one]');
+        var backTwoImage = newsSlider.querySelector('[data-slider-back-two]');
+        var currentLabel = newsSlider.querySelector('[data-slider-current]');
+        var totalLabel = newsSlider.querySelector('[data-slider-total]');
+        var progress = newsSlider.querySelector('[data-slider-progress]');
+        var prevButton = newsSlider.querySelector('[data-slider-prev]');
+        var nextButton = newsSlider.querySelector('[data-slider-next]');
+
+        function getSlide(index) {
+          return slides[(index + slides.length) % slides.length];
+        }
+
+        function setImage(image, slide) {
+          image.src = slide.src;
+          image.alt = slide.alt;
+        }
+
+        function updateNewsSlider(direction) {
+          setImage(frontImage, getSlide(currentSlide));
+          setImage(backOneImage, getSlide(currentSlide + 1));
+          setImage(backTwoImage, getSlide(currentSlide + 2));
+          currentLabel.textContent = String(currentSlide + 1);
+          totalLabel.textContent = String(slides.length);
+          progress.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+          if (direction) {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            void sliderStack.offsetWidth;
+            sliderStack.classList.add(direction === 'prev' ? 'is-prev' : 'is-next');
+          }
+        }
+
+        function moveNewsSlider(step, direction) {
+          if (isSliderAnimating) {
+            return;
+          }
+          isSliderAnimating = true;
+          currentSlide = (currentSlide + step + slides.length) % slides.length;
+          updateNewsSlider(direction);
+          window.setTimeout(function () {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            isSliderAnimating = false;
+          }, 480);
+        }
+
+        prevButton.addEventListener('click', function () {
+          moveNewsSlider(-1, 'prev');
+        });
+
+        nextButton.addEventListener('click', function () {
+          moveNewsSlider(1, 'next');
+        });
+
+        updateNewsSlider();
+      }
+
+
+
+      var creditReviewsSlider = document.querySelector("[data-credit-reviews-slider]");
+
+      if (creditReviewsSlider) {
+        var reviewsTrack = creditReviewsSlider.querySelector("[data-credit-reviews-track]");
+        var reviewsPrev = creditReviewsSlider.querySelector("[data-credit-reviews-prev]");
+        var reviewsNext = creditReviewsSlider.querySelector("[data-credit-reviews-next]");
+        var reviewCards = Array.prototype.slice.call(reviewsTrack.querySelectorAll(".review-card"));
+        var reviewIndex = 0;
+
+        function getVisibleReviews() {
+          return window.matchMedia("(max-width: 980px)").matches ? 1 : 3;
+        }
+
+        function updateCreditReviewsSlider() {
+          var visible = getVisibleReviews();
+          var maxIndex = Math.max(0, reviewCards.length - visible);
+          reviewIndex = Math.min(reviewIndex, maxIndex);
+          var cardWidth = reviewCards[0] ? reviewCards[0].getBoundingClientRect().width : 0;
+          var gap = parseFloat(getComputedStyle(reviewsTrack).gap) || 0;
+          reviewsTrack.style.transform = "translateX(" + (reviewIndex * -(cardWidth + gap)) + "px)";
+          reviewsPrev.disabled = reviewIndex === 0;
+          reviewsNext.disabled = reviewIndex === maxIndex;
+        }
+
+        reviewsPrev.addEventListener("click", function () {
+          reviewIndex -= 1;
+          updateCreditReviewsSlider();
+        });
+
+        reviewsNext.addEventListener("click", function () {
+          reviewIndex += 1;
+          updateCreditReviewsSlider();
+        });
+
+        window.addEventListener("resize", updateCreditReviewsSlider);
+        updateCreditReviewsSlider();
+      }
+
+      var creditAmountRange = document.querySelector("[data-credit-amount-range]");
+      var creditAmountValue = document.querySelector("[data-credit-amount-value]");
+
+      if (creditAmountRange && creditAmountValue) {
+        function formatCreditAmount(value) {
+          return Number(value).toLocaleString("ru-RU") + " ₽";
+        }
+
+        function updateCreditAmount() {
+          var min = Number(creditAmountRange.min);
+          var max = Number(creditAmountRange.max);
+          var value = Number(creditAmountRange.value);
+          var progress = ((value - min) / (max - min)) * 100;
+          creditAmountValue.value = formatCreditAmount(value);
+          creditAmountRange.style.setProperty("--credit-progress", progress + "%");
+        }
+
+        creditAmountRange.addEventListener("input", updateCreditAmount);
+        updateCreditAmount();
+      }
+
+
+      var insuranceTabs = Array.prototype.slice.call(document.querySelectorAll('[data-insurance-type]'));
+      var insuranceProducts = document.querySelector('.insurance-products');
+      var insuranceHeroBanner = document.querySelector('.insurance-hero-banner');
+
+      var insuranceTabContent = {
+        auto: {
+          bannerLabel: 'Автострахование',
+          productsClass: 'is-auto',
+          html: '\n            <div class="insurance-product-cards">\n              <article class="insurance-product-card is-active">\n                <div class="insurance-product-content"><h2>ОСАГО</h2><p>Выгода до 86% при оформлении на finbefine.ru</p></div>\n                <img class="insurance-product-car" src="assets/osago.png" alt="ОСАГО">\n                <img class="insurance-product-icon" src="assets/insurance.svg" alt="">\n              </article>\n              <article class="insurance-product-card">\n                <div class="insurance-product-content"><h2>Каско</h2><p>Купите полис на Банки.ру с выгодой до 90%</p></div>\n                <img class="insurance-product-car" src="assets/kasko.png" alt="Каско">\n                <img class="insurance-product-icon" src="assets/kasko.svg" alt="">\n              </article>\n            </div>\n            <form class="insurance-number-form" action="#!">\n              <label for="car-number">Введите гос. номер автомобиля</label>\n              <input id="car-number" type="text" placeholder="Гос. номер">\n              <button class="primary-btn" type="submit">Рассчитать</button>\n            </form>'
+        },
+        mortgage: {
+          bannerLabel: 'Ипотечное страхование',
+          productsClass: 'is-mortgage',
+          html: '\n            <div class="insurance-product-cards insurance-product-cards--mortgage">\n              <article class="insurance-product-card is-active">\n                <div class="insurance-product-content"><h2>Страхование квартиры</h2><p>Рассчитаем предложения в 19 компаниях</p></div>\n                <img class="insurance-product-car" src="assets/strah-ipoteka-1.png" alt="Страхование квартиры">\n                <img class="insurance-product-icon" src="assets/ipoteka.svg" alt="">\n              </article>\n              <article class="insurance-product-card">\n                <div class="insurance-product-content"><h2>Страхование дома</h2><p>Подберем подходящее предложение за 5 минут</p></div>\n                <img class="insurance-product-car" src="strah-ipoteka-2.png" alt="Страхование дома">\n                <img class="insurance-product-icon" src="assets/insurance.svg" alt="">\n              </article>\n              <article class="insurance-product-card">\n                <div class="insurance-product-content"><h2>Страхование жизни</h2><p>Поможет снизить ставку по ипотеке</p></div>\n                <img class="insurance-product-car" src="strah-ipoteka-1.png" alt="Страхование жизни">\n                <img class="insurance-product-icon" src="assets/strah.svg" alt="">\n              </article>\n            </div>\n            <form class="insurance-mortgage-form" action="#!">\n              <label><span>Тип недвижимости</span><select><option>Квартира</option><option>Дом</option></select></label>\n              <label><span>Банк, где ипотека</span><select><option>Сбербанк</option><option>ВТБ</option><option>Альфа-Банк</option></select></label>\n              <label><span>Остаток кредита</span><input type="text" value="3 000 000 ₽"></label>\n              <label><span>Пол</span><select><option>Квартира</option><option>Мужской</option><option>Женский</option></select></label>\n              <label><span>Дата рождения</span><input type="text" placeholder="Дата рождения"></label>\n              <div class="insurance-form-tags"><span>Что нужно застраховать</span><button class="active" type="button">Квартира</button><button type="button">Жизнь</button><button type="button">Квартира и Жизнь</button></div>\n              <button class="primary-btn" type="submit">Рассчитать</button>\n            </form>'
+        },
+        life: {
+          bannerLabel: 'Страхование жизни и здоровья',
+          productsClass: 'is-life',
+          html: '\n            <div class="insurance-product-cards insurance-product-cards--life">\n              <article class="insurance-product-card insurance-product-card--wide is-active">\n                <div class="insurance-product-content"><h2>Страхование жизни для ипотеки</h2><p>Подберем среди 19 страховых компаний</p></div>\n                <button class="insurance-card-btn" type="button">Рассчитать</button>\n                <img class="insurance-product-car" src="assets/strah-zhizn-1.png" alt="Страхование жизни для ипотеки">\n                <img class="insurance-product-icon" src="assets/strah-zhizn-icon-1.svg" alt="">\n              </article>\n              <article class="insurance-product-card insurance-product-card--wide">\n                <div class="insurance-product-content"><h2>Кредитное страхование жизни</h2><p>Если заболеете и не сможете платить</p></div>\n                <button class="insurance-card-btn" type="button">Рассчитать</button>\n                <img class="insurance-product-car" src="assets/strah-zhizn-2.png" alt="Кредитное страхование жизни">\n                <img class="insurance-product-icon" src="assets/strah-zhizn-icon-2.svg" alt="">\n              </article>\n              <article class="insurance-product-card insurance-product-card--small">\n                <div class="insurance-product-content"><h2>Путешествие</h2><p>Медицинская помощь за границей</p></div>\n                <button class="insurance-card-btn" type="button">Рассчитать</button>\n                <img class="insurance-product-car" src="assets/strah-zhizn-3.png" alt="Путешествие">\n                <img class="insurance-product-icon" src="assets/strah-zhizn-icon-3.svg" alt="">\n              </article>\n              <article class="insurance-product-card insurance-product-card--small">\n                <div class="insurance-product-content"><h2>ДМС</h2><p>Более 8000 клиник по всей России</p></div>\n                <button class="insurance-card-btn" type="button">Рассчитать</button>\n                <img class="insurance-product-car" src="assets/strah-zhizn-4.png" alt="ДМС">\n                <img class="insurance-product-icon" src="assets/strah-zhizn-icon-4.svg" alt="">\n              </article>\n              <article class="insurance-product-card insurance-product-card--small">\n                <div class="insurance-product-content"><h2>Страхование спортсменов</h2><p>Защита на случай профессиональных травм</p></div>\n                <button class="insurance-card-btn" type="button">Рассчитать</button>\n                <img class="insurance-product-car" src="assets/strah-zhizn-5.png" alt="Страхование спортсменов">\n                <img class="insurance-product-icon" src="assets/strah-zhizn-icon-5.svg" alt="">\n              </article>\n            </div>'
+        }
+      };
+
+      function bindInsuranceCards() {
+        Array.prototype.slice.call(document.querySelectorAll('.insurance-product-card')).forEach(function (card) {
+          card.addEventListener('click', function () {
+            Array.prototype.slice.call(document.querySelectorAll('.insurance-product-card')).forEach(function (item) {
+              item.classList.toggle('is-active', item === card);
+            });
+          });
+        });
+        Array.prototype.slice.call(document.querySelectorAll('.insurance-form-tags button')).forEach(function (button) {
+          button.addEventListener('click', function () {
+            Array.prototype.slice.call(document.querySelectorAll('.insurance-form-tags button')).forEach(function (item) {
+              item.classList.toggle('active', item === button);
+            });
+          });
+        });
+      }
+
+      function setInsuranceTab(type) {
+        var content = insuranceTabContent[type] || insuranceTabContent.auto;
+        insuranceTabs.forEach(function (item) {
+          var active = item.getAttribute('data-insurance-type') === type;
+          item.classList.toggle('active', active);
+          item.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        if (insuranceProducts) {
+          insuranceProducts.className = 'insurance-products ' + content.productsClass;
+          insuranceProducts.innerHTML = content.html;
+          bindInsuranceCards();
+        }
+        if (insuranceHeroBanner) insuranceHeroBanner.setAttribute('aria-label', content.bannerLabel);
+      }
+
+      insuranceTabs.forEach(function (button) {
+        button.addEventListener('click', function () {
+          setInsuranceTab(button.getAttribute('data-insurance-type'));
+        });
+      });
+      bindInsuranceCards();
+
+      var bankSearch = document.querySelector('.bank-search');
+      var bankTiles = Array.prototype.slice.call(document.querySelectorAll('[data-bank-name]'));
+      var bankEmpty = document.querySelector('.bank-empty');
+
+      if (bankSearch && bankTiles.length && bankEmpty) {
+        function normalizeBankText(value) {
+          return value.toLowerCase().replace(/[\s\-]+/g, '');
+        }
+
+        bankSearch.addEventListener('input', function () {
+          var query = normalizeBankText(bankSearch.value.trim());
+          var visibleCount = 0;
+
+          bankTiles.forEach(function (tile) {
+            var name = normalizeBankText(tile.getAttribute('data-bank-name'));
+            var isVisible = !query || name.indexOf(query) !== -1;
+            tile.hidden = !isVisible;
+            if (isVisible) {
+              visibleCount += 1;
+            }
+          });
+
+          bankEmpty.hidden = visibleCount > 0;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

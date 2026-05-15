@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINBEFINE — главная страница</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css?v=56">
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-strip">
+      <div class="container top-strip-inner">
+        <div class="top-strip-links">
+          <a href="#">
+            <div class="icon">
+              <img src="assets/point.svg" alt="point">
+            </div>
+            Москва
+          </a>
+          <div class="course">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/course.svg" alt="course">
+              </div>
+              Курсы валют
+            </a>
+            <div class="course-list">
+              <div class="course-item">
+                <span>USD</span>
+                88.72 +0.01
+              </div>
+              <div class="course-item">
+                <span>EUR</span>
+                96.44 -0.12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-strip-actions language-select" data-language-select>
+          <button class="language-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="language-flag language-flag-ru" data-language-flag aria-hidden="true"></span>
+            <span class="lang" data-language-current>RU</span>
+            <span class="dropdown-arrow" aria-hidden="true">
+              <img src="assets/arrow-down.svg" alt="">
+            </span>
+          </button>
+          <div class="language-menu" role="listbox" aria-label="Выбор языка">
+            <button class="language-option active" type="button" role="option" aria-selected="true" data-lang-value="RU" data-lang-code="ru" data-flag-class="language-flag-ru">
+              <span class="language-flag language-flag-ru" aria-hidden="true"></span>
+              Русский
+            </button>
+            <button class="language-option" type="button" role="option" aria-selected="false" data-lang-value="EN" data-lang-code="en" data-flag-class="language-flag-en">
+              <span class="language-flag language-flag-en" aria-hidden="true"></span>
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="assets/logo.svg" alt="logo" />
+      </a>
+
+<input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Открыть меню">
+<label class="burger" for="menu-toggle" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<div class="mobile-menu">
+  <nav class="nav" aria-label="Основное меню">
+    <a href="credits.html">Кредиты</a>
+    <a href="cards.html">Карты</a>
+    <a href="zaimy.html">Займы</a>
+    <a href="vklady.html">Вклады</a>
+    <a href="insurance.html">Страхование</a>
+    <a href="education.html">Образование</a>
+  </nav>
+  <button class="login-btn mobile-login-btn">
+    <img src="assets/login.svg" alt="login">
+    Войти
+  </button>
+</div>
+
+      <div class="header-actions">
+        <button class="login-btn">
+          <img src="assets/login.svg" alt="login">
+          Войти
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <img class="hero-man" src="./assets/hero-man.png" alt="Финансовые продукты" />
+        <img class="hero-man-2" src="./assets/calc.png" alt="Калькуляторы" />
+        <article class="card mini-card deposits-card">
+          <div class="card-info">
+            <div class="mini-icon">
+              <img src="assets/money.svg" alt="money">
+            </div>
+            <div class="card-info__desc">
+              <div class="mini-title">Вклады</div>
+              <div class="mini-subtitle">Найдите лучшую ставку</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card mini-card mortgage-card">
+          <div class="card-info">
+            <div class="mini-icon">
+              <img src="assets/ipoteka.svg" alt="ipoteka">
+            </div>
+            <div class="card-info__desc">
+              <div class="mini-title">Ипотека</div>
+              <div class="mini-subtitle">Одна заявка в 9 банков</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card hero-travel">
+          <div class="hero-travel-line">
+            <img src="assets/line.svg" alt="line">
+          </div>
+          <div class="card-info">
+            <div class="mini-icon">
+              <img src="assets/tourist.svg" alt="tourist">
+            </div>
+            <div class="card-info__desc">
+              <h2>Туристическое страхование</h2>
+            </div>
+          </div>
+          <img class="travel-image" src="./assets/hero-travel.png" alt="Туристическое страхование" />
+        </article>
+
+        <article class="card calc-card accent">
+          <div class="card-info">
+            <div class="card-info__desc">
+              <div class="mini-title">Калькуляторы</div>
+            </div>
+            <div class="mini-icon">
+              <img src="assets/calc.svg" alt="calc">
+            </div>
+          </div>
+        </article>
+
+        <article class="card hero-main">
+          <div class="hero-card-before"></div>
+          <div class="hero-main-content">
+            <div class="hero-card-icon">
+              <img src="assets/moneyup.svg" alt="moneyup">
+            </div>
+            <h1>Лучшие финансовые продукты в <span>Москве</span></h1>
+            <p>Подбор и сравнение любых финансовых продуктов. Кредиты, займы, вклады, страховки.</p>
+          </div>
+          <div class="hero-card-circle">
+            <img src="assets/elipse.svg" alt="elipse">
+          </div>
+          <div class="hero-card-triangle">
+            <img src="assets/triangle.svg" alt="triangle">
+          </div>
+        </article>
+
+        <article class="card insurance-card">
+          <div class="card-info">
+            <div class="mini-icon">
+              <img src="assets/insurance.svg" alt="insurance">
+            </div>
+            <div class="card-info__desc">
+              <div class="mini-title">Страхование ипотеки</div>
+            </div>
+          </div>
+          <img src="./assets/insurance.png" alt="Страхование" />
+        </article>
+      </section>
+
+      <section class="services">
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/invest.svg" alt="invest">
+          </div>
+          <span>Инвестиции</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/rating.svg" alt="rating">
+          </div>
+          <span>Рейтинг МФО</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/autocredit.svg" alt="autocredit">
+          </div>
+          <span>Автокредит</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/refinance.svg" alt="refinance">
+          </div>
+          <span>Рефинансирование</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/zaim.svg" alt="zaim">
+          </div>
+          <span>Займы без отказа</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/creditbusiness.svg" alt="creditbusiness">
+          </div>
+          <span>Кредиты для бизнеса</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/kasko.svg" alt="kasko">
+          </div>
+          <span>КАСКО</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/bankrot.svg" alt="bankrot">
+          </div>
+          <span>Банкротство</span>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/bankrating.svg" alt="bankrating">
+          </div>
+          <span>Рейтинг банков</span>
+        </div>
+      </section>
+
+      <a class="section-link" href="#">Все услуги</a>
+
+      <section class="banners">
+        <a class="banner image-banner" href="#!" aria-label="Перейти к предложению Газпромбанка"><img src="./assets/banner-gpb.png" alt="Газпромбанк"></a>
+        <a class="banner image-banner" href="#!" aria-label="Перейти к предложению Выгодно дружить"><img src="./assets/banner-friend.png" alt="Выгодно дружить"></a>
+        <a class="banner image-banner" href="#!" aria-label="Перейти к предложению по вкладу 7.4%"><img src="./assets/banner-purple.png" alt="Вклад 7.4%"></a>
+      </section>
+
+      <section class="rates-grid">
+        <article class="rates-card">
+          <div class="rates-title">
+            <div class="title-icon">
+              <img src="assets/course.svg" alt="course">
+            </div>
+            <h3>
+              Курсы валют в <a href="#">Москве</a>
+            </h3>
+          </div>
+
+          <div class="rates-table">
+            <div class="row head">
+              <div>Валюта</div>
+              <div>Покупка</div>
+              <div>Продажа</div>
+              <div>ЦБ РФ</div>
+              <div>Мосбиржа</div>
+            </div>
+            <div class="row">
+              <div class="currency"><span class="flag us"></span>USD</div>
+              <div>83.01</div>
+              <div>82.59</div>
+              <div>80.7689</div>
+              <div>81.06</div>
+            </div>
+            <div class="row">
+              <div class="currency"><span class="flag eu"></span>EUR</div>
+              <div>93.5</div>
+              <div>92.7</div>
+              <div>90.7062</div>
+              <div>90.66</div>
+            </div>
+            <div class="row">
+              <div class="currency"><span class="flag cn"></span>CNY</div>
+              <div>11.7</div>
+              <div>11.69</div>
+              <div>11.1593</div>
+              <div>11.18</div>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="converter-card">
+          <h3>Конвертер валют ЦБ РФ</h3>
+          <div class="converter-list">
+            <div class="converter-row"><span>RUB</span><strong>100</strong></div>
+            <div class="converter-row"><span>USD</span><strong>1.2381</strong></div>
+            <div class="converter-row"><span>EUR</span><strong>1.1025</strong></div>
+            <div class="converter-row"><span>CNY</span><strong>8.9611</strong></div>
+          </div>
+        </article>
+      </section>
+
+      <a class="section-link" href="#">Показать все курсы</a>
+
+      <section class="offers-section">
+        <div class="section-head">
+          <h2>Лучшие предложения месяца</h2>
+          <div class="tabs offer-tabs" role="tablist" aria-label="Лучшие предложения месяца">
+            <button class="active" type="button" role="tab" aria-selected="true" data-offer-tab="credits">Кредиты</button>
+            <button type="button" role="tab" aria-selected="false" data-offer-tab="deposits">Вклады</button>
+            <button type="button" role="tab" aria-selected="false" data-offer-tab="debit">Дебетовые карты</button>
+            <button type="button" role="tab" aria-selected="false" data-offer-tab="credit-cards">Кредитные карты</button>
+            <button type="button" role="tab" aria-selected="false" data-offer-tab="investments">Инвестиции</button>
+            <button type="button" role="tab" aria-selected="false" data-offer-tab="business">Бизнес</button>
+          </div>
+        </div>
+        <div class="offers-panel active" data-offer-panel="credits">
+          <div class="offers-grid">
+          <article class="offer-card">
+            <div class="offer-label">Кредит для реализации любых Ваших планов</div>
+            <div class="offer-bank">
+              <div class="offer-bank-img">
+                <img src="assets/rshb.svg" alt="rshb">
+              </div>
+            </div>
+            <div class="offer-desc">Кредит со сниженным платежом</div>
+            <div class="offer-meta"><span>Сумма</span><strong>от 30 тыс. до 5 млн.</strong></div>
+            <div class="offer-meta"><span>Ставка</span><strong>27.5 - 35.4%</strong></div>
+            <div class="offer-meta"><span>Срок</span><strong>13 - 60 мес.</strong></div>
+            <button class="primary-btn">Подать заявку</button>
+          </article>
+          <article class="offer-card">
+            <div class="offer-label">Кредит за 5 минут</div>
+            <div class="offer-bank tinkoff">
+              <img src="assets/tcs.svg" alt="tcs">
+            </div>
+            <div class="offer-desc">Наличными без залога</div>
+            <div class="offer-meta"><span>Сумма</span><strong>до 5 млн.</strong></div>
+            <div class="offer-meta"><span>Ставка</span><strong>29.9 - 38.5%</strong></div>
+            <div class="offer-meta"><span>Срок</span><strong>12 - 60 мес.</strong></div>
+            <button class="primary-btn">Подать заявку</button>
+          </article>
+          <article class="offer-card">
+            <div class="offer-label">Получите деньги уже сегодня</div>
+            <div class="offer-bank alfa">
+              <img src="assets/alfabank 1.svg" alt="alfabank">
+            </div>
+            <div class="offer-desc">Наличными онлайн заявка</div>
+            <div class="offer-meta"><span>Сумма</span><strong>до 30 млн.</strong></div>
+            <div class="offer-meta"><span>Ставка</span><strong>18.8 - 46.99%</strong></div>
+            <div class="offer-meta"><span>Срок</span><strong>12 - 180 мес.</strong></div>
+            <button class="primary-btn">Подать заявку</button>
+          </article>
+          <article class="offer-card">
+            <div class="offer-label">Выгодные условия!</div>
+            <div class="offer-bank sber">
+              <img src="assets/sberbank.svg" alt="sberbank">
+            </div>
+            <div class="offer-desc">Кредит на любые цели онлайн</div>
+            <div class="offer-meta"><span>Сумма</span><strong>до 30 млн.</strong></div>
+            <div class="offer-meta"><span>Ставка</span><strong>24.9%</strong></div>
+            <div class="offer-meta"><span>Срок</span><strong>3 - 60 мес.</strong></div>
+            <button class="primary-btn">Подать заявку</button>
+          </article>
+          </div>
+        </div>
+        <div class="offers-panel" data-offer-panel="deposits">
+          <div class="offers-placeholder">
+            <div class="placeholder-icon">%</div>
+            <h3>Вклады скоро появятся</h3>
+            <p>Готовим подборку банков с понятными сроками, ставками и условиями пополнения.</p>
+          </div>
+        </div>
+        <div class="offers-panel" data-offer-panel="debit">
+          <div class="offers-placeholder">
+            <div class="placeholder-icon">₽</div>
+            <h3>Дебетовые карты в работе</h3>
+            <p>Скоро добавим карты с кэшбэком, бесплатным обслуживанием и удобными лимитами.</p>
+          </div>
+        </div>
+        <div class="offers-panel" data-offer-panel="credit-cards">
+          <div class="offers-placeholder">
+            <div class="placeholder-icon">✦</div>
+            <h3>Кредитные карты появятся позже</h3>
+            <p>Здесь будет подборка с льготным периодом, лимитами и стоимостью обслуживания.</p>
+          </div>
+        </div>
+        <div class="offers-panel" data-offer-panel="investments">
+          <div class="offers-placeholder">
+            <div class="placeholder-icon">↑</div>
+            <h3>Инвестиционные предложения готовятся</h3>
+            <p>Собираем варианты для старта и пополнения инвестиционных счетов.</p>
+          </div>
+        </div>
+        <div class="offers-panel" data-offer-panel="business">
+          <div class="offers-placeholder">
+            <div class="placeholder-icon">Б</div>
+            <h3>Предложения для бизнеса скоро будут</h3>
+            <p>Добавим расчетные счета, кредиты и сервисы для предпринимателей.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="double-promos">
+        <a class="promo-strip image-banner" href="#!" aria-label="Перейти к баннеру Вклады"><img src="./assets/figma/promo-deposit.png" alt="Вклады"></a>
+        <a class="promo-strip image-banner" href="#!" aria-label="Перейти к баннеру Срочная помощь"><img src="./assets/figma/promo-credit.png" alt="Срочная помощь"></a>
+      </section>
+
+      <section class="banks-section">
+        <div class="section-head section-head-tight">
+          <h2>Лучшие условия по продуктам в банках <span>Москвы</span></h2>
+        </div>
+        <div class="banks-grid-wide">
+          <article class="terms-card">
+            <div class="tabs compact bank-tabs" role="tablist" aria-label="Лучшие условия по продуктам в банках Москвы">
+              <button class="active" type="button" role="tab" aria-selected="true" data-bank-tab="credits">Кредиты</button>
+              <button type="button" role="tab" aria-selected="false" data-bank-tab="deposits">Вклады</button>
+              <button type="button" role="tab" aria-selected="false" data-bank-tab="mortgage">Ипотека</button>
+              <button type="button" role="tab" aria-selected="false" data-bank-tab="credit-cards">Кредитные карты</button>
+              <button type="button" role="tab" aria-selected="false" data-bank-tab="debit">Дебетовые карты</button>
+            </div>
+            <div class="bank-panel active" data-bank-panel="credits">
+              <div class="terms-table">
+                <div class="terms-row head"><div>Банк</div><div>Сумма кредита</div><div>Ставка</div></div>
+                <div class="terms-row"><div class="bank"><img src="assets/bank1.png" alt="bank"> Почта Банк</div><div>до 6.5 млн ₽</div><div>11.9 - 35.9%</div></div>
+                <div class="terms-row"><div class="bank"><img src="assets/bank2.png" alt="bank"> Банк ВТБ</div><div>до 40 млн ₽</div><div>18.3 - 47%</div></div>
+                <div class="terms-row"><div class="bank"><img src="assets/bank3.png" alt="bank"> Paylate МКК</div><div>до 250 тыс ₽</div><div>0.1 - 292%</div></div>
+                <div class="terms-row"><div class="bank"><img src="assets/bank4.png" alt="bank"> Газпромбанк</div><div>до 30 млн ₽</div><div>13.4 - 41.1%</div></div>
+                <div class="terms-row"><div class="bank"><img src="assets/bank5.png" alt="bank"> Альфа-Банк</div><div>до 30 млн ₽</div><div>0.01 - 56.99%</div></div>
+              </div>
+              <div class="compact-bottom">
+                <a href="#">Смотреть все предложения по кредитам</a>
+                <div class="date">Обновлено 16.05.2025</div>
+              </div>
+            </div>
+            <div class="bank-panel" data-bank-panel="deposits">
+              <div class="offers-placeholder bank-placeholder">
+                <div class="placeholder-icon">%</div>
+                <h3>Условия по вкладам скоро появятся</h3>
+                <p>Подготовим ставки, сроки размещения и минимальные суммы по банкам Москвы.</p>
+              </div>
+            </div>
+            <div class="bank-panel" data-bank-panel="mortgage">
+              <div class="offers-placeholder bank-placeholder">
+                <div class="placeholder-icon">⌂</div>
+                <h3>Ипотечные условия в работе</h3>
+                <p>Здесь появятся программы с первоначальным взносом, ставками и сроками кредита.</p>
+              </div>
+            </div>
+            <div class="bank-panel" data-bank-panel="credit-cards">
+              <div class="offers-placeholder bank-placeholder">
+                <div class="placeholder-icon">✦</div>
+                <h3>Кредитные карты добавим позже</h3>
+                <p>Скоро покажем лимиты, льготные периоды и стоимость обслуживания по банкам.</p>
+              </div>
+            </div>
+            <div class="bank-panel" data-bank-panel="debit">
+              <div class="offers-placeholder bank-placeholder">
+                <div class="placeholder-icon">₽</div>
+                <h3>Дебетовые карты скоро будут</h3>
+                <p>Добавим условия по кэшбэку, обслуживанию, переводам и снятию наличных.</p>
+              </div>
+            </div>
+          </article>
+          <article class="banks-list-card">
+            <h3>Все банки в Москве</h3>
+            <input class="bank-search" type="text" placeholder="Введите название банка" aria-label="Поиск банка" />
+            <div class="bank-tiles" data-bank-list>
+              <a class="bank-tile green" href="#!" data-bank-name="Сбер Банк Sberbank СБЕР">
+                <img src="assets/sberbank-mini.svg" alt="Сбер Банк">
+              </a>
+              <a class="bank-tile blue" href="#!" data-bank-name="ВТБ VTB">
+                <img src="assets/vtb-mini.svg" alt="ВТБ">
+              </a>
+              <a class="bank-tile green2" href="#!" data-bank-name="РСХБ Россельхозбанк">
+                <img src="assets/rshb-mini.svg" alt="РСХБ">
+              </a>
+              <a class="bank-tile red" href="#!" data-bank-name="Альфа-Банк Альфа Банк Alfabank">
+                <img src="assets/alfabank-mini.svg" alt="Альфа-Банк">
+              </a>
+              <a class="bank-tile yellow" href="#!" data-bank-name="Т Банк Тинькофф T-Банк Tinkoff">
+                <img src="assets/tcs-mini.svg" alt="Т Банк">
+              </a>
+              <a class="bank-tile gray" href="#!" data-bank-name="Газпромбанк Газпром Банк">
+                <img src="assets/gazprombank-mini.svg" alt="Газпромбанк">
+              </a>
+            </div>
+            <div class="bank-empty" hidden>
+              <div class="placeholder-icon">?</div>
+              <h4>Банк не найден</h4>
+              <p>Попробуйте изменить запрос или посмотреть полный список банков.</p>
+            </div>
+            <a class="section-link" href="#">Смотреть все банки</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="section-head section-head-tight">
+          <h2>Отзывы</h2>
+          <div class="tabs compact review-tabs" role="tablist" aria-label="Отзывы">
+            <button class="active" type="button" role="tab" aria-selected="true" data-review-tab="banks">Банки</button>
+            <button type="button" role="tab" aria-selected="false" data-review-tab="mfo">МФО</button>
+            <button type="button" role="tab" aria-selected="false" data-review-tab="investments">Инвестиции</button>
+          </div>
+        </div>
+        <div class="review-panel active" data-review-panel="banks">
+          <div class="reviews-grid">
+            <article class="review-card review-one">
+              <div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt="Логотип банка"></span></div>
+              <p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг, каждая услуга ...</p>
+              <a href="#" class="section-link">Читать полностью</a>
+            <div class="review-bottom">
+              <div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div>
+              <div class="review-score"><span>Оценка</span><b class="score">5</b></div>
+            </div>
+            </article>
+            <article class="review-card review-two">
+              <div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt="Логотип банка"></span></div>
+              <p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг, каждая услуга описана подробно и доходчиво, если происходит списание за определенную услугу, у вас есть ...</p>
+              <a href="#" class="section-link">Читать полностью</a>
+            <div class="review-bottom">
+              <div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div>
+              <div class="review-score"><span>Оценка</span><b class="score">5</b></div>
+            </div>
+            </article>
+            <article class="review-card review-three">
+              <div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt="Логотип банка"></span></div>
+              <p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг, каждая услуга описана подробно и доходчиво, если происходит списание за определенную услугу, у вас есть ...</p>
+              <a href="#" class="section-link">Читать полностью</a>
+            <div class="review-bottom">
+              <div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div>
+              <div class="review-score"><span>Оценка</span><b class="score">5</b></div>
+            </div>
+            </article>
+            <article class="review-card review-stat">
+              <img class="stat-icon" src="./assets/figma/reviews-chat.png" alt="" />
+              <div class="stat-line"><span>Банков:</span><strong>313</strong></div>
+              <div class="stat-line"><span>Отзывов:</span><strong>2 439 110</strong></div>
+              <a class="ghost-btn" href="#">Читать все отзывы о банках</a>
+            </article>
+            <article class="review-card review-wide">
+              <div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt="Логотип банка"></span></div>
+              <p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг, каждая услуга описана подробно и доходчиво, если происходит списание за определенную услугу, у вас есть возможность отключить ее и вернуть деньги, и это на уровне ИИ, без участия оператора. Также в альфа банке регулярно появляются ...</p>
+              <a href="#" class="section-link">Читать полностью</a>
+            <div class="review-bottom">
+              <div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div>
+              <div class="review-score"><span>Оценка</span><b class="score">5</b></div>
+            </div>
+            </article>
+            <article class="review-card review-four">
+              <div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt="Логотип банка"></span></div>
+              <p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг, каждая услуга описана подробно и доходчиво, если происходит списание за определенную услугу, у вас есть ...</p>
+              <a href="#" class="section-link">Читать полностью</a>
+            <div class="review-bottom">
+              <div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div>
+              <div class="review-score"><span>Оценка</span><b class="score">5</b></div>
+            </div>
+            </article>
+            <article class="review-card review-five">
+              <div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt="Логотип банка"></span></div>
+              <p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг, каждая услуга описана подробно и доходчиво, если происходит списание за определенную услугу, у вас есть ...</p>
+              <a href="#" class="section-link">Читать полностью</a>
+            <div class="review-bottom">
+              <div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div>
+              <div class="review-score"><span>Оценка</span><b class="score">5</b></div>
+            </div>
+            </article>
+            <article class="review-card leave-review">
+              <h4>Оставьте отзыв</h4>
+              <p>Помогите другим пользователям выбрать лучший банк</p>
+              <button class="primary-btn">Написать отзыв</button>
+            </article>
+          </div>
+        </div>
+        <div class="review-panel" data-review-panel="mfo">
+          <div class="offers-placeholder review-placeholder">
+            <div class="placeholder-icon">М</div>
+            <h3>Отзывы о МФО скоро появятся</h3>
+            <p>Соберем свежие оценки пользователей по займам, скорости выдачи и качеству поддержки.</p>
+          </div>
+        </div>
+        <div class="review-panel" data-review-panel="investments">
+          <div class="offers-placeholder review-placeholder">
+            <div class="placeholder-icon">↑</div>
+            <h3>Отзывы об инвестициях в работе</h3>
+            <p>Здесь появятся мнения клиентов о брокерах, приложениях и инвестиционных сервисах.</p>
+          </div>
+        </div>
+      </section>
+
+      <a class="bot-banner image-banner long-banner" href="#!" aria-label="Перейти к ЗаймоБоту"><img src="./assets/figma/promo-bot.png" alt="ЗаймоБот"></a>
+
+      <section class="news-section">
+        <div class="section-head section-head-tight">
+          <h2>Новости в области финансов</h2>
+          <div class="tabs compact news-tabs" role="tablist" aria-label="Новости в области финансов">
+            <button class="active" type="button" role="tab" aria-selected="true" data-news-tab="today">Сегодня</button>
+            <button type="button" role="tab" aria-selected="false" data-news-tab="rubric-1">Рубрика 1</button>
+            <button type="button" role="tab" aria-selected="false" data-news-tab="rubric-2">Рубрика 2</button>
+            <button type="button" role="tab" aria-selected="false" data-news-tab="rubric-3">Рубрика 3</button>
+            <button type="button" role="tab" aria-selected="false" data-news-tab="rubric-4">Рубрика 4</button>
+          </div>
+        </div>
+        <div class="news-panel active" data-news-panel="today">
+        <article class="news-card">
+          <div class="news-col news-feature">
+            <h3>Лента новостей</h3>
+            <h4>Кто рискует остаться без пенсии: разъяснения юриста.</h4>
+            <div class="news-meta">Рубрика 1 · 15.05.2025 · 22:05</div>
+            <p>Несмотря на то что право на страховую пенсию закреплено федеральным законом, для её получения необходимо выполнить ряд условий. Об этом рассказал юрист.</p>
+            <a href="#" class="section-link">Читать полностью</a>
+            <img src="./assets/figma/news-old-man.png" alt="Новость">
+          </div>
+          <div class="news-col news-list">
+            <div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Рубрика 1 · 15.05.2025 · 22:05</div></div>
+            <div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Рубрика 1 · 15.05.2025 · 22:05</div></div>
+            <div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Рубрика 1 · 15.05.2025 · 22:05</div></div>
+            <div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Рубрика 1 · 15.05.2025 · 22:05</div></div>
+          </div>
+          <div class="news-col news-slider" data-news-slider>
+            <div class="news-slider-stack">
+              <img class="slider-layer slider-layer-back slider-layer-back-two" data-slider-back-two src="./assets/hero-travel.png" alt="Следующая новость">
+              <img class="slider-layer slider-layer-back slider-layer-back-one" data-slider-back-one src="./assets/figma/news-old-man.png" alt="Следующая новость">
+              <img class="slider-layer slider-layer-front" data-slider-image src="./assets/figma/news-old-woman.png" alt="Новость о пенсиях">
+            </div>
+            <div class="slider-nav">
+              <button class="slider-arrow" type="button" data-slider-prev aria-label="Предыдущая новость">←</button>
+              <span class="slider-count" data-slider-current>1</span>
+              <div class="slider-bar"><i data-slider-progress></i></div>
+              <span data-slider-total>5</span>
+              <button class="slider-arrow" type="button" data-slider-next aria-label="Следующая новость">→</button>
+            </div>
+          </div>
+        </article>
+        </div>
+        <div class="news-panel" data-news-panel="rubric-1">
+          <div class="offers-placeholder news-placeholder">
+            <div class="placeholder-icon">1</div>
+            <h3>Новости рубрики 1 скоро появятся</h3>
+            <p>Подготовим материалы, аналитику и полезные обновления по этой теме.</p>
+          </div>
+        </div>
+        <div class="news-panel" data-news-panel="rubric-2">
+          <div class="offers-placeholder news-placeholder">
+            <div class="placeholder-icon">2</div>
+            <h3>Рубрика 2 пока наполняется</h3>
+            <p>Здесь появится подборка свежих финансовых новостей и разборов.</p>
+          </div>
+        </div>
+        <div class="news-panel" data-news-panel="rubric-3">
+          <div class="offers-placeholder news-placeholder">
+            <div class="placeholder-icon">3</div>
+            <h3>Материалы рубрики 3 в работе</h3>
+            <p>Скоро добавим публикации, которые помогут быстрее ориентироваться в финансах.</p>
+          </div>
+        </div>
+        <div class="news-panel" data-news-panel="rubric-4">
+          <div class="offers-placeholder news-placeholder">
+            <div class="placeholder-icon">4</div>
+            <h3>Рубрика 4 скоро будет доступна</h3>
+            <p>Команда готовит новые статьи и важные обновления для этого раздела.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="seo-section">
+        <article class="seo-brand card">
+          <div class="logo-name">
+            FINBE<span>FINE.RU</span>
+          </div>
+          <img src="assets/logo-seo.png" alt="FINBEFINE" />
+        </article>
+        <article class="seo-copy card">
+          <h2>&lt;h2&gt;SEO заголовок &lt;/h2&gt;</h2>
+          <p>Для современного мира сплочённость команды профессионалов влечёт за собой процесс внедрения и модернизации поэтапного и последовательного развития общества. Не следует, однако, забывать, что постоянный рост и сфера нашей активности предоставляет широкие возможности для приоритизации разума над эмоциями.</p>
+          <p>С учётом сложившейся международной обстановки, дальнейшее развитие различных форм деятельности однозначно определяет каждого участника как способного принимать собственные решения касаемо укрепления моральных ценностей. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: дальнейшее развитие различных форм деятельности прекрасно подходит для реализации вывода текущих активов. Не следует, однако, забывать, что выбранный нами инновационный путь прекрасно подходит для реализации экономической целесообразности принимаемых решений.</p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <a href="index.html" class="brand footer-brand">
+          <img class="brand-mark" src="assets/logo.svg" alt="FINBEFINE.RU" />
+        </a>
+        <p>2005—2025 "Название организации". При использовании материалов гиперссылка на finbefine.ru обязательна.</p>
+        <p>Свидетельство на товарный знак №123456 от 15.05.2025 г.</p>
+        <div class="footer-links">
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Безопасность</a>
+        </div>
+        <p>Реквизиты "Название компании": ИНН: 1234567890; ОГРН: 1234567891011; Адрес: 123456, г. Москва, улица Уличная, д. 1, этаж 1; ОКВЭД: 12.34</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-socials" aria-label="Социальные сети">
+          <a href="#!" aria-label="Дзен"><img src="assets/dzen.svg" alt=""></a>
+          <a href="#!" aria-label="ВКонтакте"><img src="assets/vk.svg" alt=""></a>
+          <a href="#!" aria-label="Telegram"><img src="assets/tg.svg" alt=""></a>
+        </nav>
+        <div class="support-title">Служба поддержки клиентов:</div>
+        <div class="footer-support">
+          <div class="footer-support-main">
+            <a href="mailto:support@finbefine.ru">support@finbefine.ru</a>
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+            <span>Пн-пт с 10:00 до 17:00</span>
+          </div>
+          <address>123456, г. Москва, улица Уличная, д. 1, этаж 1</address>
+        </div>
+        <div class="footer-bottom-row">
+          <div class="copy">© finbefine.ru 2025</div>
+          <div class="age-badge" aria-label="Возрастное ограничение 16 плюс">16+</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function setupTabs(tabSelector, panelSelector, tabAttribute, panelAttribute) {
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(tabSelector));
+        var panels = Array.prototype.slice.call(document.querySelectorAll(panelSelector));
+
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            var target = tab.getAttribute(tabAttribute);
+
+            tabs.forEach(function (item) {
+              var isActive = item === tab;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            panels.forEach(function (panel) {
+              panel.classList.toggle('active', panel.getAttribute(panelAttribute) === target);
+            });
+          });
+        });
+      }
+
+      setupTabs('[data-offer-tab]', '[data-offer-panel]', 'data-offer-tab', 'data-offer-panel');
+      setupTabs('[data-bank-tab]', '[data-bank-panel]', 'data-bank-tab', 'data-bank-panel');
+      setupTabs('[data-review-tab]', '[data-review-panel]', 'data-review-tab', 'data-review-panel');
+      setupTabs('[data-news-tab]', '[data-news-panel]', 'data-news-tab', 'data-news-panel');
+
+      var languageSelect = document.querySelector('[data-language-select]');
+      if (languageSelect) {
+        var languageToggle = languageSelect.querySelector('.language-toggle');
+        var languageCurrent = languageSelect.querySelector('[data-language-current]');
+        var languageFlag = languageSelect.querySelector('[data-language-flag]');
+        var languageOptions = Array.prototype.slice.call(languageSelect.querySelectorAll('.language-option'));
+
+        function closeLanguageMenu() {
+          languageSelect.classList.remove('open');
+          languageToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        languageToggle.addEventListener('click', function () {
+          var isOpen = languageSelect.classList.toggle('open');
+          languageToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        languageOptions.forEach(function (option) {
+          option.addEventListener('click', function () {
+            languageCurrent.textContent = option.getAttribute('data-lang-value');
+            document.documentElement.setAttribute('lang', option.getAttribute('data-lang-code'));
+            languageFlag.className = 'language-flag ' + option.getAttribute('data-flag-class');
+
+            languageOptions.forEach(function (item) {
+              var isActive = item === option;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            closeLanguageMenu();
+          });
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!languageSelect.contains(event.target)) {
+            closeLanguageMenu();
+          }
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            closeLanguageMenu();
+          }
+        });
+      }
+
+      var newsSlider = document.querySelector('[data-news-slider]');
+      if (newsSlider) {
+        var slides = [
+          { src: './assets/figma/news-old-woman.png', alt: 'Новость о пенсиях' },
+          { src: './assets/figma/news-old-man.png', alt: 'Новость о пенсионных условиях' },
+          { src: './assets/hero-man.png', alt: 'Финансовые продукты' },
+          { src: './assets/hero-travel.png', alt: 'Туристическое страхование' },
+          { src: './assets/promo-credit.png', alt: 'Помощь с кредитом' }
+        ];
+        var currentSlide = 0;
+        var isSliderAnimating = false;
+        var sliderStack = newsSlider.querySelector('.news-slider-stack');
+        var frontImage = newsSlider.querySelector('[data-slider-image]');
+        var backOneImage = newsSlider.querySelector('[data-slider-back-one]');
+        var backTwoImage = newsSlider.querySelector('[data-slider-back-two]');
+        var currentLabel = newsSlider.querySelector('[data-slider-current]');
+        var totalLabel = newsSlider.querySelector('[data-slider-total]');
+        var progress = newsSlider.querySelector('[data-slider-progress]');
+        var prevButton = newsSlider.querySelector('[data-slider-prev]');
+        var nextButton = newsSlider.querySelector('[data-slider-next]');
+
+        function getSlide(index) {
+          return slides[(index + slides.length) % slides.length];
+        }
+
+        function setImage(image, slide) {
+          image.src = slide.src;
+          image.alt = slide.alt;
+        }
+
+        function updateNewsSlider(direction) {
+          setImage(frontImage, getSlide(currentSlide));
+          setImage(backOneImage, getSlide(currentSlide + 1));
+          setImage(backTwoImage, getSlide(currentSlide + 2));
+          currentLabel.textContent = String(currentSlide + 1);
+          totalLabel.textContent = String(slides.length);
+          progress.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+          if (direction) {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            void sliderStack.offsetWidth;
+            sliderStack.classList.add(direction === 'prev' ? 'is-prev' : 'is-next');
+          }
+        }
+
+        function moveNewsSlider(step, direction) {
+          if (isSliderAnimating) {
+            return;
+          }
+          isSliderAnimating = true;
+          currentSlide = (currentSlide + step + slides.length) % slides.length;
+          updateNewsSlider(direction);
+          window.setTimeout(function () {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            isSliderAnimating = false;
+          }, 480);
+        }
+
+        prevButton.addEventListener('click', function () {
+          moveNewsSlider(-1, 'prev');
+        });
+
+        nextButton.addEventListener('click', function () {
+          moveNewsSlider(1, 'next');
+        });
+
+        updateNewsSlider();
+      }
+
+      var bankSearch = document.querySelector('.bank-search');
+      var bankTiles = Array.prototype.slice.call(document.querySelectorAll('[data-bank-name]'));
+      var bankEmpty = document.querySelector('.bank-empty');
+
+      if (bankSearch && bankTiles.length && bankEmpty) {
+        function normalizeBankText(value) {
+          return value.toLowerCase().replace(/[\s\-]+/g, '');
+        }
+
+        bankSearch.addEventListener('input', function () {
+          var query = normalizeBankText(bankSearch.value.trim());
+          var visibleCount = 0;
+
+          bankTiles.forEach(function (tile) {
+            var name = normalizeBankText(tile.getAttribute('data-bank-name'));
+            var isVisible = !query || name.indexOf(query) !== -1;
+            tile.hidden = !isVisible;
+            if (isVisible) {
+              visibleCount += 1;
+            }
+          });
+
+          bankEmpty.hidden = visibleCount > 0;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

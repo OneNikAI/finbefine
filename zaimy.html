@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINBEFINE — Займы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css?v=56">
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-strip">
+      <div class="container top-strip-inner">
+        <div class="top-strip-links">
+          <a href="#">
+            <div class="icon">
+              <img src="assets/point.svg" alt="point">
+            </div>
+            Москва
+          </a>
+          <div class="course">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/course.svg" alt="course">
+              </div>
+              Курсы валют
+            </a>
+            <div class="course-list">
+              <div class="course-item">
+                <span>USD</span>
+                88.72 +0.01
+              </div>
+              <div class="course-item">
+                <span>EUR</span>
+                96.44 -0.12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-strip-actions language-select" data-language-select>
+          <button class="language-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="language-flag language-flag-ru" data-language-flag aria-hidden="true"></span>
+            <span class="lang" data-language-current>RU</span>
+            <span class="dropdown-arrow" aria-hidden="true">
+              <img src="assets/arrow-down.svg" alt="">
+            </span>
+          </button>
+          <div class="language-menu" role="listbox" aria-label="Выбор языка">
+            <button class="language-option active" type="button" role="option" aria-selected="true" data-lang-value="RU" data-lang-code="ru" data-flag-class="language-flag-ru">
+              <span class="language-flag language-flag-ru" aria-hidden="true"></span>
+              Русский
+            </button>
+            <button class="language-option" type="button" role="option" aria-selected="false" data-lang-value="EN" data-lang-code="en" data-flag-class="language-flag-en">
+              <span class="language-flag language-flag-en" aria-hidden="true"></span>
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="assets/logo.svg" alt="logo" />
+      </a>
+
+<input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Открыть меню">
+<label class="burger" for="menu-toggle" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<div class="mobile-menu">
+  <nav class="nav" aria-label="Основное меню">
+    <a href="credits.html">Кредиты</a>
+    <a href="cards.html">Карты</a>
+    <a class="active" href="zaimy.html">Займы</a>
+    <a href="vklady.html">Вклады</a>
+    <a href="insurance.html">Страхование</a>
+    <a href="education.html">Образование</a>
+  </nav>
+  <button class="login-btn mobile-login-btn">
+    <img src="assets/login.svg" alt="login">
+    Войти
+  </button>
+</div>
+
+      <div class="header-actions">
+        <button class="login-btn">
+          <img src="assets/login.svg" alt="login">
+          Войти
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <main class="credits-page loans-page">
+    <div class="container">
+      <section class="credits-hero cards-hero loans-hero">
+        <div class="credits-hero-copy">
+          <h1>Займы <span class="title-icon-inline"><img src="assets/zaimy.svg" alt=""></span> в <span>Москве</span></h1>
+          <p>Платформа Finbefine гарантирует простоту и скорость получения микрозаймов. Подать заявку можно в любое время суток непосредственно на нашем сайте, без необходимости посещения офисов и встреч с представителями. Для оформления займа потребуется минимальный пакет документов, а решение по заявке принимается максимально оперативно.</p>
+          <div class="loan-filter">
+            <h2>Количество предложений без процентов: <span>99</span></h2>
+            <div class="loan-filter-row">
+              <label class="credit-control loan-field"><span>Сумма займа</span><input type="text" placeholder="Сумма займа"></label>
+              <label class="credit-control loan-field"><span>Срок в днях</span><input type="text" placeholder="Срок в днях"></label>
+            </div>
+          </div>
+        </div>
+        <div class="loans-hero-side">
+          <a class="credits-hero-banner image-banner" href="#!" aria-label="Первый займ без процентов"><img src="assets/pervii-zaim.png" alt="Первый займ без процентов"></a>
+          <div class="loans-hero-cta">
+            <span>Первый займ без процентов</span>
+            <button class="primary-btn" type="button">Заполнить анкету</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="loan-top-section">
+        <div class="loan-top-grid">
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/webbankir.png" alt="Webbankir"><span>Займ бесплатно на карту</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>30 дней</b></div><div class="loan-line"><span>Срок</span><b>7-30 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/budget.png" alt="Бюджет"><span>Льготный до 100 000 ₽ на карту</span></div>
+            <div class="loan-card-body"><strong>1 000 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>нет</b></div><div class="loan-line"><span>Срок</span><b>7 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>127,804 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,01 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/viva.png" alt="VIVA деньги"><span>Займ на карту онлайн</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>14 дней</b></div><div class="loan-line"><span>Срок</span><b>1 - 14 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/dengi.png" alt="Деньги"><span>Уникальный на 10 дней</span></div>
+            <div class="loan-card-body"><strong>1 500 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>21 день</b></div><div class="loan-line"><span>Срок</span><b>5 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="loan-banners">
+        <a class="image-banner" href="#!"><img src="assets/banner-zaim-1.png" alt="Лучшие предложения по займам"></a>
+        <a class="image-banner" href="#!"><img src="assets/banner-zaim-2.png" alt="Первый займ бесплатно"></a>
+        <a class="image-banner" href="#!"><img src="assets/banner-zaim-3.png" alt="Акция займ без процентов"></a>
+      </section>
+
+      <section class="loan-catalog-section">
+        <div class="loan-tags" aria-label="Фильтры займов">
+          <button class="active" type="button">Первый без %</button>
+          <button type="button">Через Госуслуги</button>
+          <button type="button">До 15 тыс. руб.</button>
+          <button type="button">От 1% годовых</button>
+          <button type="button">Более 30 дней</button>
+        </div>
+        <div class="loan-catalog-grid">
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/webbankir.png" alt="Webbankir"><span>Займ бесплатно на карту</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>30 дней</b></div><div class="loan-line"><span>Срок</span><b>7-30 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/budget.png" alt="Бюджет"><span>Льготный до 100 000 ₽ на карту</span></div>
+            <div class="loan-card-body"><strong>1 000 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>нет</b></div><div class="loan-line"><span>Срок</span><b>7 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>127,804 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,01 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/viva.png" alt="VIVA деньги"><span>Займ на карту онлайн</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>14 дней</b></div><div class="loan-line"><span>Срок</span><b>1 - 14 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/dengi.png" alt="Деньги"><span>Уникальный на 10 дней</span></div>
+            <div class="loan-card-body"><strong>1 500 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>21 день</b></div><div class="loan-line"><span>Срок</span><b>5 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/webbankir.png" alt="Webbankir"><span>Займ бесплатно на карту</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>30 дней</b></div><div class="loan-line"><span>Срок</span><b>7-30 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/budget.png" alt="Бюджет"><span>Льготный до 100 000 ₽ на карту</span></div>
+            <div class="loan-card-body"><strong>1 000 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>нет</b></div><div class="loan-line"><span>Срок</span><b>7 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>127,804 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,01 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/viva.png" alt="VIVA деньги"><span>Займ на карту онлайн</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>14 дней</b></div><div class="loan-line"><span>Срок</span><b>1 - 14 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/dengi.png" alt="Деньги"><span>Уникальный на 10 дней</span></div>
+            <div class="loan-card-body"><strong>1 500 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>21 день</b></div><div class="loan-line"><span>Срок</span><b>5 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/webbankir.png" alt="Webbankir"><span>Займ бесплатно на карту</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>30 дней</b></div><div class="loan-line"><span>Срок</span><b>7-30 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/budget.png" alt="Бюджет"><span>Льготный до 100 000 ₽ на карту</span></div>
+            <div class="loan-card-body"><strong>1 000 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>нет</b></div><div class="loan-line"><span>Срок</span><b>7 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>127,804 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0,01 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/viva.png" alt="VIVA деньги"><span>Займ на карту онлайн</span></div>
+            <div class="loan-card-body"><strong>3 000 - 30 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>14 дней</b></div><div class="loan-line"><span>Срок</span><b>1 - 14 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+          <article class="loan-card loan-offer-card">
+            <div class="loan-card-head"><img src="assets/dengi.png" alt="Деньги"><span>Уникальный на 10 дней</span></div>
+            <div class="loan-card-body"><strong>1 500 - 100 000 ₽</strong><div class="loan-badges"><em>Первый бесплатно</em><em class="ad">Реклама</em></div><div class="loan-line"><span>Срок без %</span><b>21 день</b></div><div class="loan-line"><span>Срок</span><b>5 - 364 дней</b></div><div class="loan-line"><span>ПСК <i class="loan-info" tabindex="0" aria-label="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования" data-tooltip="Полная стоимость кредита - расходы, которые заемщик выплачивает за период кредитования">i</i></span><b>0 - 292,000% годовых</b></div><div class="loan-line"><span>Ставка</span><b>0 - 0,8% в день</b></div><a class="primary-btn" href="#!">Получить займ</a><a class="loan-secondary" href="#!">ⓘ Изучить все условия займа</a></div>
+          </article>
+        </div>
+        <button class="show-more-btn" type="button">Показать еще</button>
+      </section>
+
+      <section class="loan-conditions-section">
+        <h2>Займы на следующих условиях:</h2>
+        <div class="loan-conditions-grid">
+          <a href="#!"><img src="assets/zaim-type-1.svg" alt=""><span>Займ онлайн</span></a>
+          <a href="#!"><img src="assets/zaim-type-2.svg" alt=""><span>Деньги по паспорту</span></a>
+          <a href="#!"><img src="assets/zaim-type-3.svg" alt=""><span>На карту онлайн</span></a>
+          <a href="#!"><img src="assets/zaim-type-4.svg" alt=""><span>На большую сумму</span></a>
+          <a href="#!"><img src="assets/zaim-type-5.svg" alt=""><span>Экспресс</span></a>
+          <a href="#!"><img src="assets/zaim-type-6.svg" alt=""><span>Без процентов</span></a>
+          <a href="#!"><img src="assets/zaim-type-7.svg" alt=""><span>Займы по акции</span></a>
+          <a href="#!"><img src="assets/zaim-type-8.svg" alt=""><span>На карту</span></a>
+          <a href="#!"><img src="assets/zaim-type-9.svg" alt=""><span>Наличными</span></a>
+          <a href="#!"><img src="assets/zaim-type-10.svg" alt=""><span>До зарплаты</span></a>
+          <a href="#!"><img src="assets/zaim-type-11.svg" alt=""><span>Под залог авто</span></a>
+          <a href="#!"><img src="assets/zaim-type-12.svg" alt=""><span>Круглосуточно</span></a>
+        </div>
+      </section>
+
+      <section class="loan-mfo-section">
+        <h2>Список МФО в базе FINBEFINE:</h2>
+        <div class="loan-mfo-grid">
+          <article class="loan-mfo-card">
+            <div class="loan-mfo-top"><img src="assets/mfo-1.png" alt="495 кредит"><div class="loan-mfo-rating"><b>4.1</b><span>391 (голос)</span></div></div>
+            <a class="primary-btn" href="#!">Подробнее</a>
+            <div class="loan-mfo-license">Лиц. № 2103045009690</div>
+            <div class="loan-mfo-offers">1 Предложение по займам</div>
+          </article>
+          <article class="loan-mfo-card">
+            <div class="loan-mfo-top"><img src="assets/mfo-2.png" alt="belka credit"><div class="loan-mfo-rating"><b>4.09</b><span>344 (голоса)</span></div></div>
+            <a class="primary-btn" href="#!">Подробнее</a>
+            <div class="loan-mfo-license">Лиц. № 2403045010054</div>
+            <div class="loan-mfo-offers">4 Предложения по займам</div>
+          </article>
+          <article class="loan-mfo-card">
+            <div class="loan-mfo-top"><img src="assets/mfo-3.png" alt="boostra"><div class="loan-mfo-rating"><b>4.02</b><span>272 (голоса)</span></div></div>
+            <a class="primary-btn" href="#!">Подробнее</a>
+            <div class="loan-mfo-license">Лиц. № 2303045009968</div>
+            <div class="loan-mfo-offers">2 Предложения по займам</div>
+          </article>
+          <article class="loan-mfo-card">
+            <div class="loan-mfo-top"><img src="assets/mfo-4.png" alt="bunny money"><div class="loan-mfo-rating"><b>4.02</b><span>237 (голосов)</span></div></div>
+            <a class="primary-btn" href="#!">Подробнее</a>
+            <div class="loan-mfo-license">Лиц. № 2203045009879</div>
+            <div class="loan-mfo-offers">1 Предложение по займам</div>
+          </article>
+        </div>
+        <button class="show-more-btn" type="button">Показать все МФО</button>
+      </section>
+
+      <section class="loan-rating-section">
+        <h2>Займы в <span>Москве</span> - ТОП 10 займов в МФО 2025 года</h2>
+        <div class="loan-rating-table">
+          <div class="loan-rating-head"><span>МФО</span><span>Сумма</span><span>Срок</span><span>ПСК</span><span>Ставка в день</span><span>Дополнительно</span></div>
+          <div class="loan-rating-body">
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Твой займ</span><a href="#!">Займ</a></div><span>до 100 000 ₽</span><span>1 - 365 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С плохой кредитной историей<br>Можно продлить срок</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Марусенька</span><a href="#!">Займ онлайн</a></div><span>до 100 000 ₽</span><span>1 - 365 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С плохой кредитной историей<br>Можно продлить срок</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Альфа Займ</span><a href="#!">Займ онлайн</a></div><span>до 100 000 ₽</span><span>3 - 180 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С 18 лет<br>С плохой кредитной историей</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Гранат Займ</span><a href="#!">Займ онлайн</a></div><span>до 100 000 ₽</span><span>1 - 365 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С 18 лет<br>Можно продлить срок</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Займер</span><a href="#!">Заем бесплатно</a></div><span>до 30 000 ₽</span><span>7 - 30 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С 18 лет<br>С плохой кредитной историей</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Бюджет</span><a href="#!">Онлайн-займ</a></div><span>до 300 000 ₽</span><span>30 - 1095 дн.</span><span>35.045 - 292.000%</span><b>0.2 - 0.8%</b><p>С 18 лет<br>Можно продлить срок</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>MoneyDay</span><a href="#!">Онлайн заём</a></div><span>до 50 000 ₽</span><span>16 - 180 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С 18 лет<br>С плохой кредитной историей</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>GreenMoney</span><a href="#!">Займ онлайн</a></div><span>до 30 000 ₽</span><span>7 - 21 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С плохой кредитной историей</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Кекас</span><a href="#!">Онлайн-займ</a></div><span>до 30 000 ₽</span><span>3 - 30 дн.</span><span>292.000%</span><b>до 0.8%</b><p>Без % новым клиентам<br>С плохой кредитной историей<br>Можно продлить срок</p></div>
+            <div class="loan-rating-row"><div class="loan-rating-name"><span>Бюджет</span><a href="#!">Онлайн-займ</a></div><span>до 300 000 ₽</span><span>30 - 1095 дн.</span><span>35.045 - 292.000%</span><b>0.2 - 0.8%</b><p>С 18 лет<br>Можно продлить срок</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-section credit-news">
+        <div class="section-head section-head-tight"><h2>Новости о займах</h2></div>
+        <article class="news-card">
+          <div class="news-col news-feature"><h3>Лента новостей</h3><h4>Кто рискует остаться без пенсии: разъяснения юриста.</h4><div class="news-meta">Займы · 15.05.2025 · 22:05</div><p>Несмотря на то что право на страховую пенсию закреплено федеральным законом, для её получения необходимо выполнить ряд условий.</p><a href="#" class="section-link">Читать полностью</a><img src="assets/news-old-man.png" alt="Новость"></div>
+          <div class="news-col news-list"><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Займы · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Займы · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Займы · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Займы · 15.05.2025 · 22:05</div></div></div>
+          <div class="news-col news-slider" data-news-slider><div class="news-slider-stack"><img class="slider-layer slider-layer-back slider-layer-back-two" data-slider-back-two src="assets/hero-travel.png" alt=""><img class="slider-layer slider-layer-back slider-layer-back-one" data-slider-back-one src="assets/news-old-man.png" alt=""><img class="slider-layer slider-layer-front" data-slider-image src="assets/news-old-woman.png" alt="Новость"></div><div class="slider-nav"><button class="slider-arrow" type="button" data-slider-prev aria-label="Предыдущая новость">←</button><span class="slider-count" data-slider-current>1</span><div class="slider-bar"><i data-slider-progress></i></div><span data-slider-total>5</span><button class="slider-arrow" type="button" data-slider-next aria-label="Следующая новость">→</button></div></div>
+        </article>
+      </section>
+
+      <section class="credit-reviews-section">
+        <div class="section-head section-head-tight"><h2>Отзывы о займах</h2></div>
+        <div class="credit-reviews-slider" data-credit-reviews-slider>
+          <button class="credit-review-arrow credit-review-arrow--prev" type="button" aria-label="Предыдущие отзывы" data-credit-reviews-prev><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+          <div class="credit-review-viewport"><div class="credit-review-track" data-credit-reviews-track>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+            <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          </div></div>
+          <button class="credit-review-arrow credit-review-arrow--next" type="button" aria-label="Следующие отзывы" data-credit-reviews-next><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+        </div>
+        <div class="credit-leave-review"><h3>Оставьте отзыв</h3><p>Помогите другим пользователям выбрать лучший банк</p><button class="primary-btn">Написать отзыв</button></div>
+      </section>
+
+      <section class="credit-seo card-lite"><h2>&lt;h2&gt;Заголовок&lt;/h2&gt;</h2><p>Вот вам яркий пример современных тенденций: высокотехнологичная концепция общественного уклада способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности.</p><p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности играет важную роль в формировании первоочередных требований.</p></section>
+
+      <section class="credit-question card-lite"><h2>Задать вопрос о займе</h2><div class="question-card"><div class="question-card__label">Эксперт направления займы</div><div class="expert"><img src="assets/expert-avatar.png" alt=""><div><strong>Жорж Милославский</strong><span>Ведущий эксперт по займам Finbefine</span></div></div><div class="question-card__action"><button class="primary-btn">Задать вопрос</button></div></div></section>
+    </div>
+  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <a href="index.html" class="brand footer-brand">
+          <img class="brand-mark" src="assets/logo.svg" alt="FINBEFINE.RU" />
+        </a>
+        <p>2005—2025 "Название организации". При использовании материалов гиперссылка на finbefine.ru обязательна.</p>
+        <p>Свидетельство на товарный знак №123456 от 15.05.2025 г.</p>
+        <div class="footer-links">
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Безопасность</a>
+        </div>
+        <p>Реквизиты "Название компании": ИНН: 1234567890; ОГРН: 1234567891011; Адрес: 123456, г. Москва, улица Уличная, д. 1, этаж 1; ОКВЭД: 12.34</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-socials" aria-label="Социальные сети">
+          <a href="#!" aria-label="Дзен"><img src="assets/dzen.svg" alt=""></a>
+          <a href="#!" aria-label="ВКонтакте"><img src="assets/vk.svg" alt=""></a>
+          <a href="#!" aria-label="Telegram"><img src="assets/tg.svg" alt=""></a>
+        </nav>
+        <div class="support-title">Служба поддержки клиентов:</div>
+        <div class="footer-support">
+          <div class="footer-support-main">
+            <a href="mailto:support@finbefine.ru">support@finbefine.ru</a>
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+            <span>Пн-пт с 10:00 до 17:00</span>
+          </div>
+          <address>123456, г. Москва, улица Уличная, д. 1, этаж 1</address>
+        </div>
+        <div class="footer-bottom-row">
+          <div class="copy">© finbefine.ru 2025</div>
+          <div class="age-badge" aria-label="Возрастное ограничение 16 плюс">16+</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function setupTabs(tabSelector, panelSelector, tabAttribute, panelAttribute) {
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(tabSelector));
+        var panels = Array.prototype.slice.call(document.querySelectorAll(panelSelector));
+
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            var target = tab.getAttribute(tabAttribute);
+
+            tabs.forEach(function (item) {
+              var isActive = item === tab;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            panels.forEach(function (panel) {
+              panel.classList.toggle('active', panel.getAttribute(panelAttribute) === target);
+            });
+          });
+        });
+      }
+
+      setupTabs('[data-offer-tab]', '[data-offer-panel]', 'data-offer-tab', 'data-offer-panel');
+      setupTabs('[data-bank-tab]', '[data-bank-panel]', 'data-bank-tab', 'data-bank-panel');
+      setupTabs('[data-review-tab]', '[data-review-panel]', 'data-review-tab', 'data-review-panel');
+      setupTabs('[data-news-tab]', '[data-news-panel]', 'data-news-tab', 'data-news-panel');
+
+      var languageSelect = document.querySelector('[data-language-select]');
+      if (languageSelect) {
+        var languageToggle = languageSelect.querySelector('.language-toggle');
+        var languageCurrent = languageSelect.querySelector('[data-language-current]');
+        var languageFlag = languageSelect.querySelector('[data-language-flag]');
+        var languageOptions = Array.prototype.slice.call(languageSelect.querySelectorAll('.language-option'));
+
+        function closeLanguageMenu() {
+          languageSelect.classList.remove('open');
+          languageToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        languageToggle.addEventListener('click', function () {
+          var isOpen = languageSelect.classList.toggle('open');
+          languageToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        languageOptions.forEach(function (option) {
+          option.addEventListener('click', function () {
+            languageCurrent.textContent = option.getAttribute('data-lang-value');
+            document.documentElement.setAttribute('lang', option.getAttribute('data-lang-code'));
+            languageFlag.className = 'language-flag ' + option.getAttribute('data-flag-class');
+
+            languageOptions.forEach(function (item) {
+              var isActive = item === option;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            closeLanguageMenu();
+          });
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!languageSelect.contains(event.target)) {
+            closeLanguageMenu();
+          }
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            closeLanguageMenu();
+          }
+        });
+      }
+
+      var newsSlider = document.querySelector('[data-news-slider]');
+      if (newsSlider) {
+        var slides = [
+          { src: './assets/figma/news-old-woman.png', alt: 'Новость о пенсиях' },
+          { src: './assets/figma/news-old-man.png', alt: 'Новость о пенсионных условиях' },
+          { src: './assets/hero-man.png', alt: 'Финансовые продукты' },
+          { src: './assets/hero-travel.png', alt: 'Туристическое страхование' },
+          { src: './assets/promo-credit.png', alt: 'Помощь с кредитом' }
+        ];
+        var currentSlide = 0;
+        var isSliderAnimating = false;
+        var sliderStack = newsSlider.querySelector('.news-slider-stack');
+        var frontImage = newsSlider.querySelector('[data-slider-image]');
+        var backOneImage = newsSlider.querySelector('[data-slider-back-one]');
+        var backTwoImage = newsSlider.querySelector('[data-slider-back-two]');
+        var currentLabel = newsSlider.querySelector('[data-slider-current]');
+        var totalLabel = newsSlider.querySelector('[data-slider-total]');
+        var progress = newsSlider.querySelector('[data-slider-progress]');
+        var prevButton = newsSlider.querySelector('[data-slider-prev]');
+        var nextButton = newsSlider.querySelector('[data-slider-next]');
+
+        function getSlide(index) {
+          return slides[(index + slides.length) % slides.length];
+        }
+
+        function setImage(image, slide) {
+          image.src = slide.src;
+          image.alt = slide.alt;
+        }
+
+        function updateNewsSlider(direction) {
+          setImage(frontImage, getSlide(currentSlide));
+          setImage(backOneImage, getSlide(currentSlide + 1));
+          setImage(backTwoImage, getSlide(currentSlide + 2));
+          currentLabel.textContent = String(currentSlide + 1);
+          totalLabel.textContent = String(slides.length);
+          progress.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+          if (direction) {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            void sliderStack.offsetWidth;
+            sliderStack.classList.add(direction === 'prev' ? 'is-prev' : 'is-next');
+          }
+        }
+
+        function moveNewsSlider(step, direction) {
+          if (isSliderAnimating) {
+            return;
+          }
+          isSliderAnimating = true;
+          currentSlide = (currentSlide + step + slides.length) % slides.length;
+          updateNewsSlider(direction);
+          window.setTimeout(function () {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            isSliderAnimating = false;
+          }, 480);
+        }
+
+        prevButton.addEventListener('click', function () {
+          moveNewsSlider(-1, 'prev');
+        });
+
+        nextButton.addEventListener('click', function () {
+          moveNewsSlider(1, 'next');
+        });
+
+        updateNewsSlider();
+      }
+
+
+      var cardRadioGroups = Array.prototype.slice.call(document.querySelectorAll('.cards-purpose-buttons, .cards-bank-line'));
+      cardRadioGroups.forEach(function (group) {
+        var buttons = Array.prototype.slice.call(group.querySelectorAll('button[role="radio"]'));
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            buttons.forEach(function (item) {
+              var isActive = item === button;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-checked', isActive ? 'true' : 'false');
+            });
+          });
+        });
+      });
+
+      var cardCheckboxFilters = Array.prototype.slice.call(document.querySelectorAll('.cards-tag-line button:not(.primary-btn)'));
+      cardCheckboxFilters.forEach(function (button) {
+        button.addEventListener('click', function () {
+          button.classList.toggle('active');
+        });
+      });
+
+
+      var loanTagButtons = Array.prototype.slice.call(document.querySelectorAll('.loan-tags button'));
+      loanTagButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          loanTagButtons.forEach(function (item) {
+            item.classList.toggle('active', item === button);
+          });
+        });
+      });
+
+      var creditReviewsSlider = document.querySelector("[data-credit-reviews-slider]");
+
+      if (creditReviewsSlider) {
+        var reviewsTrack = creditReviewsSlider.querySelector("[data-credit-reviews-track]");
+        var reviewsPrev = creditReviewsSlider.querySelector("[data-credit-reviews-prev]");
+        var reviewsNext = creditReviewsSlider.querySelector("[data-credit-reviews-next]");
+        var reviewCards = Array.prototype.slice.call(reviewsTrack.querySelectorAll(".review-card"));
+        var reviewIndex = 0;
+
+        function getVisibleReviews() {
+          return window.matchMedia("(max-width: 980px)").matches ? 1 : 3;
+        }
+
+        function updateCreditReviewsSlider() {
+          var visible = getVisibleReviews();
+          var maxIndex = Math.max(0, reviewCards.length - visible);
+          reviewIndex = Math.min(reviewIndex, maxIndex);
+          var cardWidth = reviewCards[0] ? reviewCards[0].getBoundingClientRect().width : 0;
+          var gap = parseFloat(getComputedStyle(reviewsTrack).gap) || 0;
+          reviewsTrack.style.transform = "translateX(" + (reviewIndex * -(cardWidth + gap)) + "px)";
+          reviewsPrev.disabled = reviewIndex === 0;
+          reviewsNext.disabled = reviewIndex === maxIndex;
+        }
+
+        reviewsPrev.addEventListener("click", function () {
+          reviewIndex -= 1;
+          updateCreditReviewsSlider();
+        });
+
+        reviewsNext.addEventListener("click", function () {
+          reviewIndex += 1;
+          updateCreditReviewsSlider();
+        });
+
+        window.addEventListener("resize", updateCreditReviewsSlider);
+        updateCreditReviewsSlider();
+      }
+
+      var creditAmountRange = document.querySelector("[data-credit-amount-range]");
+      var creditAmountValue = document.querySelector("[data-credit-amount-value]");
+
+      if (creditAmountRange && creditAmountValue) {
+        function formatCreditAmount(value) {
+          return Number(value).toLocaleString("ru-RU") + " ₽";
+        }
+
+        function updateCreditAmount() {
+          var min = Number(creditAmountRange.min);
+          var max = Number(creditAmountRange.max);
+          var value = Number(creditAmountRange.value);
+          var progress = ((value - min) / (max - min)) * 100;
+          creditAmountValue.value = formatCreditAmount(value);
+          creditAmountRange.style.setProperty("--credit-progress", progress + "%");
+        }
+
+        creditAmountRange.addEventListener("input", updateCreditAmount);
+        updateCreditAmount();
+      }
+
+      var bankSearch = document.querySelector('.bank-search');
+      var bankTiles = Array.prototype.slice.call(document.querySelectorAll('[data-bank-name]'));
+      var bankEmpty = document.querySelector('.bank-empty');
+
+      if (bankSearch && bankTiles.length && bankEmpty) {
+        function normalizeBankText(value) {
+          return value.toLowerCase().replace(/[\s\-]+/g, '');
+        }
+
+        bankSearch.addEventListener('input', function () {
+          var query = normalizeBankText(bankSearch.value.trim());
+          var visibleCount = 0;
+
+          bankTiles.forEach(function (tile) {
+            var name = normalizeBankText(tile.getAttribute('data-bank-name'));
+            var isVisible = !query || name.indexOf(query) !== -1;
+            tile.hidden = !isVisible;
+            if (isVisible) {
+              visibleCount += 1;
+            }
+          });
+
+          bankEmpty.hidden = visibleCount > 0;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

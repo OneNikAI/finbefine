@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINBEFINE — Кредиты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css?v=56">
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-strip">
+      <div class="container top-strip-inner">
+        <div class="top-strip-links">
+          <a href="#">
+            <div class="icon">
+              <img src="assets/point.svg" alt="point">
+            </div>
+            Москва
+          </a>
+          <div class="course">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/course.svg" alt="course">
+              </div>
+              Курсы валют
+            </a>
+            <div class="course-list">
+              <div class="course-item">
+                <span>USD</span>
+                88.72 +0.01
+              </div>
+              <div class="course-item">
+                <span>EUR</span>
+                96.44 -0.12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-strip-actions language-select" data-language-select>
+          <button class="language-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="language-flag language-flag-ru" data-language-flag aria-hidden="true"></span>
+            <span class="lang" data-language-current>RU</span>
+            <span class="dropdown-arrow" aria-hidden="true">
+              <img src="assets/arrow-down.svg" alt="">
+            </span>
+          </button>
+          <div class="language-menu" role="listbox" aria-label="Выбор языка">
+            <button class="language-option active" type="button" role="option" aria-selected="true" data-lang-value="RU" data-lang-code="ru" data-flag-class="language-flag-ru">
+              <span class="language-flag language-flag-ru" aria-hidden="true"></span>
+              Русский
+            </button>
+            <button class="language-option" type="button" role="option" aria-selected="false" data-lang-value="EN" data-lang-code="en" data-flag-class="language-flag-en">
+              <span class="language-flag language-flag-en" aria-hidden="true"></span>
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="assets/logo.svg" alt="logo" />
+      </a>
+
+<input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Открыть меню">
+<label class="burger" for="menu-toggle" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<div class="mobile-menu">
+  <nav class="nav" aria-label="Основное меню">
+    <a class="active" href="credits.html">Кредиты</a>
+    <a href="cards.html">Карты</a>
+    <a href="zaimy.html">Займы</a>
+    <a href="vklady.html">Вклады</a>
+    <a href="insurance.html">Страхование</a>
+    <a href="education.html">Образование</a>
+  </nav>
+  <button class="login-btn mobile-login-btn">
+    <img src="assets/login.svg" alt="login">
+    Войти
+  </button>
+</div>
+
+      <div class="header-actions">
+        <button class="login-btn">
+          <img src="assets/login.svg" alt="login">
+          Войти
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <main class="credits-page">
+    <div class="container">
+      <section class="credits-hero">
+        <div class="credits-hero-copy">
+          <h1>Все <span class="title-icon-inline"><img src="assets/money.svg" alt=""></span> кредитные предложения в <span>Москве</span></h1>
+          <p>Узнайте о самых выгодных кредитных ставках для физических лиц в 2025 году. Подберите идеальный кредит на FINBEFINE и получите профессиональные советы по кредитованию в банках России.</p>
+        </div>
+        <a class="credits-hero-banner image-banner" href="#!" aria-label="Срочная помощь получение кредита"><img src="assets/promo-credit.png" alt="Срочная помощь получение кредита"></a>
+      </section>
+
+      <section class="credit-filter card-lite">
+        <h2>Укажите параметры кредита</h2>
+<div class="credit-filter-row">
+  <label class="credit-control credit-amount-control"><span>Сумма</span><input class="credit-amount-input" type="text" value="500 000 ₽" inputmode="numeric" data-credit-amount-value><input class="credit-amount-range" type="range" min="50000" max="5000000" step="50000" value="500000" aria-label="Сумма кредита" data-credit-amount-range></label>
+  <label class="credit-control credit-term-control"><span>Срок в годах</span><div class="credit-term-box"><input type="text" value="5" inputmode="numeric"><select aria-label="Единица срока"><option>г.</option><option>мес.</option></select></div></label>
+  <label class="credit-control credit-goal-control"><span>Цель</span><select><option>Деньги на любые цели</option><option>Рефинансирование</option><option>Автокредит</option></select></label>
+  <button class="primary-btn">Подобрать</button>
+</div>
+        <div class="credit-tags">
+          <button type="button">Лучшие</button>
+          <button type="button">Онлайн-заявка</button>
+          <button type="button">Рефинансирование под залог</button>
+          <button type="button">Наличными</button>
+          <button type="button">Без отказа</button>
+          <button type="button" class="credit-tag-more">Еще <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+        </div>
+      </section>
+
+      <section class="credit-best-section">
+        <div class="section-head section-head-tight"><h2>Лучшие условия по кредитам в банках <span>Москвы</span></h2></div>
+          <div class="credit-best-list">
+            <article class="credit-best-row">
+              <div class="credit-bank">
+                <div class="credit-bank__info">
+                  <img src="assets/sovcombank-credit.svg" alt="">
+                  <div class="credit-bank__text">
+                    <strong>Прайм Выгодный</strong>
+                    <span>Кредит наличными</span>
+                  </div>
+              </div>
+              </div>
+              <b>до 5 млн ₽<small>до 5 лет</small></b>
+              <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+              <span>14.90%<small>Ставка в год</small></span>
+              <a class="primary-btn" href="#!">Получить кредит</a>
+              <div class="credit-bank__bottom">
+                <em>Получение онлайн-заявки</em>
+              </div>
+            </article>
+            <article class="credit-best-row">
+              <div class="credit-bank">
+                <div class="credit-bank__info">
+                  <img src="assets/rshb-credit.svg" alt="">
+                  <div class="credit-bank__text">
+                    <strong>Кредит со сниженным платежом</strong>
+                  <span>Россельхозбанк</span>
+                  </div>
+              </div>
+              </div>
+              <b>до 5 млн ₽<small>до 5 лет</small></b>
+              <span>28.412% - 42.650%<small>Полная стоимость кредита</small></span>
+              <span>от 27.50%<small>Ставка в год</small></span>
+              <a class="primary-btn" href="#!">Получить кредит</a>
+              <div class="credit-bank__bottom">
+                <em>Получение онлайн-заявки</em>
+              </div>
+            </article>
+            <article class="credit-best-row">
+              <div class="credit-bank">
+                <div class="credit-bank__info">
+                  <img src="assets/tcs-credit.svg" alt="">
+                  <div class="credit-bank__text">
+                    <strong>Наличными без залога</strong>
+                    <span>Безопасная доставка карты</span>
+                  </div>
+              </div>
+              </div>
+              <b>до 5 млн ₽<small>до 5 лет</small></b>
+              <span>29.802% - 38.402%<small>Полная стоимость кредита</small></span>
+              <span>от 29.90%<small>Ставка в год</small></span>
+              <a class="primary-btn" href="#!">Получить кредит</a>
+              <div class="credit-bank__bottom">
+                <em>Получение онлайн-заявки</em>
+                <em class="marketing">Реклама</em>
+              </div>
+            </article>
+            <article class="credit-best-row">
+              <div class="credit-bank">
+                <div class="credit-bank__info">
+                  <img src="assets/sberbank-credit.svg" alt="">
+                  <div class="credit-bank__text">
+                    <strong>Кредит на образование</strong>
+                    <span>С господдержкой</span>
+                  </div>
+              </div>
+              </div>
+              <b>от 1 ₽<small>до 15 лет</small></b>
+              <span>3.000%<small>Полная стоимость кредита</small></span>
+              <span>3.00%<small>Ставка в год</small></span>
+              <a class="primary-btn" href="#!">Получить кредит</a>
+              <div class="credit-bank__bottom">
+                <em>Получение онлайн-заявки</em>
+              </div>
+            </article>
+            <article class="credit-best-row">
+              <div class="credit-bank">
+                <div class="credit-bank__info">
+                  <img src="assets/alfabank-credit.svg" alt="">
+                  <div class="credit-bank__text">
+                    <strong>Наличными онлайн заявка</strong>
+                  <span>Альфа-Банк</span>
+                  </div>
+              </div>
+              </div>
+              <b>до 30 млн ₽<small>до 15 лет</small></b>
+              <span>21.153% - 46.990%<small>Полная стоимость кредита</small></span>
+              <span>от 18.80%<small>Ставка в год</small></span>
+              <a class="primary-btn" href="#!">Получить кредит</a>
+              <div class="credit-bank__bottom">
+                <em>Получение онлайн-заявки</em>
+              </div>
+            </article>
+          </div>
+      </section>
+
+      <section class="credit-list-section">
+        <div class="section-head section-head-tight"><h2>Мы подобрали для вас 252 потребительские кредиты в банках <span>Москвы</span></h2></div>
+        <div class="credit-table-toolbar">
+          <div class="credit-table-head"><span>Банк</span><span>Сумма и срок <img src="assets/sort-down.svg" alt="" aria-hidden="true"></span><span>Полная стоимость кредита</span><span>Ставка <img src="assets/sort-down.svg" alt="" aria-hidden="true"></span><span>Условия</span></div>
+          <button class="primary-btn credit-compare-btn" type="button"><img src="assets/scales.svg" alt="" aria-hidden="true">Сравнить лучшие</button>
+        </div>
+        <div class="credit-table-list">
+<article class="credit-offer-row">
+  <div class="credit-bank credit-bank--table">
+    <div class="credit-bank__info"><img src="assets/sovcombank-credit.svg" alt=""><div><strong>Прайм Выгодный</strong><span>Совкомбанк Лиц. №963</span></div></div>
+    <button class="credit-more" type="button">Еще 5 <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+  </div>
+  <b>до 5 млн ₽<small>до 5 лет</small></b>
+  <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+  <span>от 18.80%<small>Ставка в год</small></span>
+  <p>Возраст от 18 до 85 лет<br>Без справки о доходах<br>Без поручителей и залога</p>
+  <div class="credit-action"><small>40318 заявок</small><a class="primary-btn" href="#!">Узнать решение</a><button type="button">Преимущества <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button></div>
+</article>
+<article class="credit-offer-row">
+  <div class="credit-bank credit-bank--table">
+    <div class="credit-bank__info"><img src="assets/sovcombank-credit.svg" alt=""><div><strong>Прайм Выгодный</strong><span>Совкомбанк Лиц. №963</span></div></div>
+    <button class="credit-more" type="button">Еще 5 <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+  </div>
+  <b>до 5 млн ₽<small>до 5 лет</small></b>
+  <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+  <span>от 18.80%<small>Ставка в год</small></span>
+  <p>Возраст от 18 до 85 лет<br>Без справки о доходах<br>Без поручителей и залога</p>
+  <div class="credit-action"><small>40318 заявок</small><a class="primary-btn" href="#!">Узнать решение</a><button type="button">Преимущества <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button></div>
+</article>
+<article class="credit-offer-row">
+  <div class="credit-bank credit-bank--table">
+    <div class="credit-bank__info"><img src="assets/sovcombank-credit.svg" alt=""><div><strong>Прайм Выгодный</strong><span>Совкомбанк Лиц. №963</span></div></div>
+    <button class="credit-more" type="button">Еще 5 <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+  </div>
+  <b>до 5 млн ₽<small>до 5 лет</small></b>
+  <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+  <span>от 18.80%<small>Ставка в год</small></span>
+  <p>Возраст от 18 до 85 лет<br>Без справки о доходах<br>Без поручителей и залога</p>
+  <div class="credit-action"><small>40318 заявок</small><a class="primary-btn" href="#!">Узнать решение</a><button type="button">Преимущества <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button></div>
+</article>
+<article class="credit-offer-row">
+  <div class="credit-bank credit-bank--table">
+    <div class="credit-bank__info"><img src="assets/sovcombank-credit.svg" alt=""><div><strong>Прайм Выгодный</strong><span>Совкомбанк Лиц. №963</span></div></div>
+    <button class="credit-more" type="button">Еще 5 <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+  </div>
+  <b>до 5 млн ₽<small>до 5 лет</small></b>
+  <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+  <span>от 18.80%<small>Ставка в год</small></span>
+  <p>Возраст от 18 до 85 лет<br>Без справки о доходах<br>Без поручителей и залога</p>
+  <div class="credit-action"><small>40318 заявок</small><a class="primary-btn" href="#!">Узнать решение</a><button type="button">Преимущества <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button></div>
+</article>
+<article class="credit-offer-row">
+  <div class="credit-bank credit-bank--table">
+    <div class="credit-bank__info"><img src="assets/sovcombank-credit.svg" alt=""><div><strong>Прайм Выгодный</strong><span>Совкомбанк Лиц. №963</span></div></div>
+    <button class="credit-more" type="button">Еще 5 <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+  </div>
+  <b>до 5 млн ₽<small>до 5 лет</small></b>
+  <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+  <span>от 18.80%<small>Ставка в год</small></span>
+  <p>Возраст от 18 до 85 лет<br>Без справки о доходах<br>Без поручителей и залога</p>
+  <div class="credit-action"><small>40318 заявок</small><a class="primary-btn" href="#!">Узнать решение</a><button type="button">Преимущества <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button></div>
+</article>
+<article class="credit-offer-row">
+  <div class="credit-bank credit-bank--table">
+    <div class="credit-bank__info"><img src="assets/sovcombank-credit.svg" alt=""><div><strong>Прайм Выгодный</strong><span>Совкомбанк Лиц. №963</span></div></div>
+    <button class="credit-more" type="button">Еще 5 <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+  </div>
+  <b>до 5 млн ₽<small>до 5 лет</small></b>
+  <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+  <span>от 18.80%<small>Ставка в год</small></span>
+  <p>Возраст от 18 до 85 лет<br>Без справки о доходах<br>Без поручителей и залога</p>
+  <div class="credit-action"><small>40318 заявок</small><a class="primary-btn" href="#!">Узнать решение</a><button type="button">Преимущества <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button></div>
+</article>
+<article class="credit-offer-row">
+  <div class="credit-bank credit-bank--table">
+    <div class="credit-bank__info"><img src="assets/sovcombank-credit.svg" alt=""><div><strong>Прайм Выгодный</strong><span>Совкомбанк Лиц. №963</span></div></div>
+    <button class="credit-more" type="button">Еще 5 <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button>
+  </div>
+  <b>до 5 млн ₽<small>до 5 лет</small></b>
+  <span>14.883% - 14.901%<small>Полная стоимость кредита</small></span>
+  <span>от 18.80%<small>Ставка в год</small></span>
+  <p>Возраст от 18 до 85 лет<br>Без справки о доходах<br>Без поручителей и залога</p>
+  <div class="credit-action"><small>40318 заявок</small><a class="primary-btn" href="#!">Узнать решение</a><button type="button">Преимущества <img src="assets/arrow-bottom.svg" alt="" aria-hidden="true"></button></div>
+</article>
+        </div>
+        <button class="show-more-btn" type="button">Показать еще</button>
+      </section>
+
+      <section class="news-section credit-news">
+        <div class="section-head section-head-tight"><h2>Новости в области кредитования</h2></div>
+        <article class="news-card">
+          <div class="news-col news-feature"><h3>Лента новостей</h3><h4>Кто рискует остаться без пенсии: разъяснения юриста.</h4><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div><p>Несмотря на то что право на страховую пенсию закреплено федеральным законом, для её получения необходимо выполнить ряд условий.</p><a href="#" class="section-link">Читать полностью</a><img src="assets/news-old-man.png" alt="Новость"></div>
+          <div class="news-col news-list"><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div>
+          <div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div>
+          <div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div>
+          <div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div></div>
+          <div class="news-col news-slider" data-news-slider><div class="news-slider-stack"><img class="slider-layer slider-layer-back slider-layer-back-two" data-slider-back-two src="assets/hero-travel.png" alt=""><img class="slider-layer slider-layer-back slider-layer-back-one" data-slider-back-one src="assets/news-old-man.png" alt=""><img class="slider-layer slider-layer-front" data-slider-image src="assets/news-old-woman.png" alt="Новость"></div><div class="slider-nav"><button class="slider-arrow" type="button" data-slider-prev aria-label="Предыдущая новость">←</button><span class="slider-count" data-slider-current>1</span><div class="slider-bar"><i data-slider-progress></i></div><span data-slider-total>5</span><button class="slider-arrow" type="button" data-slider-next aria-label="Следующая новость">→</button></div></div>
+        </article>
+      </section>
+
+      <section class="credit-reviews-section">
+        <div class="section-head section-head-tight"><h2>Отзывы о кредитах</h2></div>
+        <div class="credit-reviews-slider" data-credit-reviews-slider>
+          <button class="credit-review-arrow credit-review-arrow--prev" type="button" aria-label="Предыдущие отзывы" data-credit-reviews-prev><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+          <div class="credit-review-viewport">
+            <div class="credit-review-track" data-credit-reviews-track>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+            </div>
+          </div>
+          <button class="credit-review-arrow credit-review-arrow--next" type="button" aria-label="Следующие отзывы" data-credit-reviews-next><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+        </div>
+        <div class="credit-leave-review"><h3>Оставьте отзыв</h3><p>Помогите другим пользователям выбрать лучший банк</p><button class="primary-btn">Написать отзыв</button></div>
+      </section>
+
+      <section class="credit-seo card-lite"><h2>&lt;h2&gt;Заголовок&lt;/h2&gt;</h2><p>Вот вам яркий пример современных тенденций: высокотехнологичная концепция общественного уклада способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности.</p><p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности играет важную роль в формировании первоочередных требований.</p></section>
+
+      <section class="credit-question card-lite"><h2>Задать вопрос о кредите</h2><div class="question-card"><div class="question-card__label">Эксперт направления кредитование</div><div class="expert"><img src="assets/expert-avatar.png" alt=""><div><strong>Жорж Милославский</strong><span>Ведущий эксперт по кредитным продуктам Finbefine</span></div></div><div class="question-card__action"><button class="primary-btn">Задать вопрос</button></div></div></section>
+    </div>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <a href="index.html" class="brand footer-brand">
+          <img class="brand-mark" src="assets/logo.svg" alt="FINBEFINE.RU" />
+        </a>
+        <p>2005—2025 "Название организации". При использовании материалов гиперссылка на finbefine.ru обязательна.</p>
+        <p>Свидетельство на товарный знак №123456 от 15.05.2025 г.</p>
+        <div class="footer-links">
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Безопасность</a>
+        </div>
+        <p>Реквизиты "Название компании": ИНН: 1234567890; ОГРН: 1234567891011; Адрес: 123456, г. Москва, улица Уличная, д. 1, этаж 1; ОКВЭД: 12.34</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-socials" aria-label="Социальные сети">
+          <a href="#!" aria-label="Дзен"><img src="assets/dzen.svg" alt=""></a>
+          <a href="#!" aria-label="ВКонтакте"><img src="assets/vk.svg" alt=""></a>
+          <a href="#!" aria-label="Telegram"><img src="assets/tg.svg" alt=""></a>
+        </nav>
+        <div class="support-title">Служба поддержки клиентов:</div>
+        <div class="footer-support">
+          <div class="footer-support-main">
+            <a href="mailto:support@finbefine.ru">support@finbefine.ru</a>
+            <a href="tel:88001234567">8 (800) 123-45-67</a>
+            <span>Пн-пт с 10:00 до 17:00</span>
+          </div>
+          <address>123456, г. Москва, улица Уличная, д. 1, этаж 1</address>
+        </div>
+        <div class="footer-bottom-row">
+          <div class="copy">© finbefine.ru 2025</div>
+          <div class="age-badge" aria-label="Возрастное ограничение 16 плюс">16+</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function setupTabs(tabSelector, panelSelector, tabAttribute, panelAttribute) {
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(tabSelector));
+        var panels = Array.prototype.slice.call(document.querySelectorAll(panelSelector));
+
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            var target = tab.getAttribute(tabAttribute);
+
+            tabs.forEach(function (item) {
+              var isActive = item === tab;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            panels.forEach(function (panel) {
+              panel.classList.toggle('active', panel.getAttribute(panelAttribute) === target);
+            });
+          });
+        });
+      }
+
+      setupTabs('[data-offer-tab]', '[data-offer-panel]', 'data-offer-tab', 'data-offer-panel');
+      setupTabs('[data-bank-tab]', '[data-bank-panel]', 'data-bank-tab', 'data-bank-panel');
+      setupTabs('[data-review-tab]', '[data-review-panel]', 'data-review-tab', 'data-review-panel');
+      setupTabs('[data-news-tab]', '[data-news-panel]', 'data-news-tab', 'data-news-panel');
+
+      var languageSelect = document.querySelector('[data-language-select]');
+      if (languageSelect) {
+        var languageToggle = languageSelect.querySelector('.language-toggle');
+        var languageCurrent = languageSelect.querySelector('[data-language-current]');
+        var languageFlag = languageSelect.querySelector('[data-language-flag]');
+        var languageOptions = Array.prototype.slice.call(languageSelect.querySelectorAll('.language-option'));
+
+        function closeLanguageMenu() {
+          languageSelect.classList.remove('open');
+          languageToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        languageToggle.addEventListener('click', function () {
+          var isOpen = languageSelect.classList.toggle('open');
+          languageToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        languageOptions.forEach(function (option) {
+          option.addEventListener('click', function () {
+            languageCurrent.textContent = option.getAttribute('data-lang-value');
+            document.documentElement.setAttribute('lang', option.getAttribute('data-lang-code'));
+            languageFlag.className = 'language-flag ' + option.getAttribute('data-flag-class');
+
+            languageOptions.forEach(function (item) {
+              var isActive = item === option;
+              item.classList.toggle('active', isActive);
+              item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            closeLanguageMenu();
+          });
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!languageSelect.contains(event.target)) {
+            closeLanguageMenu();
+          }
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            closeLanguageMenu();
+          }
+        });
+      }
+
+      var newsSlider = document.querySelector('[data-news-slider]');
+      if (newsSlider) {
+        var slides = [
+          { src: './assets/figma/news-old-woman.png', alt: 'Новость о пенсиях' },
+          { src: './assets/figma/news-old-man.png', alt: 'Новость о пенсионных условиях' },
+          { src: './assets/hero-man.png', alt: 'Финансовые продукты' },
+          { src: './assets/hero-travel.png', alt: 'Туристическое страхование' },
+          { src: './assets/promo-credit.png', alt: 'Помощь с кредитом' }
+        ];
+        var currentSlide = 0;
+        var isSliderAnimating = false;
+        var sliderStack = newsSlider.querySelector('.news-slider-stack');
+        var frontImage = newsSlider.querySelector('[data-slider-image]');
+        var backOneImage = newsSlider.querySelector('[data-slider-back-one]');
+        var backTwoImage = newsSlider.querySelector('[data-slider-back-two]');
+        var currentLabel = newsSlider.querySelector('[data-slider-current]');
+        var totalLabel = newsSlider.querySelector('[data-slider-total]');
+        var progress = newsSlider.querySelector('[data-slider-progress]');
+        var prevButton = newsSlider.querySelector('[data-slider-prev]');
+        var nextButton = newsSlider.querySelector('[data-slider-next]');
+
+        function getSlide(index) {
+          return slides[(index + slides.length) % slides.length];
+        }
+
+        function setImage(image, slide) {
+          image.src = slide.src;
+          image.alt = slide.alt;
+        }
+
+        function updateNewsSlider(direction) {
+          setImage(frontImage, getSlide(currentSlide));
+          setImage(backOneImage, getSlide(currentSlide + 1));
+          setImage(backTwoImage, getSlide(currentSlide + 2));
+          currentLabel.textContent = String(currentSlide + 1);
+          totalLabel.textContent = String(slides.length);
+          progress.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+          if (direction) {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            void sliderStack.offsetWidth;
+            sliderStack.classList.add(direction === 'prev' ? 'is-prev' : 'is-next');
+          }
+        }
+
+        function moveNewsSlider(step, direction) {
+          if (isSliderAnimating) {
+            return;
+          }
+          isSliderAnimating = true;
+          currentSlide = (currentSlide + step + slides.length) % slides.length;
+          updateNewsSlider(direction);
+          window.setTimeout(function () {
+            sliderStack.classList.remove('is-next', 'is-prev');
+            isSliderAnimating = false;
+          }, 480);
+        }
+
+        prevButton.addEventListener('click', function () {
+          moveNewsSlider(-1, 'prev');
+        });
+
+        nextButton.addEventListener('click', function () {
+          moveNewsSlider(1, 'next');
+        });
+
+        updateNewsSlider();
+      }
+
+
+
+      var creditReviewsSlider = document.querySelector("[data-credit-reviews-slider]");
+
+      if (creditReviewsSlider) {
+        var reviewsTrack = creditReviewsSlider.querySelector("[data-credit-reviews-track]");
+        var reviewsPrev = creditReviewsSlider.querySelector("[data-credit-reviews-prev]");
+        var reviewsNext = creditReviewsSlider.querySelector("[data-credit-reviews-next]");
+        var reviewCards = Array.prototype.slice.call(reviewsTrack.querySelectorAll(".review-card"));
+        var reviewIndex = 0;
+
+        function getVisibleReviews() {
+          return window.matchMedia("(max-width: 980px)").matches ? 1 : 3;
+        }
+
+        function updateCreditReviewsSlider() {
+          var visible = getVisibleReviews();
+          var maxIndex = Math.max(0, reviewCards.length - visible);
+          reviewIndex = Math.min(reviewIndex, maxIndex);
+          var cardWidth = reviewCards[0] ? reviewCards[0].getBoundingClientRect().width : 0;
+          var gap = parseFloat(getComputedStyle(reviewsTrack).gap) || 0;
+          reviewsTrack.style.transform = "translateX(" + (reviewIndex * -(cardWidth + gap)) + "px)";
+          reviewsPrev.disabled = reviewIndex === 0;
+          reviewsNext.disabled = reviewIndex === maxIndex;
+        }
+
+        reviewsPrev.addEventListener("click", function () {
+          reviewIndex -= 1;
+          updateCreditReviewsSlider();
+        });
+
+        reviewsNext.addEventListener("click", function () {
+          reviewIndex += 1;
+          updateCreditReviewsSlider();
+        });
+
+        window.addEventListener("resize", updateCreditReviewsSlider);
+        updateCreditReviewsSlider();
+      }
+
+      var creditAmountRange = document.querySelector("[data-credit-amount-range]");
+      var creditAmountValue = document.querySelector("[data-credit-amount-value]");
+
+      if (creditAmountRange && creditAmountValue) {
+        function formatCreditAmount(value) {
+          return Number(value).toLocaleString("ru-RU") + " ₽";
+        }
+
+        function updateCreditAmount() {
+          var min = Number(creditAmountRange.min);
+          var max = Number(creditAmountRange.max);
+          var value = Number(creditAmountRange.value);
+          var progress = ((value - min) / (max - min)) * 100;
+          creditAmountValue.value = formatCreditAmount(value);
+          creditAmountRange.style.setProperty("--credit-progress", progress + "%");
+        }
+
+        creditAmountRange.addEventListener("input", updateCreditAmount);
+        updateCreditAmount();
+      }
+
+      var bankSearch = document.querySelector('.bank-search');
+      var bankTiles = Array.prototype.slice.call(document.querySelectorAll('[data-bank-name]'));
+      var bankEmpty = document.querySelector('.bank-empty');
+
+      if (bankSearch && bankTiles.length && bankEmpty) {
+        function normalizeBankText(value) {
+          return value.toLowerCase().replace(/[\s\-]+/g, '');
+        }
+
+        bankSearch.addEventListener('input', function () {
+          var query = normalizeBankText(bankSearch.value.trim());
+          var visibleCount = 0;
+
+          bankTiles.forEach(function (tile) {
+            var name = normalizeBankText(tile.getAttribute('data-bank-name'));
+            var isVisible = !query || name.indexOf(query) !== -1;
+            tile.hidden = !isVisible;
+            if (isVisible) {
+              visibleCount += 1;
+            }
+          });
+
+          bankEmpty.hidden = visibleCount > 0;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
