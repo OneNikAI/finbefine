@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FINBEFINE — Каталог квартир</title>
+  <title>FINBEFINE — Рейтинг операторов сотовой связи</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="./style.css?v=69">
+  <link rel="stylesheet" href="./style.css?v=70">
 </head>
 <body>
   <header class="topbar">
@@ -81,7 +81,7 @@
     <a href="vklady.html">Вклады</a>
     <a href="insurance.html">Страхование</a>
     <a href="education.html">Образование</a>
-    <a class="active" href="realty.html">Недвижимость</a>
+    <a href="realty.html">Недвижимость</a>
   </nav>
   <button class="login-btn mobile-login-btn">
     <img src="assets/login.svg" alt="login">
@@ -97,332 +97,256 @@
       </div>
     </div>
   </header>
-<main class="realty-page realty-results-page">
+<main class="operators-page">
   <div class="container">
-    <section class="realty-search-section">
-<h2>Подбор жилья</h2>
-<div class="realty-search-card">
-  <div class="realty-mode-row" role="tablist" aria-label="Тип сделки" data-realty-modes>
-    <button class="realty-mode active" type="button" aria-selected="true" data-realty-mode="buy">Купить</button>
-    <button class="realty-mode" type="button" aria-selected="false" data-realty-mode="rent">Снять</button>
-  </div>
-  <div class="realty-search-row">
-    <label class="realty-field realty-field-select">
-      <select aria-label="Тип недвижимости" data-realty-type-select>
-        <option>Квартира в новостройке</option>
-        <option>Квартира во вторичке</option>
-        <option>Дом</option>
-        <option>Земельный участок</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-select">
-      <select aria-label="Количество комнат">
-        <option>Комнат</option>
-        <option>1 комната</option>
-        <option>2 комнаты</option>
-        <option>3 комнаты</option>
-        <option>4+ комнаты</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-select">
-      <select aria-label="Цена">
-        <option>Цена</option>
-        <option>до 5 млн ₽</option>
-        <option>5-10 млн ₽</option>
-        <option>10-20 млн ₽</option>
-        <option>от 20 млн ₽</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-search"><img src="assets/search.svg" alt=""><input type="search" placeholder="ЖК, адрес, метро, район" data-realty-search-input></label>
-    <button class="primary-btn" type="button" onclick="window.location.href='realty-search.html'">Найти</button>
-  </div>
-</div>
+    <section class="operators-hero">
+      <div class="operators-hero-copy">
+        <h1>Рейтинг сотовых <span class="operators-title-icon"><img src="assets/mobile.svg" alt=""></span> операторов<br>— мобильные операторы 2025</h1>
+        <p>На территории России действует сразу несколько мобильных операторов, которые предлагают большой выбор тарифов мобильного и домашнего интернета для людей с разными потребностями и задачами.</p>
+      </div>
+      <a class="operators-hero-banner" href="#!" aria-label="Безлимитный интернет">
+        <img src="assets/operator-banner.png" alt="Безлимитный интернет в твоем телефоне">
+      </a>
     </section>
-    <section class="realty-results-section">
-      <h1>Каталог квартир в новостройках Москвы</h1>
-      <div class="realty-results-list">
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-2.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-3.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-4.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-4.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <div class="realty-results-banners">
-        <a href="#!"><img src="assets/realty-banner-1.png" alt="Риэлтор в Самаре"></a>
-        <a href="#!"><img src="assets/realty-banner-2.png" alt="Жилой комплекс"></a>
+
+    <section class="operators-rating-section">
+      <h2>Рейтинг мобильных операторов</h2>
+      <div class="operators-grid">
+        <article class="operator-card">
+  <div class="operator-card-top">
+    <div class="operator-logo-wrap"><img src="assets/mts.png" alt="МТС"></div>
+    <dl class="operator-facts">
+      <div><dt>Год основания:</dt><dd>1993 г.</dd></div>
+      <div><dt>Количество абонентов:</dt><dd>Более 86 млн человек.</dd></div>
+      <div><dt>Виртуальный ли оператор:</dt><dd>Нет.</dd></div>
+    </dl>
+  </div>
+  <div class="operator-card-label blue">Преимущества</div>
+  <ul class="operator-list"><li>Большой выбор тарифов по выгодным ценам.</li><li>Тариф с безлимитным мобильным интернетом.</li><li>Широкая сеть покрытия.</li><li>Высокое качество связи и интернета.</li><li>Быстрое подключение от 1 дня.</li></ul>
+  <div class="operator-card-label green">Особенности</div>
+  <ul class="operator-list operator-list-short"><li>Является лидером по средней скорости интернета (93 Мбит/с).</li><li>Можно подключить до 12 устройств одновременно.</li><li>Благодаря широкому покрытию обеспечивает качественное соединение.</li></ul>
+  <a class="operator-card-button" href="#!">На сайт оператора</a>
+</article>
+
+<article class="operator-card">
+  <div class="operator-card-top">
+    <div class="operator-logo-wrap"><img src="assets/megafon.png" alt="Мегафон"></div>
+    <dl class="operator-facts">
+      <div><dt>Год основания:</dt><dd>2002 г.</dd></div>
+      <div><dt>Количество абонентов:</dt><dd>Более 77 млн человек.</dd></div>
+      <div><dt>Виртуальный ли оператор:</dt><dd>Нет.</dd></div>
+    </dl>
+  </div>
+  <div class="operator-card-label blue">Преимущества</div>
+  <ul class="operator-list"><li>Роуминг доступен по всему миру.</li><li>Быстрая скорость интернета.</li><li>Большой выбор решений для корпоративных клиентов.</li><li>Поддержка 5G в крупных городах.</li></ul>
+  <div class="operator-card-label green">Особенности</div>
+  <ul class="operator-list operator-list-short"><li>Является лидером по скорости и покрытию среди операторов.</li></ul>
+  <a class="operator-card-button" href="#!">На сайт оператора</a>
+</article>
+
+<article class="operator-card">
+  <div class="operator-card-top">
+    <div class="operator-logo-wrap"><img src="assets/t2.png" alt="T2"></div>
+    <dl class="operator-facts">
+      <div><dt>Год основания:</dt><dd>2014 г.</dd></div>
+      <div><dt>Количество абонентов:</dt><dd>Более 48 млн человек.</dd></div>
+      <div><dt>Виртуальный ли оператор:</dt><dd>Нет.</dd></div>
+    </dl>
+  </div>
+  <div class="operator-card-label blue">Преимущества</div>
+  <ul class="operator-list"><li>Большой выбор доступных тарифов.</li><li>Тарифы с безлимитным интернетом по выгодным ценам.</li><li>Поддержка 5G в крупных городах.</li></ul>
+  <div class="operator-card-label green">Особенности</div>
+  <ul class="operator-list operator-list-short"><li>Вы можете настроить тариф под свои индивидуальные потребности.</li></ul>
+  <a class="operator-card-button" href="#!">На сайт оператора</a>
+</article>
+
+<article class="operator-card">
+  <div class="operator-card-top">
+    <div class="operator-logo-wrap"><img src="assets/beeline.png" alt="Билайн"></div>
+    <dl class="operator-facts">
+      <div><dt>Год основания:</dt><dd>1992 г.</dd></div>
+      <div><dt>Количество абонентов:</dt><dd>Более 44 млн человек.</dd></div>
+      <div><dt>Виртуальный ли оператор:</dt><dd>Нет.</dd></div>
+    </dl>
+  </div>
+  <div class="operator-card-label blue">Преимущества</div>
+  <ul class="operator-list"><li>Большой выбор тарифов мобильного и домашнего интернета.</li><li>Пакетные тарифы с более выгодными предложениями.</li><li>Поддержка 5G в крупных городах.</li></ul>
+  <div class="operator-card-label green">Особенности</div>
+  <ul class="operator-list operator-list-short"><li>Подходит для роутеров и модемов.</li></ul>
+  <a class="operator-card-button" href="#!">На сайт оператора</a>
+</article>
+
+<article class="operator-card">
+  <div class="operator-card-top">
+    <div class="operator-logo-wrap"><img src="assets/yota.png" alt="Yota"></div>
+    <dl class="operator-facts">
+      <div><dt>Год основания:</dt><dd>2007 г.</dd></div>
+      <div><dt>Количество абонентов:</dt><dd>Около 7 млн человек.</dd></div>
+      <div><dt>Виртуальный ли оператор:</dt><dd>Да.</dd></div>
+    </dl>
+  </div>
+  <div class="operator-card-label blue">Преимущества</div>
+  <ul class="operator-list"><li>Большое количество тарифов с безлимитным интернетом.</li><li>Все звонки по России без роуминга.</li><li>Бесплатная доставка сим-карты.</li></ul>
+  <div class="operator-card-label green">Особенности</div>
+  <ul class="operator-list operator-list-short"><li>Возможность настройки гибкого тарифа под свои потребности.</li></ul>
+  <a class="operator-card-button" href="#!">На сайт оператора</a>
+</article>
+
+<article class="operator-card">
+  <div class="operator-card-top">
+    <div class="operator-logo-wrap"><img src="assets/tmobile.png" alt="T-Банк Мобайл"></div>
+    <dl class="operator-facts">
+      <div><dt>Год основания:</dt><dd>2016 г.</dd></div>
+      <div><dt>Количество абонентов:</dt><dd>Около 6 млн человек.</dd></div>
+      <div><dt>Виртуальный ли оператор:</dt><dd>Да.</dd></div>
+    </dl>
+  </div>
+  <div class="operator-card-label blue">Преимущества</div>
+  <ul class="operator-list"><li>Доступная стоимость для больших объемов интернета.</li><li>Гибкие условия для тарифов.</li><li>Широкая зона покрытия.</li><li>Бонусы для пользователей Т-Банка.</li><li>Быстрое подключение от 1 дня.</li></ul>
+  <div class="operator-card-label green">Особенности</div>
+  <ul class="operator-list operator-list-short"><li>Может быть использован в модемах и роутерах.</li><li>Высокая скорость интернета даже для мобильных устройств.</li></ul>
+  <a class="operator-card-button" href="#!">На сайт оператора</a>
+</article>
+
+<article class="operator-card">
+  <div class="operator-card-top">
+    <div class="operator-logo-wrap"><img src="assets/sbermobile.png" alt="Сбер Мобайл"></div>
+    <dl class="operator-facts">
+      <div><dt>Год основания:</dt><dd>2016 г.</dd></div>
+      <div><dt>Количество абонентов:</dt><dd>Около 2,3 млн человек.</dd></div>
+      <div><dt>Виртуальный ли оператор:</dt><dd>Да.</dd></div>
+    </dl>
+  </div>
+  <div class="operator-card-label blue">Преимущества</div>
+  <ul class="operator-list"><li>Большой выбор выгодных тарифов.</li><li>Бонусы и акции пользователям Сбера.</li><li>Стабильное и качественное соединение.</li><li>30 ГБ интернета за переход со своим номером каждый месяц.</li></ul>
+  <div class="operator-card-label green">Особенности</div>
+  <ul class="operator-list operator-list-short"><li>Более 280 тысяч вышек по всей России.</li></ul>
+  <a class="operator-card-button" href="#!">На сайт оператора</a>
+</article>
+
       </div>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-2.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-3.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-4.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-4.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-2.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-3.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-4.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-4.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      </div>
-      <button class="realty-results-more primary-btn" type="button">Загрузить еще</button>
+    </section>
+
+    <section class="operators-tariffs-section">
+<div class="operators-tariffs-title-row">
+  <h2>Сравнение тарифных планов мобильных операторов</h2>
+</div>
+<div class="operator-tariff-head-row">
+  <div class="operator-tariff-head" aria-hidden="true">
+    <span>Оператор, Тариф</span>
+    <span>Условия</span>
+    <span>Стоимость*</span>
+  </div>
+  <p>*Цены актуальны на февраль 2025 и могут отличаться. Приведены цены для Москвы и МО.</p>
+</div>
+      <div class="operator-tariff-group">Безлимитная связь</div>
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>1200 минут;</li><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, ULTRA</div>
+  <ul class="tariff-terms"><li>5000 минут;</li><li>1000 сообщений;</li><li>60 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">2900 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>1200 минут;</li><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+<div class="operator-tariff-group">Семейные тарифы</div>
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, ULTRA</div>
+  <ul class="tariff-terms"><li>5000 минут;</li><li>1000 сообщений;</li><li>60 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">2900 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>1200 минут;</li><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+<div class="operator-tariff-group">Детские тарифы</div>
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>1200 минут;</li><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, ULTRA</div>
+  <ul class="tariff-terms"><li>5000 минут;</li><li>1000 сообщений;</li><li>60 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">2900 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>1200 минут;</li><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+<div class="operator-tariff-group">Безлимитный интернет</div>
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, ULTRA</div>
+  <ul class="tariff-terms"><li>5000 минут;</li><li>1000 сообщений;</li><li>60 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">2900 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>1200 минут;</li><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
+<div class="operator-tariff-group">Пакетные тарифы с безлимитным интернетом</div>
+<article class="operator-tariff-card">
+  <div class="tariff-logo"><img src="assets/mts.png" alt="МТС"></div>
+  <div class="tariff-name">МТС, “МТС Супер”</div>
+  <ul class="tariff-terms"><li>1200 минут;</li><li>50 сообщений;</li><li>50 ГБ интернета + безлимит на мессенджеры и социальные сети.</li></ul>
+  <div class="tariff-price">1150 руб./мес.</div>
+  <a class="tariff-button" href="#!">На сайт оператора</a>
+</article>
+
     </section>
   </div>
 </main>

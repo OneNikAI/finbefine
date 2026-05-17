@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FINBEFINE — Каталог квартир</title>
+  <title>FINBEFINE — Объект недвижимости</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -97,333 +97,55 @@
       </div>
     </div>
   </header>
-<main class="realty-page realty-results-page">
+
+<main class="realty-page realty-object-page">
   <div class="container">
-    <section class="realty-search-section">
-<h2>Подбор жилья</h2>
-<div class="realty-search-card">
-  <div class="realty-mode-row" role="tablist" aria-label="Тип сделки" data-realty-modes>
-    <button class="realty-mode active" type="button" aria-selected="true" data-realty-mode="buy">Купить</button>
-    <button class="realty-mode" type="button" aria-selected="false" data-realty-mode="rent">Снять</button>
-  </div>
-  <div class="realty-search-row">
-    <label class="realty-field realty-field-select">
-      <select aria-label="Тип недвижимости" data-realty-type-select>
-        <option>Квартира в новостройке</option>
-        <option>Квартира во вторичке</option>
-        <option>Дом</option>
-        <option>Земельный участок</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-select">
-      <select aria-label="Количество комнат">
-        <option>Комнат</option>
-        <option>1 комната</option>
-        <option>2 комнаты</option>
-        <option>3 комнаты</option>
-        <option>4+ комнаты</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-select">
-      <select aria-label="Цена">
-        <option>Цена</option>
-        <option>до 5 млн ₽</option>
-        <option>5-10 млн ₽</option>
-        <option>10-20 млн ₽</option>
-        <option>от 20 млн ₽</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-search"><img src="assets/search.svg" alt=""><input type="search" placeholder="ЖК, адрес, метро, район" data-realty-search-input></label>
-    <button class="primary-btn" type="button" onclick="window.location.href='realty-search.html'">Найти</button>
-  </div>
-</div>
-    </section>
-    <section class="realty-results-section">
-      <h1>Каталог квартир в новостройках Москвы</h1>
-      <div class="realty-results-list">
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-2.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-3.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
+    <section class="realty-object-layout">
+      <div class="realty-object-main">
+        <section class="realty-object-hero">
+          <h1>Продается 2-комн. квартира, 60 м²<br>в <a href="#">ЖК «Voxhall (Воксхолл)»</a></h1>
+          <p class="realty-object-address">Москва, ЦАО, р-н Замоскворечье, Летниковская ул., 8C1</p>
+          <div class="realty-object-metro" aria-label="Ближайшие станции метро"><span class="metro-green">Павелецкая · 10 минут пешком.</span><span class="metro-gray">Серпуховская · 23 минуты пешком.</span><span class="metro-purple">Пролетарская · 25 минут пешком.</span></div>
+          <div class="object-gallery" data-object-gallery>
+            <div class="object-gallery-main">
+              <button class="object-plan-button" type="button" data-object-plan><span>Планировка</span><img src="assets/plan.svg" alt=""></button>
+              <button class="object-full-button" type="button" aria-label="Открыть фото полностью"><img src="assets/realty-icon-blue.svg" alt=""></button>
+              <button class="object-gallery-main-arrow" type="button" data-object-gallery-next aria-label="Следующее фото">›</button>
+              <img class="object-gallery-main-img" src="assets/zhk-image-1.png" alt="ЖК Voxhall" data-object-gallery-main>
             </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
+            <div class="object-gallery-thumbs-wrap">
+              <button class="object-gallery-edge object-gallery-edge-left" type="button" data-object-gallery-prev aria-label="Предыдущее фото">←</button>
+              <div class="object-gallery-thumbs"><button class="object-gallery-thumb" type="button" data-object-thumb="0" aria-label="Показать планировку"><img src="assets/kvartira-image-4.png" alt="Планировка квартиры"></button>
+<button class="object-gallery-thumb is-active" type="button" data-object-thumb="1" aria-label="Показать фото 1"><img src="assets/zhk-image-1.png" alt="ЖК Voxhall"></button>
+<button class="object-gallery-thumb" type="button" data-object-thumb="2" aria-label="Показать фото 2"><img src="assets/zhk-image-2.png" alt="Корпус жилого комплекса"></button>
+<button class="object-gallery-thumb" type="button" data-object-thumb="3" aria-label="Показать фото 3"><img src="assets/kvartira-image-2.png" alt="Гостиная"></button>
+<button class="object-gallery-thumb" type="button" data-object-thumb="4" aria-label="Показать фото 4"><img src="assets/kvartira-image-3.png" alt="Кухня"></button></div>
+              <button class="object-gallery-edge object-gallery-edge-right" type="button" data-object-gallery-next aria-label="Следующее фото">→</button>
             </div>
           </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
+        </section>
+        <section class="realty-object-section realty-flat-info">
+          <h2>О квартире</h2>
+          <div class="flat-features-grid">
+            <div class="flat-feature"><img src="assets/skills-1.svg" alt=""><span>Общая площадь</span><strong>60 м²</strong></div><div class="flat-feature"><img src="assets/skills-2.svg" alt=""><span>Жилая площадь</span><strong>35 м²</strong></div><div class="flat-feature"><img src="assets/skills-3.svg" alt=""><span>Площадь кухни</span><strong>15,7 м²</strong></div><div class="flat-feature"><img src="assets/skills-4.svg" alt=""><span>Этаж</span><strong>5 из 25</strong></div><div class="flat-feature"><img src="assets/skills-5.svg" alt=""><span>Год сдачи</span><strong>2025</strong></div><div class="flat-feature"><img src="assets/skills-6.svg" alt=""><span>Дом</span><strong>Сдан</strong></div><div class="flat-feature"><img src="assets/skills-7.svg" alt=""><span>Отделка</span><strong>Чистовая</strong></div>
           </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-4.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-4.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <div class="realty-results-banners">
-        <a href="#!"><img src="assets/realty-banner-1.png" alt="Риэлтор в Самаре"></a>
-        <a href="#!"><img src="assets/realty-banner-2.png" alt="Жилой комплекс"></a>
+          <div class="flat-description"><p>Функциональная 2-комнатная квартира в дизайнерском клубном квартале Voxhall — современном проекте в историческом Замоскворечье. Окна выходят на три стороны, а продуманная планировка обеспечивает максимум комфорта. Сдача — IV кв. 2025 года.</p><p>Планировка:<br>- Изолированная спальня 15,3 м²<br>- Вторая комната 9,9 м² — для детской, кабинета или зоны отдыха<br>- Кухня-гостиная 15,7 м²<br>- Раздельный санузел<br>- Окна на три стороны света</p><p>О комплексе:<br>- Приватные дворы с озеленением и местами для отдыха<br>- Кафе, культурные и креативные пространства на территории</p><p>Позвоните, чтобы узнать подробности и выбрать лучшее решение.</p></div>
+        </section>
       </div>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-2.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-3.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-4.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-4.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-2.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-3.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      <article class="realty-result-card">
-        <div class="realty-result-gallery">
-          <img class="realty-result-main-img" src="assets/kvartira-image-1.png" alt="3-комнатная квартира">
-          <span class="realty-result-label">Новостройка от застройщика</span>
-          <span class="realty-result-gallery-icon"><img src="assets/camera.svg" alt=""></span>
-          <div class="realty-result-thumbs" aria-label="Фотографии квартиры">
-            <img src="assets/kvartira-image-3.png" alt="Интерьер квартиры">
-            <img src="assets/kvartira-image-4.png" alt="Гостиная квартиры">
-            <button class="realty-result-more-photo" type="button" aria-label="Показать еще фото">
-              <img src="assets/kvartira-image-4.png" alt="">
-              <span>Еще фото</span>
-            </button>
-          </div>
-        </div>
-        <div class="realty-result-info">
-          <h2><a href="realty-object.html">3-комн. квартира, 174,4 м², 3/7 этаж</a></h2>
-          <p class="realty-result-subtitle">Секция 7 · Сдача корпуса 4 кв. 2029</p>
-          <span class="realty-result-tag">С отделкой</span>
-          <a class="realty-result-complex" href="#!"><img src="assets/realty-icon-blue.svg" alt=""> ЖК «Рождественка 8»</a>
-          <p>Сдача ГК: 4 кв. 2029 года</p>
-          <p class="realty-result-metro"><span>М</span> Кузнецкий мост · 3 минуты пешком.</p>
-          <p class="realty-result-address">Москва, ЦАО, р-н Мещанский, м. Кузнецкий мост, улица Рождественка, 8с1</p>
-        </div>
-        <aside class="realty-result-contact">
-          <div class="realty-result-price-row">
-            <div>
-              <strong>734 724 000 ₽</strong>
-              <span>4 212 867 ₽/м²</span>
-            </div>
-            <time>11 июля 18:31</time>
-          </div>
-          <div class="realty-result-developer">
-            <div class="realty-result-logo"><img src="assets/logo-gals.png" alt="Галс-Девелопмент"></div>
-            <div>
-              <span>Застройщик</span>
-              <b>Галс-Девелопмент</b>
-            </div>
-          </div>
-          <div class="realty-result-phone">+7 499 648-58-67</div>
-          <p class="realty-result-schedule">Специалист работает с 09:00 по 21:00</p>
-          <div class="realty-result-actions">
-            <a class="primary-btn" href="tel:+74996485867"><img src="assets/phone.svg" alt="">Позвонить</a>
-            <a class="secondary-btn" href="#!"><img src="assets/message.svg" alt="">Написать</a>
-          </div>
-        </aside>
-      </article>
-      </div>
-      <button class="realty-results-more primary-btn" type="button">Загрузить еще</button>
+      <aside class="realty-object-sidebar">
+        <article class="object-price-card"><div class="object-price-head"><strong>34 800 000 ₽</strong><div class="object-actions"><button type="button">В избранное <img src="assets/favourite.svg" alt=""></button><button type="button"><img src="assets/copy.svg" alt=""></button><button type="button"><img src="assets/warning.svg" alt=""></button></div></div><div class="realtor-help-box"><div><strong>Помощь риелтора</strong><p>Проверенный риелтор поможет купить или продать квартиру</p><button type="button">Подать заявку</button></div><img src="assets/realtor-assistance-illustration.png" alt="Помощь риелтора"></div><dl class="object-price-params"><div><dt>Цена за м²</dt><dd>580 000 ₽/м²</dd></div><div><dt>Условия сделки</dt><dd>переуступка</dd></div></dl><div class="object-contact-row"><div><strong>+7 499 648-58-67</strong><span>Специалист работает с 09:00 по 21:00</span></div><div class="object-status"><span class="is-offline">Оффлайн</span><span class="is-online">Онлайн</span></div></div><button class="object-call-button" type="button"><img src="assets/phone.svg" alt="">Позвонить</button><button class="object-message-button" type="button"><img src="assets/message.svg" alt="">Написать</button></article>
+        <article class="object-agency-card"><div class="agency-card-head"><img src="assets/logo-vsn.png" alt="VSN Group"><div><span>Агентство недвижимости</span><strong>VSN Group</strong><small>Документы проверены</small></div></div><div class="agency-card-stats"><div><span>На FINBEFINE</span><strong>2 года</strong></div><div><span>Объектов в работе</span><strong>276</strong></div></div><button type="button">Смотреть все объекты</button></article>
+        <section class="object-location-card"><h2>Расположение</h2><img src="assets/map2.png" alt="Карта расположения объекта"></section>
+      </aside>
     </section>
+    <section class="realty-similar-section" data-similar-slider><h2>Похожие объявления</h2><div class="realty-similar-wrap"><button class="realty-similar-arrow realty-similar-prev" type="button" data-similar-prev aria-label="Предыдущие объявления">←</button><div class="realty-similar-track" data-similar-track><article class="realty-object-similar-card"><img src="assets/kvartira-image-1.png" alt="Похожая квартира"><div><strong>5 200 000 ₽</strong><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><span>г. Москва, ул. Центральная</span></div></article>
+<article class="realty-object-similar-card"><img src="assets/kvartira-image-2.png" alt="Похожая квартира"><div><strong>5 200 000 ₽</strong><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><span>г. Москва, ул. Центральная</span></div></article>
+<article class="realty-object-similar-card"><img src="assets/kvartira-image-3.png" alt="Похожая квартира"><div><strong>5 200 000 ₽</strong><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><span>г. Москва, ул. Центральная</span></div></article>
+<article class="realty-object-similar-card"><img src="assets/kvartira-image-4.png" alt="Похожая квартира"><div><strong>5 200 000 ₽</strong><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><span>г. Москва, ул. Центральная</span></div></article>
+<article class="realty-object-similar-card"><img src="assets/kvartira-image-1.png" alt="Похожая квартира"><div><strong>6 100 000 ₽</strong><p>Квартира · 72м² · 8 этаж · 2 комнаты</p><span>г. Москва, ул. Центральная</span></div></article>
+<article class="realty-object-similar-card"><img src="assets/kvartira-image-2.png" alt="Похожая квартира"><div><strong>7 450 000 ₽</strong><p>Квартира · 96м² · 11 этаж · 3 комнаты</p><span>г. Москва, ул. Центральная</span></div></article>
+<article class="realty-object-similar-card"><img src="assets/kvartira-image-3.png" alt="Похожая квартира"><div><strong>8 300 000 ₽</strong><p>Квартира · 104м² · 15 этаж · 4 комнаты</p><span>г. Москва, ул. Центральная</span></div></article>
+<article class="realty-object-similar-card"><img src="assets/kvartira-image-4.png" alt="Похожая квартира"><div><strong>4 950 000 ₽</strong><p>Квартира · 64м² · 5 этаж · 2 комнаты</p><span>г. Москва, ул. Центральная</span></div></article></div><button class="realty-similar-arrow realty-similar-next" type="button" data-similar-next aria-label="Следующие объявления">→</button></div></section>
   </div>
 </main>
 <footer class="site-footer">
@@ -865,6 +587,44 @@ if (realtyPickedSlider) {
       }
     });
   </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-object-gallery]').forEach(function (gallery) {
+    var main = gallery.querySelector('[data-object-gallery-main]');
+    var thumbs = Array.from(gallery.querySelectorAll('.object-gallery-thumb[data-object-thumb]'));
+    var planButton = gallery.querySelector('[data-object-plan]');
+    var activeIndex = 1;
+    function setActive(index) {
+      if (!main || !thumbs.length) return;
+      activeIndex = (index + thumbs.length) % thumbs.length;
+      thumbs.forEach(function (thumb, thumbIndex) { thumb.classList.toggle('is-active', thumbIndex === activeIndex); });
+      var img = thumbs[activeIndex].querySelector('img');
+      if (img) { main.src = img.getAttribute('src'); main.alt = img.getAttribute('alt') || 'Фото объекта'; }
+      thumbs[activeIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+    }
+    thumbs.forEach(function (thumb, index) { thumb.addEventListener('click', function () { setActive(index); }); });
+    if (planButton) planButton.addEventListener('click', function () { setActive(0); });
+    var fullButton = gallery.querySelector('.object-full-button');
+    if (fullButton && main) fullButton.addEventListener('click', function () { window.open(main.src, '_blank'); });
+    gallery.querySelectorAll('[data-object-gallery-next]').forEach(function (button) { button.addEventListener('click', function () { setActive(activeIndex + 1); }); });
+    gallery.querySelectorAll('[data-object-gallery-prev]').forEach(function (button) { button.addEventListener('click', function () { setActive(activeIndex - 1); }); });
+  });
+  document.querySelectorAll('[data-similar-slider]').forEach(function (slider) {
+    var track = slider.querySelector('[data-similar-track]');
+    if (!track) return;
+    function getSimilarStep() {
+      var firstCard = track.querySelector('.realty-object-similar-card');
+      return firstCard ? firstCard.offsetWidth + 20 : 330;
+    }
+    var prev = slider.querySelector('[data-similar-prev]');
+    var next = slider.querySelector('[data-similar-next]');
+    if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -getSimilarStep(), behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { track.scrollBy({ left: getSimilarStep(), behavior: 'smooth' }); });
+  });
+});
+</script>
+
 </body>
 
 </html>
