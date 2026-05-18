@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FINBEFINE — Недвижимость</title>
+  <title>FINBEFINE — Авто</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -81,8 +81,8 @@
     <a href="vklady.html">Вклады</a>
     <a href="insurance.html">Страхование</a>
     <a href="education.html">Образование</a>
-    <a class="active" href="realty.html">Недвижимость</a>
-    <a href="auto.html">Авто</a>
+    <a href="realty.html">Недвижимость</a>
+    <a class="active" href="auto.html">Авто</a>
   </nav>
   <button class="login-btn mobile-login-btn">
     <img src="assets/login.svg" alt="login">
@@ -98,170 +98,127 @@
       </div>
     </div>
   </header>
-<main class="realty-page">
+<main class="auto-page">
   <div class="container">
-    <section class="realty-hero">
-      <div class="realty-hero-copy">
-        <h1>Крупнейшая <span class="title-icon-inline"><img src="assets/realty-icon.svg" alt=""></span> база недвижимости <span>Москвы</span></h1>
-        <p>В нашем сервисе представлен широкий спектр предложений недвижимости: новостройки, готовое жилье, коммерческие объекты и ипотечные программы. Подбирайте варианты, сравнивайте условия и находите подходящее решение рядом с работой, парком или родными.</p>
+    <section class="auto-hero">
+      <div class="auto-hero-copy">
+        <h1>Крупнейшая <span class="title-icon-inline auto-title-icon"><img src="assets/car.svg" alt=""></span> база<br>автомобилей <span>Москвы</span></h1>
+        <p>В нашем сервисе представлен широкий спектр страховых услуг, охватывающих различные области вашей жизни и имущества. Воспользуйтесь нашими преимуществами и обеспечьте себе и своей семье финансовую безопасность в разнообразных жизненных ситуациях.</p>
       </div>
-      <a class="realty-hero-banner" href="#!" aria-label="Жилой комплекс Монэ">
-        <img src="assets/realty-banner.png" alt="Жилой комплекс Монэ">
+      <a class="auto-hero-banner" href="#!"><img src="assets/cars-banner.png" alt="Обмен автомобиля"></a>
+    </section>
+
+    <section class="auto-filter-section">
+      <h2>Подобрать авто</h2>
+      <div class="auto-filter-card">
+        <div class="auto-filter-grid">
+          <label class="auto-field auto-field-select"><span>Марка</span><select><option>Toyota (165542)</option><option>Kia</option><option>Volkswagen</option></select></label>
+          <label class="auto-field auto-field-select"><span>Модель</span><select><option>Camry (13787)</option><option>Corolla</option><option>K8</option></select></label>
+          <label class="auto-field auto-field-select"><span>Поколение</span><select><option>10 поколение, 2023 - н.в., XV80</option><option>9 поколение</option></select></label>
+          <button class="auto-plus" type="button" aria-label="Добавить фильтр"></button>
+          <label class="auto-field auto-split"><span>Цена</span><input placeholder="От, ₽"><i></i><input placeholder="До, ₽"></label>
+          <label class="auto-field auto-split"><span>Год</span><input placeholder="От, ₽"><i></i><input placeholder="До, ₽"></label>
+          <label class="auto-field auto-field-select"><span>КПП</span><select><option>АКПП</option><option>МКПП</option></select></label>
+          <label class="auto-field auto-field-select auto-field-fuel"><span>Топливо</span><select><option>Бензин</option><option>Дизель</option><option>Гибрид</option></select></label>
+          <label class="auto-field auto-split"><span>Объем</span><input placeholder="От, л"><i></i><input placeholder="До, л"></label>
+          <label class="auto-field auto-field-select"><span>Привод</span><select><option>Передний</option><option>Полный</option><option>Задний</option></select></label>
+          <label class="auto-field auto-checkbox">
+            <span>С фото</span>
+            <input type="checkbox" checked>
+            <i></i>
+          </label>
+          <a class="auto-reset" href="#">
+            Сбросить все
+            <img src="assets/clear.svg" alt="">
+          </a>
+        </div>
+        <div class="auto-filter-actions"><a class="auto-advanced" href="#">Расширенный поиск <img src="assets/arrow-down.svg" alt=""></a><button class="primary-btn" type="button">Подобрать (938)</button></div>
+      </div>
+    </section>
+
+    <section class="auto-brands-section">
+      <div class="auto-brands-grid">
+        <a href="#!"><img src="assets/logo-audi.png" alt="Audi"><span>Audi</span></a><a href="#!"><img src="assets/logo-geely.png" alt="Geely"><span>Geely</span></a><a href="#!"><img src="assets/logo-landrover.png" alt="Land Rover"><span>Land Rover</span></a><a href="#!"><img src="assets/logo-skoda.png" alt="Skoda"><span>Skoda</span></a><a href="#!"><img src="assets/logo-bmw.png" alt="BMW"><span>BMW</span></a>
+        <a href="#!"><img src="assets/logo-haval.png" alt="Haval"><span>Haval</span></a><a href="#!"><img src="assets/logo-mazda.png" alt="Mazda"><span>Mazda</span></a><a href="#!"><img src="assets/logo-toyota.png" alt="Toyota"><span>Toyota</span></a><a href="#!"><img src="assets/logo-changan.png" alt="Changan"><span>Changan</span></a><a href="#!"><img src="assets/logo-honda.png" alt="Honda"><span>Honda</span></a>
+        <a href="#!"><img src="assets/logo-mercedes.png" alt="Mercedes-Benz"><span>Mercedes-Benz</span></a><a href="#!"><img src="assets/logo-volkswagen.png" alt="Volkswagen"><span>Volkswagen</span></a><a href="#!"><img src="assets/logo-cherry.png" alt="Chery"><span>Chery</span></a><a href="#!"><img src="assets/logo-hyundai.png" alt="Hyundai"><span>Hyundai</span></a><a href="#!"><img src="assets/logo-mitsubishi.png" alt="Mitsubishi"><span>Mitsubishi</span></a>
+        <a href="#!"><img src="assets/logo-lada.png" alt="Лада"><span>Лада</span></a><a href="#!"><img src="assets/logo-ford.png" alt="Ford"><span>Ford</span></a><a href="#!"><img src="assets/logo-kia.png" alt="Kia"><span>Kia</span></a><a href="#!"><img src="assets/nissan.png" alt="Nissan"><span>Nissan</span></a><button type="button">Показать все марки <img src="assets/arrow-down.svg" alt=""></button>
+      </div>
+    </section>
+
+    <section class="auto-specials-section auto-slider-section">
+      <div class="auto-section-row">
+        <h2>Специальные предложения</h2>
+        <a href="#">Смотреть все спецразмещения</a>
+      </div>
+
+      <div class="auto-specials-slider" data-auto-specials-slider>
+        <button class="auto-slider-arrow auto-slider-arrow--prev" type="button" data-auto-specials-prev>←</button>
+
+        <div class="auto-specials-viewport">
+          <div class="auto-specials-track" data-auto-specials-track>
+            <a class="auto-deal-card" href="#!"><img src="assets/cars-slider-1.png" alt=""><b>3 999 000 ₽</b><div><h3>Kia K8, 2021</h3><p>Москва</p></div></a>
+            <a class="auto-deal-card" href="#!"><img src="assets/cars-slider-2.png" alt=""><b>1 195 000 ₽</b><div><h3>Toyota Corolla, 2014</h3><p>Москва</p></div></a>
+            <a class="auto-deal-card" href="#!"><img src="assets/cars-slider-3.png" alt=""><b>2 149 000 ₽</b><div><h3>Mercedes-Benz Viano, 2013</h3><p>Москва</p></div></a>
+            <a class="auto-deal-card" href="#!"><img src="assets/cars-slider-4.png" alt=""><b>1 299 000 ₽</b><div><h3>Hyundai ix35, 2013</h3><p>Москва</p></div></a>
+            <a class="auto-deal-card" href="#!"><img src="assets/cars-slider-5.png" alt=""><b>1 819 000 ₽</b><div><h3>Hyundai i30, 2022</h3><p>Москва</p></div></a>
+            <a class="auto-deal-card" href="#!"><img src="assets/cars-slider-6.png" alt=""><b>1 670 000 ₽</b><div><h3>Skoda Octavia, 2019</h3><p>Москва</p></div></a>
+          </div>
+        </div>
+
+        <button class="auto-slider-arrow auto-slider-arrow--next" type="button" data-auto-specials-next>→</button>
+      </div>
+    </section>
+
+    <section class="auto-recommend-section">
+      <h2>Рекомендации</h2>
+      <div class="auto-catalog-grid">
+        <a href="#!"><img src="assets/auto-image-1.png" alt="Kia K8"><h3>Kia K8, 2025</h3><b>5 950 000 ₽</b><p>Москва</p></a>
+        <a href="#!"><img src="assets/auto-image-2.png" alt="Kia K8"><h3>Kia K8, 2022</h3><b>3 000 000 ₽</b><p>Москва</p></a>
+        <a href="#!"><img src="assets/auto-image-3.png" alt="Toyota Corolla"><h3>Toyota Corolla, 2014</h3><b>949 000 ₽</b><p>Москва</p></a>
+        <a href="#!"><img src="assets/auto-image-4.png" alt="Volkswagen Arteon"><h3>Volkswagen Arteon, 2020</h3><b>2 650 000 ₽ <span>Хорошая цена</span></b><p>Москва</p></a>
+        <a href="#!"><img src="assets/auto-image-1.png" alt="Kia K8"><h3>Kia K8, 2025</h3><b>5 950 000 ₽</b><p>Москва</p></a>
+        <a href="#!"><img src="assets/auto-image-2.png" alt="Kia K8"><h3>Kia K8, 2022</h3><b>3 000 000 ₽</b><p>Москва</p></a>
+        <a href="#!"><img src="assets/auto-image-3.png" alt="Toyota Corolla"><h3>Toyota Corolla, 2014</h3><b>949 000 ₽</b><p>Москва</p></a>
+        <a href="#!"><img src="assets/auto-image-4.png" alt="Volkswagen Arteon"><h3>Volkswagen Arteon, 2020</h3><b>2 650 000 ₽ <span>Хорошая цена</span></b><p>Москва</p></a>
+      </div>
+    </section>
+
+    <section class="auto-banners-row">
+      <a href="#">
+        <img src="assets/auto-banner-1.png" alt="Авторынок">
+      </a>
+      <a href="#">
+        <img src="assets/auto-banner-2.png" alt="Выкуп авто">
       </a>
     </section>
 
-    <section class="realty-search-section">
-<h2>Подбор жилья</h2>
-<div class="realty-search-card">
-  <div class="realty-mode-row" role="tablist" aria-label="Тип сделки" data-realty-modes>
-    <button class="realty-mode active" type="button" aria-selected="true" data-realty-mode="buy">Купить</button>
-    <button class="realty-mode" type="button" aria-selected="false" data-realty-mode="rent">Снять</button>
-  </div>
-  <div class="realty-search-row">
-    <label class="realty-field realty-field-select">
-      <select aria-label="Тип недвижимости" data-realty-type-select>
-        <option>Квартира в новостройке</option>
-        <option>Квартира во вторичке</option>
-        <option>Дом</option>
-        <option>Земельный участок</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-select">
-      <select aria-label="Количество комнат">
-        <option>Комнат</option>
-        <option>1 комната</option>
-        <option>2 комнаты</option>
-        <option>3 комнаты</option>
-        <option>4+ комнаты</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-select">
-      <select aria-label="Цена">
-        <option>Цена</option>
-        <option>до 5 млн ₽</option>
-        <option>5-10 млн ₽</option>
-        <option>10-20 млн ₽</option>
-        <option>от 20 млн ₽</option>
-      </select>
-    </label>
-    <label class="realty-field realty-field-search"><img src="assets/search.svg" alt=""><input type="search" placeholder="ЖК, адрес, метро, район" data-realty-search-input></label>
-    <button class="primary-btn" type="button" onclick="window.location.href='realty-search.html'">Найти</button>
-  </div>
-</div>
-    </section>
+    <section class="auto-dealer-section"><h2>Новые автомобили от дилеров</h2><div class="auto-dealer-grid"><article><h3>Эконом</h3><p>до 1,5 млн ₽</p><img src="assets/auto-econom.png" alt="Эконом"></article><article><h3>Комфорт</h3><p>до 3 млн ₽</p><img src="assets/auto-comfort.png" alt="Комфорт"></article><article><h3>Бизнес</h3><p>до 6 млн ₽</p><img src="assets/auto-business.png" alt="Бизнес"></article><article><h3>Премиум</h3><p>от 6 млн ₽</p><img src="assets/auto-premium.png" alt="Премиум"></article></div></section>
 
-    <section class="realty-newbuild-section">
-      <h2>Жилье в новостройках</h2>
-      <div class="realty-newbuild-grid">
-        <a class="realty-newbuild-tall realty-blue-card" href="#!">
-          <div><h3>Купить квартиру<br>в новостройке</h3><p><b>1 - комнатные:</b> 1870 предложений</p><p><b>2 - комнатные:</b> 2106 предложений</p><p><b>3 - комнатные:</b> 578 предложений</p><span>Все предложения</span></div>
-          <img src="assets/zhile.png" alt="Новостройка">
-        </a>
-        <div class="realty-newbuild-mini-grid">
-          <a class="realty-image-card" href="#!"><img src="assets/zhk-1.png" alt="Строящиеся ЖК"><span><b>Строящиеся ЖК</b><em>58 предложений</em></span></a>
-          <a class="realty-image-card" href="#!"><img src="assets/zhk-2.png" alt="Сданные ЖК"><span><b>Сданные ЖК</b><em>119 предложений</em></span></a>
-          <a class="realty-image-card" href="#!"><img src="assets/zhk-3.png" alt="Квартиры от застройщиков"><span><b>Квартиры от застройщиков</b><em>58 предложений</em></span></a>
-          <a class="realty-blue-card realty-builder-card" href="#!"><div><h3>Каталог<br>застройщиков</h3><span>458 предложений</span></div><img src="assets/zastroychik.png" alt="Каталог застройщиков"><i><img src="assets/realty-icon.svg" alt=""></i></a>
-        </div>
-        <a class="realty-map-card" href="#!"><div><h3>Поиск на карте</h3><p>Ищите новостройки рядом с работой, парком или родственниками</p><span>Найти на карте</span></div></a>
-      </div>
-    </section>
-
-<section class="realty-picked-section" data-realty-picked-slider>
-  <h2>Подобрали ЖК для Вас</h2>
-  <button class="realty-picked-arrow realty-picked-arrow--prev" type="button" aria-label="Предыдущие ЖК" data-realty-picked-prev><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
-  <div class="realty-picked-viewport">
-    <div class="realty-picked-grid" data-realty-picked-track>
-      <article class="realty-complex-card"><img src="assets/zhk-image-1.png" alt="ЖК Германия"><div><h3>ЖК Германия</h3><span>250 квартир</span><p>Сдан</p><b>от 18 138 416 ₽</b><small>г. Москва, ул. Центральная</small></div></article>
-      <article class="realty-request-card"><img src="assets/kvartira-icon.png" alt="Подбор квартиры"><h3>Бесплатно подберем<br>и поможем купить квартиру</h3><button type="button">Подать заявку</button></article>
-      <article class="realty-complex-card"><img src="assets/zhk-image-2.png" alt="ЖК Зеленодар"><div><h3>ЖК Зеленодар</h3><span>250 квартир</span><p>Сдан</p><b>от 5 820 000 ₽</b><small>г. Москва, ул. Центральная</small></div></article>
-      <article class="realty-complex-card"><img src="assets/zhk-image-3.png" alt="ЖК Славянка"><div><h3>ЖК Славянка</h3><span>250 квартир</span><p>Сдан</p><b>от 3 660 500 ₽</b><small>г. Москва, ул. Центральная</small></div></article>
-      <article class="realty-complex-card"><img src="assets/zhk-1.png" alt="ЖК Лесной"><div><h3>ЖК Лесной</h3><span>250 квартир</span><p>Сдан</p><b>от 7 420 000 ₽</b><small>г. Москва, ул. Центральная</small></div></article>
-      <article class="realty-complex-card"><img src="assets/zhk-2.png" alt="ЖК Солнечный"><div><h3>ЖК Солнечный</h3><span>250 квартир</span><p>Сдан</p><b>от 6 150 000 ₽</b><small>г. Москва, ул. Центральная</small></div></article>
-    </div>
-  </div>
-  <button class="realty-picked-arrow realty-picked-arrow--next" type="button" aria-label="Следующие ЖК" data-realty-picked-next><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
-</section>
-
-    <section class="realty-interest-section">
-      <div class="section-head section-head-tight"><h2>Может заинтересовать</h2><a class="section-link" href="#!">Показать все 56 предложений</a></div>
-      <div class="realty-interest-grid">
-        <article class="realty-flat-card"><img src="assets/kvartira-image-1.png" alt="Квартира"><div><b>5 200 000 ₽</b><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><small>г. Москва, ул. Центральная</small></div></article>
-        <article class="realty-flat-card"><img src="assets/kvartira-image-2.png" alt="Квартира"><div><b>5 200 000 ₽</b><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><small>г. Москва, ул. Центральная</small></div></article>
-        <article class="realty-flat-card"><img src="assets/kvartira-image-3.png" alt="Квартира"><div><b>5 200 000 ₽</b><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><small>г. Москва, ул. Центральная</small></div></article>
-        <article class="realty-flat-card"><img src="assets/kvartira-image-4.png" alt="Квартира"><div><b>5 200 000 ₽</b><p>Квартира · 80м² · 2 этаж · 3 комнаты</p><small>г. Москва, ул. Центральная</small></div></article>
-      </div>
-      <div class="realty-wide-banners">
-        <a href="#!"><img src="assets/realty-banner-1.png" alt="Риэлтор"></a>
-        <a href="#!"><img src="assets/realty-banner-2.png" alt="Жилой комплекс"></a>
-      </div>
-    </section>
-
-    <section class="realty-commercial-section">
-      <h2>Коммерческая недвижимость</h2>
-      <div class="realty-commercial-layout">
-        <div class="realty-commercial-grid">
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-1.png" alt="Офисы"><span><b>Офисы</b><em>Аренда 476</em><em>Продажа 391</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-2.png" alt="Склады"><span><b>Склады</b><em>Аренда 233</em><em>Продажа 101</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-3.png" alt="Торговая площадь"><span><b>Торговая площадь</b><em>Аренда 385</em><em>Продажа 454</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-4.png" alt="Производство"><span><b>Производство</b><em>Аренда 45</em><em>Продажа 40</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-5.png" alt="Здание"><span><b>Здание</b><em>Аренда 58</em><em>Продажа 114</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-6.png" alt="Свободного назначения"><span><b>Свободного назначения</b><em>Аренда 776</em><em>Продажа 1080</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-7.png" alt="Готовый бизнес"><span><b>Готовый бизнес</b><em>Продажа 171</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-8.png" alt="Коммерческая земля"><span><b>Коммерческая земля</b><em>Аренда 34</em><em>Продажа 105</em></span></a>
-          <a class="realty-commercial-card" href="#!"><img src="assets/commerce-9.png" alt="Гараж"><span><b>Гараж</b><em>Аренда 155</em><em>Продажа 483</em></span></a>
-        </div>
-        <aside class="realty-commercial-aside">
-          <a class="realty-blue-card realty-catalog-card" href="#!"><h3>Каталог<br>бизнес-центров</h3><img src="assets/catalog-image-1.png" alt="Бизнес-центры"><i><img src="assets/catalog-icon-1.svg" alt=""></i></a>
-          <a class="realty-blue-card realty-catalog-card" href="#!"><h3>Каталог<br>торговых центров</h3><img src="assets/catalog-image-2.png" alt="Торговые центры"><i><img src="assets/catalog-icon-2.svg" alt=""></i></a>
-        </aside>
-      </div>
-    </section>
-
-    <section class="realty-mortgage-section">
-      <div class="realty-mortgage-layout">
-        <div class="realty-mortgage-card card-lite">
-          <h2>Ипотека на все виды недвижимости</h2>
-          <div class="realty-house-grid">
-            <div><img src="assets/ipoteka-icon-1.svg" alt=""><span>от <b>5,7%</b> новостройки</span></div>
-            <div><img src="assets/ipoteka-icon-2.svg" alt=""><span>от <b>18,7%</b> вторичка</span></div>
-            <div><img src="assets/ipoteka-icon-3.svg" alt=""><span>от <b>6%</b> дома</span></div>
-            <div><img src="assets/ipoteka-icon-4.svg" alt=""><span>от <b>12%</b> земельные участки</span></div>
-          </div>
-          <button class="primary-btn" type="button">Получить предложения банков</button>
-        </div>
-        <a class="realty-realtor-card realty-blue-card" href="#!"><h3>Подбор<br>риелтора</h3><button type="button">Подобрать риелтора</button><img src="assets/catalog-image-3.png" alt="Риелтор"><i><img src="assets/catalog-icon-3.svg" alt=""></i></a>
-      </div>
-    </section>
-
-    <section class="realty-state-section card-lite">
-      <h2>Ипотека с господдержкой</h2>
-      <div class="realty-state-grid">
-        <article><b>7%</b><span>Льготная</span><img src="assets/ipoteka-image-1.png" alt="Льготная ипотека"></article>
-        <article><b>6%</b><span>Семейная</span><img src="assets/ipoteka-image-2.png" alt="Семейная ипотека"></article>
-        <article><b>5%</b><span>IT-специалисты</span><img src="assets/ipoteka-image-3.png" alt="IT ипотека"></article>
-        <article><b>3%</b><span>Сельская</span><img src="assets/ipoteka-image-4.png" alt="Сельская ипотека"></article>
-        <article><b>2%</b><span>Дальневосточная</span><img src="assets/ipoteka-image-5.png" alt="Дальневосточная ипотека"></article>
-      </div>
-      <button class="primary-btn" type="button">Подать заявку онлайн</button>
-    </section>
-
-    <section class="news-section credit-news realty-blog-section">
+    <section class="news-section credit-news auto-blog-section">
       <div class="section-head section-head-tight"><h2>Блог</h2></div>
       <article class="news-card">
-        <div class="news-col news-feature"><h3>Лента новостей</h3><h4>Кто рискует остаться без пенсии: разъяснения юриста.</h4><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div><p>Несмотря на то что право на страховую пенсию закреплено федеральным законом, для её получения необходимо выполнить ряд условий.</p><a href="#" class="section-link">Читать полностью</a><img src="assets/news-old-man.png" alt="Новость"></div>
+        <div class="news-col news-feature"><h3>Лента новостей</h3><h4>Кто рискует остаться без пенсии: разъяснения юриста.</h4><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div><p>Несмотря на то что право на страховую пенсию закреплено федеральным законом, для её получения необходимо выполнить ряд условий. Об этом рассказывает «РГ» со ссылкой на юриста Илью Русева.</p><a href="#" class="section-link">Читать полностью</a><img src="assets/news-old-man.png" alt="Новость"></div>
         <div class="news-col news-list"><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div><div class="news-item"><h5>Кто рискует остаться без пенсии: разъяснения юриста.</h5><div class="news-meta">Кредиты · 15.05.2025 · 22:05</div></div></div>
         <div class="news-col news-slider" data-news-slider><div class="news-slider-stack"><img class="slider-layer slider-layer-back slider-layer-back-two" data-slider-back-two src="assets/hero-travel.png" alt=""><img class="slider-layer slider-layer-back slider-layer-back-one" data-slider-back-one src="assets/news-old-man.png" alt=""><img class="slider-layer slider-layer-front" data-slider-image src="assets/news-old-woman.png" alt="Новость"></div><div class="slider-nav"><button class="slider-arrow" type="button" data-slider-prev aria-label="Предыдущая новость">←</button><span class="slider-count" data-slider-current>1</span><div class="slider-bar"><i data-slider-progress></i></div><span data-slider-total>5</span><button class="slider-arrow" type="button" data-slider-next aria-label="Следующая новость">→</button></div></div>
       </article>
     </section>
 
-    <section class="credit-reviews-section realty-reviews-section">
-      <div class="section-head section-head-tight"><h2>Отзывы о недвижимости</h2></div>
-      <div class="credit-reviews-slider" data-credit-reviews-slider><button class="credit-review-arrow credit-review-arrow--prev" type="button" aria-label="Предыдущие отзывы" data-credit-reviews-prev><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button><div class="credit-review-viewport"><div class="credit-review-track" data-credit-reviews-track><article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article><article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article><article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article><article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article></div></div><button class="credit-review-arrow credit-review-arrow--next" type="button" aria-label="Следующие отзывы" data-credit-reviews-next><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button></div>
+    <section class="credit-reviews-section auto-reviews-section">
+      <div class="section-head section-head-tight"><h2>Отзывы о школах</h2></div>
+      <div class="credit-reviews-slider" data-credit-reviews-slider>
+        <button class="credit-review-arrow credit-review-arrow--prev" type="button" aria-label="Предыдущие отзывы" data-credit-reviews-prev><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+        <div class="credit-review-viewport"><div class="credit-review-track" data-credit-reviews-track>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+          <article class="review-card"><div class="review-top"><h4>В этом банке ты клиент с большой буквы</h4><span class="review-badge"><img src="assets/bank-logo.png" alt=""></span></div><p>На данный момент банк придерживается политики максимальной прозрачности в предоставлении своих услуг...</p><a href="#" class="section-link">Читать полностью</a><div class="review-bottom"><div class="review-meta"><span>15.05.2025</span><span>Михаил</span><span>Москва</span></div><div class="review-score"><span>Оценка</span><b class="score">5</b></div></div></article>
+        </div></div>
+        <button class="credit-review-arrow credit-review-arrow--next" type="button" aria-label="Следующие отзывы" data-credit-reviews-next><img src="assets/arrow-right-slider.svg" alt="" aria-hidden="true"></button>
+      </div>
       <div class="credit-leave-review"><h3>Оставьте отзыв</h3><p>Помогите другим пользователям выбрать лучший банк</p><button class="primary-btn">Написать отзыв</button></div>
     </section>
 
-    <section class="credit-seo card-lite"><h2>&lt;h2&gt;Заголовок&lt;/h2&gt;</h2><p>Вот вам яркий пример современных тенденций: высокотехнологичная концепция общественного уклада способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности.</p><p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности играет важную роль в формировании первоочередных требований.</p><p>Однозначно, интерактивные прототипы представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом.</p></section>
+    <section class="credit-seo card-lite"><h2>&lt;h2&gt;Заголовок&lt;/h2&gt;</h2><p>Вот вам яркий пример современных тенденций — высокотехнологичная концепция общественного уклада способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности. Однозначно, стремящиеся вытеснить традиционное производство, нанотехнологии призваны к ответу.</p><p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности играет важную роль в формировании первоочередных требований.</p><p>Однозначно, интерактивные прототипы представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом.</p></section>
   </div>
 </main>
 
@@ -618,6 +575,38 @@ if (realtyPickedSlider) {
   updateRealtyPickedSlider();
 }
 
+
+var autoSpecialsSlider = document.querySelector('[data-auto-specials-slider]');
+if (autoSpecialsSlider) {
+  var autoSpecialsTrack = autoSpecialsSlider.querySelector('[data-auto-specials-track]');
+  var autoSpecialsPrev = autoSpecialsSlider.querySelector('[data-auto-specials-prev]');
+  var autoSpecialsNext = autoSpecialsSlider.querySelector('[data-auto-specials-next]');
+  var autoSpecialsCards = Array.prototype.slice.call(autoSpecialsTrack.children);
+  var autoSpecialsIndex = 0;
+
+  function getVisibleAutoSpecials() {
+    if (window.matchMedia('(max-width: 720px)').matches) return 1;
+    if (window.matchMedia('(max-width: 1080px)').matches) return 2;
+    return 4;
+  }
+
+  function updateAutoSpecialsSlider() {
+    var visible = getVisibleAutoSpecials();
+    var maxIndex = Math.max(0, autoSpecialsCards.length - visible);
+    autoSpecialsIndex = Math.max(0, Math.min(autoSpecialsIndex, maxIndex));
+    var cardWidth = autoSpecialsCards[0] ? autoSpecialsCards[0].getBoundingClientRect().width : 0;
+    var gap = parseFloat(getComputedStyle(autoSpecialsTrack).gap) || 0;
+    autoSpecialsTrack.style.transform = 'translateX(' + (autoSpecialsIndex * -(cardWidth + gap)) + 'px)';
+    autoSpecialsPrev.disabled = autoSpecialsIndex === 0;
+    autoSpecialsNext.disabled = autoSpecialsIndex === maxIndex;
+  }
+
+  autoSpecialsPrev.addEventListener('click', function () { autoSpecialsIndex -= 1; updateAutoSpecialsSlider(); });
+  autoSpecialsNext.addEventListener('click', function () { autoSpecialsIndex += 1; updateAutoSpecialsSlider(); });
+  window.addEventListener('resize', updateAutoSpecialsSlider);
+  updateAutoSpecialsSlider();
+}
+
       var creditReviewsSlider = document.querySelector("[data-credit-reviews-slider]");
 
       if (creditReviewsSlider) {
@@ -703,6 +692,8 @@ if (realtyPickedSlider) {
         });
       }
     });
+
+    var autoSpecialsSlider = document.querySelector('[data-auto-specials-slider]');
   </script>
 </body>
 
